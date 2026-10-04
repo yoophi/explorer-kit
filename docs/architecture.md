@@ -57,3 +57,9 @@ flowchart TD
 ```
 
 Movie/Repo의 화면 설정과 Tree의 숨김/패널 배치는 브라우저 설정입니다. Folder/Bookmark의 그룹·경로·별칭은 기존 Rust JSON 설정에 남깁니다. 두 저장 계층은 서로 다른 설정을 담당하며 같은 값을 중복 저장하지 않습니다. UI는 어떤 저장 방식을 사용하는지 알지 못합니다.
+
+## 탐색 스트리밍 확대
+
+Movie/Tree의 기존 배열 IPC는 호환용으로 유지하고, 화면용 탐색에는 항목·종료 이벤트를 추가합니다. 공통 fs-core는 항목 callback·취소 predicate만 알며 transport를 참조하지 않습니다. application port는 앱 DTO·정책을 정의하고 outbound adapter가 fs-core를 호출합니다. Tauri inbound adapter는 작업 등록과 blocking worker, 이벤트 전달을 담당합니다.
+
+React는 임시 탐색 결과와 완료한 서버 상태를 구분합니다. 폴더/glob/숨김 설정이 바뀌면 이전 작업의 이벤트를 새 목록에 섞지 않으며, 완료 전 전체 결과를 캐시에 확정하지 않습니다. Repo의 Git 검사와 catalog commit은 도메인 전용 흐름으로 남깁니다. 적용·검증 상태는 [탐색 스트리밍 보고서](streaming-exploration-report.md)를 참고하세요.

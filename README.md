@@ -18,7 +18,7 @@
 | packages/settings-core | @yoophi/settings-core | 검증·버전 보호·오류 복구를 갖춘 브라우저 설정 저장과 React 구독 |
 | packages/settings-ui | @yoophi/settings-ui | 설정 섹션·필드·토글·저장 상태 구성 요소 |
 | packages/dev-tools | @yoophi/explorer-dev-tools | 사용 가능한 포트로 Vite와 Tauri 동시 실행 |
-| crates/fs-core | explorer-fs-core | 단일 디렉터리 조회, glob 기반 재귀 파일 검색 |
+| crates/fs-core | explorer-fs-core | 단일 디렉터리 조회, glob 재귀 검색, 항목 스트리밍·취소 |
 | crates/json-store | explorer-json-store | JSON 읽기, 조건부 갱신, 버전 검사, 원자적 byte 저장 |
 | crates/image-store | explorer-image-store | 이미지 확장자·후보 선택·원자적 교체와 정리 결과 |
 | crates/scan-job | explorer-scan-job | 스캔 작업 등록·취소·수명·종료 판정 |
@@ -122,3 +122,7 @@ explorer-fs-core = { path = "../../explorer-kit/crates/fs-core" }
 ## 기능 리뷰 후 수정
 
 이미지의 점으로 끝나는 stem 호환, JSON 변경과 조합할 이미지 임시 보관·복원 API, POSIX 루트와 끝 구분자 경로 변환을 보완했습니다. [후속 수정·검증 기록](docs/remaining-review-fixes-report.md)에서 소비 앱 적용 상태와 복구 한계를 확인할 수 있습니다.
+
+## 탐색 스트리밍
+
+[fs-core 스트리밍 API](crates/fs-core/README.md)와 [다섯 앱 조사·적용 보고서](docs/streaming-exploration-report.md)를 참고하세요.

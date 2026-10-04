@@ -1,0 +1,388 @@
+{
+  "baseline": "/var/folders/3z/mcf5cp4n0t567wk9p_kjrpp80000gn/T/streaming-baseline-8gl3gp4s",
+  "description": "스트리밍 적용 시작 전 working tree 대비 최종 변경. 이전 미커밋 작업 제외. 이 manifest 자체 제외.",
+  "repositories": {
+    "explorer-kit": [
+      {
+        "path": "CONTEXT.md",
+        "status": "modified",
+        "before_sha256": "f9aefa8849b7d7b170b60bbae2e3a6212dc2eee8c366b24f4782158fb1349ccb",
+        "after_sha256": "a54a41c4c8665d34513deb355204058d8f521a83a4062ec19a62fcd5014bfa16"
+      },
+      {
+        "path": "PROMPT.md",
+        "status": "modified",
+        "before_sha256": "fb3112d887062874a0af5bbb8e948aad94fda5b50a89b50e5b2a703fde31adee",
+        "after_sha256": "c911071fc576d23a8dccd06e364d12abfed09d0321d7f1b56c6c05764cf65d7b"
+      },
+      {
+        "path": "README.md",
+        "status": "modified",
+        "before_sha256": "eed89d77910fb98f55a32349740ad38bb3e1861d1a6d64818a55c922679a8c36",
+        "after_sha256": "e6dca22fe79b3f42f43de2b0e2a01c9efa22bc76982701dc0400c6fe2eece64b"
+      },
+      {
+        "path": "crates/fs-core/README.md",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "d204e7607c96732e92732a699adc131163c929bb6159e153bc0ddbe217559e29"
+      },
+      {
+        "path": "crates/fs-core/src/lib.rs",
+        "status": "modified",
+        "before_sha256": "3734ec69e1e5f4cfb241df92b555781c1ab54cf8457d086864ea466126003718",
+        "after_sha256": "2b2c2d3d80c5a38b232deb5234b368f9d460ae90d19c8911cd3f19b985d31fa5"
+      },
+      {
+        "path": "crates/fs-core/src/list.rs",
+        "status": "modified",
+        "before_sha256": "3576725b4a5895dfa088f9793f04ac39543e67c10b6a0bfb3ecef940b846198c",
+        "after_sha256": "1a3e6a88b7bb7a2d43fe64c9e53e6b9a3a80b1b557c9a1445d469969cc307d94"
+      },
+      {
+        "path": "crates/fs-core/src/scan.rs",
+        "status": "modified",
+        "before_sha256": "7ac6aae230dd99a5a038ab82598265a5a09941c5326f176b86540e508e44ba26",
+        "after_sha256": "3e30562e5dcdd12de179e0ce9798415f4525269e599b3436610e0540889c8c1a"
+      },
+      {
+        "path": "crates/fs-core/tests/streaming.rs",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "9bd68e2bd4ebf794ff885f58d791e874bdf043ac30be84dc2a74c14d02e16bc4"
+      },
+      {
+        "path": "docs/architecture.md",
+        "status": "modified",
+        "before_sha256": "6a55497886cb218abbe3c5734e2c55abcce42644cd64a97c58832370a5a05392",
+        "after_sha256": "55cf060eaf22d393b44bbb4f8275d6d15ec1c7fbdf566633ab603f270f3268b9"
+      },
+      {
+        "path": "docs/provenance.md",
+        "status": "modified",
+        "before_sha256": "fadbbc2f9cbc4bc1f5df9e6efe113add9a01f2ae52af20547f7083d5c6d74b6f",
+        "after_sha256": "afb0ad403b9ddb11d2dfdca6b2958dd41d3dbca7d614a8a320afdc9535761e56"
+      },
+      {
+        "path": "docs/streaming-exploration-report.md",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "17c7709a6079b1b871e720c80457b5fc3d0aa6aa4a3777a1ab00969c34f4c648"
+      },
+      {
+        "path": "docs/validation.md",
+        "status": "modified",
+        "before_sha256": "af3bc08fbfc7b0d1300864177dee19404ec87641d89d08b4372dc693b3cb42bc",
+        "after_sha256": "d1f29dc0d904e962f2f793f26be97d942dfdfb1e0e8408b8c3fb32c1a025d393"
+      }
+    ],
+    "movie-explorer": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "before_sha256": "b2249390b6470b55a3e5ab7726dc2ffea6724a95062e96831a6f3c0cc0a51a3d",
+        "after_sha256": "d003e214c1d773c3153c00f09ed4b1a3620fe029382c266657fd051383155358"
+      },
+      {
+        "path": "apps/desktop/package.json",
+        "status": "modified",
+        "before_sha256": "3f63ebae63880d3604f9edbff0b648050dbeb84991d9c1d7125390937472957e",
+        "after_sha256": "2dadca0e77e73e8fca50e8d3afb4d72a2b4ddb56f748c8851432709f7cce8091"
+      },
+      {
+        "path": "apps/desktop/scripts/test.mjs",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "1d469a1d9902ec384cbf2329ee89605fde9066efb8299290940d14106ea60fdd"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.lock",
+        "status": "modified",
+        "before_sha256": "f1f1ce25126d44fe91d448320e423b3de0cdcdaa217aff7b2fa4252707d2ee14",
+        "after_sha256": "9846c77ff8a5b7a510d5faff704f546ec4f287ae0a4ae3a32f64c216e2dcf4ba"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.toml",
+        "status": "modified",
+        "before_sha256": "3088b143f8a2d141257102fc30515003934fa98ea7c98214ec2f9f1e47fc62f4",
+        "after_sha256": "08694b4a82ec234d9f7985bb876cfb25c1d2b1a9df8284144a01b40e1c75b412"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/application/mod.rs",
+        "status": "modified",
+        "before_sha256": "1af57b3f894af66849e504da55435a4b255fc6974e4de4ef5e9861d952af35f0",
+        "after_sha256": "1a08d9d758dcebf1f65dfeca3222388bbb8eac605730231a5f6d6986ea4413d3"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/infrastructure/mod.rs",
+        "status": "modified",
+        "before_sha256": "a67ddc0f572ffd498b2e10888eed3415a3a49c4bb6856fcd3ad397ccace904fa",
+        "after_sha256": "cc095c868d1d94fba677a18506985e032bdc4aaa76ce3f058cacd4cf19272b11"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/lib.rs",
+        "status": "modified",
+        "before_sha256": "dd81493ec0140726d60bf25ea4ad3dc8885dc796cc58ff9c4e6cd9e223846d8b",
+        "after_sha256": "8e1271fe6b88201d5cf7a03435a44eb10e16eacc1c6f36f9d4c0de23d97f3675"
+      },
+      {
+        "path": "apps/desktop/src/entities/movie/api.ts",
+        "status": "modified",
+        "before_sha256": "de5b4a1d497c8113ebd5b01c2fb8289e78d79f616c272137866b5a3037d49d0b",
+        "after_sha256": "21256bae43cedd290f70efec096578a8c11090f62cb420ff185e3ba21d0df70e"
+      },
+      {
+        "path": "apps/desktop/src/entities/movie/index.ts",
+        "status": "modified",
+        "before_sha256": "a8805c0ceb0ee0f44264bdb7f02af6ab97be0fe1a5b6d3ff26124ba171af37f7",
+        "after_sha256": "e4ff48f9354e48ce0aaeb0d9383dc616a5906482c9382785562c03f6c7478f3d"
+      },
+      {
+        "path": "apps/desktop/src/entities/movie/scan-stream.test.ts",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "6774e96659e4a1f90f66de0369d42401ffd2395342e54c63e39b60c568c836a8"
+      },
+      {
+        "path": "apps/desktop/src/entities/movie/scan-stream.ts",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "faac64aa93022ea108d50c10a8124c884c66e4036f52cc815c1bdd2fd8b85ec8"
+      },
+      {
+        "path": "apps/desktop/src/pages/home/index.tsx",
+        "status": "modified",
+        "before_sha256": "adbc129dc3e30b56be6eb54c8fd26b389e2f2643c5fa3964ebf58b4006b916cd",
+        "after_sha256": "392dfb955317902a62c7687f613425c1dc36bfd2fab43275d56cd283676b3600"
+      },
+      {
+        "path": "apps/desktop/src/pages/home/selection.test.ts",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "4b687307b77124b78aac6d1fe9fab48cc85729b7f38446082d889f3262189581"
+      },
+      {
+        "path": "apps/desktop/src/pages/home/selection.ts",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "2ba67c005f75e477cf5e77b74901ef9f423a51991e62b9285e83e6fcf6fb8d6c"
+      },
+      {
+        "path": "apps/desktop/vite.config.ts",
+        "status": "modified",
+        "before_sha256": "4396e2117ff93682e10a3e3152814083f383eb312a1307e9b4d033b9dcb374d0",
+        "after_sha256": "bf70ae4497b3cfb674d3c35a0af5d1d1367f486ca56ac705ba493bfc17079d99"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "status": "modified",
+        "before_sha256": "ae29b1957aacb3964e1d7043daaf71a5ef892edf5d63c294745dfde2c8764122",
+        "after_sha256": "0f7cbc02220378a8273863a9d9ab94603e4a6881f9eb9151a42b23cfab68a671"
+      }
+    ],
+    "movie-folder-explorer": [],
+    "repo-explorer": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "before_sha256": "77762cfb92edbc1b373d6707e7008b7f90a0ad1d6113bc0799d4d765bde52e1d",
+        "after_sha256": "7335c5675cdd9053c6561b192b18b1182847bcbf236475678896d9d7f2e349e8"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/application.rs",
+        "status": "modified",
+        "before_sha256": "33ade99db522b4f51cbac431934a3e4aaf73f9fdab2a2ba4305abea13ff0bbbf",
+        "after_sha256": "07314eaa8d7a7fc9f3f716c68a2d389aa791f5f1ab0753192c697281be6b75df"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/domain.rs",
+        "status": "modified",
+        "before_sha256": "2a79b5b9e26de659790a63d316bae9c00c751b44ce602673703e8592bdb3667c",
+        "after_sha256": "d77ccb0151ae2f55486aec8c243e226ceed05b7e5cacd9030fd9aff94fc2d1bc"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/infrastructure.rs",
+        "status": "modified",
+        "before_sha256": "b4f23b37f9010ade7cba524b01c913a2779ca6c81737a01a98f74b53c4770913",
+        "after_sha256": "6db4074c6c099e6fb68a9ed6fef2f4a5d2953c62b7e8865be1a6fd6c34aad905"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/lib.rs",
+        "status": "modified",
+        "before_sha256": "8ff2438fb1d509e6fce5ee99512edd79f8f971a92ef6107bf9a020ae8cf59734",
+        "after_sha256": "85d6a9ccb338ccc7d10dcef4a60aa14b0ca8c4128d604190c94a84890a160878"
+      },
+      {
+        "path": "apps/desktop/src/entities/repository/api.ts",
+        "status": "modified",
+        "before_sha256": "46e5b961958c8ffe8b7a720712e1e695ae3c4a535839d5bc74919adda8276596",
+        "after_sha256": "1fa76f84dfa5ea088e9b0f50385f529f71b713dece27732c9a47e216bb00d830"
+      },
+      {
+        "path": "apps/desktop/src/entities/repository/index.ts",
+        "status": "modified",
+        "before_sha256": "5dcdc98df7291e6e483ee529eb9b19242dc35a8c7207c669826711ad071f1376",
+        "after_sha256": "4b0f3ac515f2590402dedc83ed6d9c5f630160f199279d5b29bbf7f5bc60b915"
+      },
+      {
+        "path": "apps/desktop/src/entities/repository/scan-session.ts",
+        "status": "modified",
+        "before_sha256": "273006033190be74f7f5f0addcf6c423c1125044f7bcdea2c16d1fcde44a693c",
+        "after_sha256": "7fc6a528098aec7c5ee66d1773dcceb43cb094d7b4a1367ca61977d239a47166"
+      },
+      {
+        "path": "apps/desktop/src/entities/repository/scan-view.ts",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "b4969f921e15846d84fa4339529a910f874112f6eef80de25fba09656c22fe44"
+      },
+      {
+        "path": "apps/desktop/src/pages/repository/ui/RepositoryPage.tsx",
+        "status": "modified",
+        "before_sha256": "5e9e7ee9c211800fd0dbbe0c5d8c02568a3205d89375566170641f2cc5557428",
+        "after_sha256": "6b65470526108110c007031e15e185af148eebcc0cc84d278493329871bf5e07"
+      },
+      {
+        "path": "apps/desktop/tests/scan-session.test.mjs",
+        "status": "modified",
+        "before_sha256": "aa85d2541a2e54652e8f1e2f635ce375530665a6690415fdf8747eba55552156",
+        "after_sha256": "459ba6c539a3bcdbf1cce12548503044f8710a5d5458607e54fe6f391182671a"
+      },
+      {
+        "path": "apps/desktop/tests/scan-view.test.mjs",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "015ae00ebe81a8790d653dd1172c102902c9b233a78007617caa11642533256d"
+      }
+    ],
+    "site-bookmark-browser": [],
+    "tauri-tree-file-explorer": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "before_sha256": "92537759a8fbc11c1a82556cb95a458c0918f2f989e55e6390908e0efb546cbd",
+        "after_sha256": "a683b250150562788ce26110f7f67931261501e1fe4bb504e387ce2b6fdae64e"
+      },
+      {
+        "path": "apps/desktop/package.json",
+        "status": "modified",
+        "before_sha256": "cd91fbc054a931f1bc2b1ab619f49203eacadbe1a8d266aa39c09f33e8f3cd0b",
+        "after_sha256": "cbe320a9812c28cabb2b26646f748dba91ab893612d6703aaee97e244d260148"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.lock",
+        "status": "modified",
+        "before_sha256": "ca50178379518155116609148676e521d901e2ec755e078fadda5c0160ff61ff",
+        "after_sha256": "b2338364b141f3339e274fc3bba0e6410fd7e10583f70f6366dc7018720b433a"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.toml",
+        "status": "modified",
+        "before_sha256": "4040531d5bf5a5cd3100865167c0e9a316bfc563f045fa64cd7cf72fb0d192a9",
+        "after_sha256": "e8cdad718a1225eabd3221ccd67162a029b27a11f03bf5ae53103deb906283bf"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/application.rs",
+        "status": "modified",
+        "before_sha256": "c08c27e4203afae56b0f18c7cf6fa382633dec7f2876d05b4fd9dcd66ab295ff",
+        "after_sha256": "6d3b45dd096284ce095f154935c6d43deaf6d6ce84b898465a3d5a02463d97d3"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/lib.rs",
+        "status": "modified",
+        "before_sha256": "2ba377325381e1a181eef501f416460f15a22d8854d1d3cd5e31a046e1691e01",
+        "after_sha256": "20e1ba39bdb7997b23921cd9b77dd178e570d84e09f7caec8be3a8f6d21ed358"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/outbound.rs",
+        "status": "modified",
+        "before_sha256": "de9f2c271149a12c32d52953752477b9baeeac93af6fb59f568f4a7d57b0e815",
+        "after_sha256": "2a0685d63035098a2aa2a8fa1ece63e00ff57113846ee1b65e0633d1028f1d7f"
+      },
+      {
+        "path": "apps/desktop/src/entities/file-system/api/file-system.ts",
+        "status": "modified",
+        "before_sha256": "f4b04b7669c847c2326876738fcdd53bb7fdd7fe7455af068e1c578fbd4730d0",
+        "after_sha256": "cce30aaa380138fe361f4b15213dd8d799217094b5c07c61613096f2b815e207"
+      },
+      {
+        "path": "apps/desktop/src/entities/file-system/model/directory-progress.ts",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "101190b319b44cca938675687843b0a0dce23365c936b49db4f2181418357ac8"
+      },
+      {
+        "path": "apps/desktop/src/entities/file-system/model/load-directory.ts",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "a1151360cf5f1aec0411be0b05ead8e7e4fa3a1370999f653156caf7776a7cff"
+      },
+      {
+        "path": "apps/desktop/src/entities/file-system/model/queries.ts",
+        "status": "modified",
+        "before_sha256": "22febfd5aa4b590f6e39f68d565d15298567369665c5fbb8d10e2017512c7e53",
+        "after_sha256": "b14d221e8f9e8ba17f41566cc023b061d7ec40f6e95cefcf7ca397943b274e7c"
+      },
+      {
+        "path": "apps/desktop/src/entities/file-system/model/stream-directory.test.ts",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "8cd4bcdc8dcecb9a2b26ca628398a575f4f5760c8200b5b87a4408e003467a39"
+      },
+      {
+        "path": "apps/desktop/src/entities/file-system/model/stream-directory.ts",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "be66001040cb9b47d6aa9381f72b531caf48078cb2155d4c7b46b7ec7a5e1fdb"
+      },
+      {
+        "path": "apps/desktop/src/entities/file-system/model/test-loader.mjs",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "42058f8eb61f6425b3b2db24f6d7fd7e7dd5724aff6b55246793c12f0e0b5e6d"
+      },
+      {
+        "path": "apps/desktop/src/test-main.tsx",
+        "status": "modified",
+        "before_sha256": "e2d287fea881072044069a11b96cfec4f68e1657f330f50d1a691523018d9af4",
+        "after_sha256": "843d060bad23086ca5119ee16ae41b5ec18597efdef45be459432c0d27525c51"
+      },
+      {
+        "path": "apps/desktop/src/widgets/file-list-panel/ui/FileListPanel.tsx",
+        "status": "modified",
+        "before_sha256": "98d08fdc69fc6efd317416c1bec24b764e52aafe94511e64ee588394fe60171f",
+        "after_sha256": "030a1de96f21d1b3b25e5eeb974e0dc4f7ad46087b9b64e672e66353f3e10868"
+      },
+      {
+        "path": "apps/desktop/src/widgets/folder-tree-panel/model/root-directories.test.ts",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "f94ee74a270946f98f5ede50bd5a3db988dddd07a682fbf8dc3c4d41ec1e1ce0"
+      },
+      {
+        "path": "apps/desktop/src/widgets/folder-tree-panel/model/root-directories.ts",
+        "status": "added",
+        "before_sha256": null,
+        "after_sha256": "fc3075bebb39731419a57b2104f87a79172bd2374f296bd0a4a9cb50ca0c85d6"
+      },
+      {
+        "path": "apps/desktop/src/widgets/folder-tree-panel/ui/FolderTreePanel.tsx",
+        "status": "modified",
+        "before_sha256": "bf134813b46f99a0916aab3156cb67ebfaf1e1321bf39f17cea1b8d97131ef2a",
+        "after_sha256": "37cc5766c80d1bd0ac22e13fb542df13784d3f6aea02cd299c58166c9158095f"
+      },
+      {
+        "path": "apps/desktop/vite.config.ts",
+        "status": "modified",
+        "before_sha256": "799dbcf67067eb9a31db0ab9a7388cdb094aee2b0b6f464b42d7d5f1856471e1",
+        "after_sha256": "3ec3fc2b3b5817083db05b427849600ad57c5a79feb6f3687269d304166eb141"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "status": "modified",
+        "before_sha256": "c25a29717e1a8c8869a5db473fe946998e6a93ed18e5ae1b0896359d81314301",
+        "after_sha256": "94949facebea706fa49d95fab0a3ca3f5850e0f5534d12e66c890447b7b2bbc0"
+      }
+    ]
+  }
+}

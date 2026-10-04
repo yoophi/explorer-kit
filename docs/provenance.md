@@ -41,3 +41,7 @@ JSON 저장기의 원자적 파일 교체가 기존 `fs::write`와 달리 symlin
 file-tree의 원본 paths helper를 유지하면서 POSIX 루트 `/`와 끝 구분자 정규화를 추가했습니다. root 자체는 하위 Tree ID로 포함하지 않으며 유사 prefix를 거부합니다. 공개 함수와 기존 POSIX 계약을 유지하고 Windows 경로 지원을 새로 추가하지 않았습니다. 최초 복사본 해시는 기존 이력으로 유지합니다.
 
 image-store의 끝점 stem 검증을 확장자 결합 파일명 계약에 맞춰 수정했습니다. Bookmark의 JSON 실패 시 이미지 선삭제 문제에서 파생한 `stage_remove_images`를 추가했습니다. 여러 stem/명시 파일명을 잠금 안에서 임시 보관하고 JSON 결과에 따라 복원·확정하며 그룹 소유권과 JSON schema는 앱에 남깁니다. 상대 symlink, 부분 실패, 복원 충돌, 격리 정리 실패를 fixture로 검증합니다. tempfile은 기존 workspace 버전을 runtime 의존성으로 재사용합니다.
+
+## 탐색 스트리밍 확대
+
+Folder의 항목 이벤트/취소/80ms 화면 갱신 패턴을 기준으로 기존 fs-core/list(Tree 출처)와 fs-core/scan(Movie 출처)에 callback 기반 스트리밍 API를 추가했습니다. 원본 복사본의 필터·symlink·오류 정책을 유지하고 배열 API는 동일 탐색을 수집·정렬하는 호환 wrapper로 구성했습니다. 취소 확인과 sink 오류 전파를 추가했으며 Tauri event, 앱 기본 glob, 서버상태 캐시 정책은 소비 앱에 남겼습니다. 최초 provenance.json 해시는 변경하지 않습니다.

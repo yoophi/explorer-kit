@@ -38,3 +38,9 @@ JSON writer 회귀 수정 후 `pnpm check` 종료 코드 0을 확인했습니다
 ## Storybook 구성 검증
 
 공통 UI Storybook 추가 후 전체 `pnpm check` 통과: 타입·Node25·Rust35·소비 빌드 및 Storybook 정적 빌드. 주요 브라우저 동작과 경고·검증 한계는 [Storybook 안내](storybook.md)에 기록합니다.
+
+## 탐색 스트리밍 확대 선행 검증
+
+공통 fs-core callback·취소 API 추가 후 `pnpm check` 통과: Node29·Rust50, 타입·소비 빌드·Storybook 빌드. fs-core는 기존3개와 스트리밍4개 fixture를 통과했습니다. 앱 적용 및 독립 리뷰 최종 결과는 [탐색 스트리밍 보고서](streaming-exploration-report.md)를 참조합니다.
+
+최종 소비 앱은 Movie Node14/Rust8, Tree Node14/Rust6, Repo TS14/Rust18 및 타입·앱 빌드·Rust check/fmt를 통과했습니다. Movie/Repo Storybook도 최종 통과했습니다. 독립 리뷰 지적 수정·재리뷰와 Tree 모의 IPC 브라우저 검증 범위는 [최종 보고서](streaming-exploration-report.md)에 기록했습니다.

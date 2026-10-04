@@ -13,30 +13,48 @@ pub fn scan_files(
     root_path: String,
     include_patterns: Vec<String>,
 ) -> Result<Vec<ScannedFile>, String> {
-    let root = std::path::PathBuf::from(root_path);
+    let mut files = Vec::new();
+    scan_files_stream(root_path, include_patterns, &|| false, &mut |file| {
+        files.push(file);
+        Ok(())
+    })?;
+    files.sort_by(|left, right| left.name.to_lowercase().cmp(&right.name.to_lowercase()));
+    Ok(files)
+}
 
+/// Delivers each matching file during traversal, in filesystem traversal order.
+/// A callback error stops traversal. Cancellation returns an error; callers use
+/// their cancellation token to classify the terminal event. Already delivered
+/// items are provisional until the traversal completes successfully.
+pub fn scan_files_stream(
+    root_path: String,
+    include_patterns: Vec<String>,
+    cancelled: &dyn Fn() -> bool,
+    on_file: &mut dyn FnMut(ScannedFile) -> Result<(), String>,
+) -> Result<(), String> {
+    crate::check_cancelled(cancelled)?;
+    let root = std::path::PathBuf::from(root_path);
     if !root.is_dir() {
         return Err("Selected path is not a directory.".to_string());
     }
-
     let matcher = build_glob_matcher(&include_patterns)?;
-    let mut files = Vec::new();
-    scan_directory(&root, &root, &matcher, &mut files)?;
-    files.sort_by(|left, right| left.name.to_lowercase().cmp(&right.name.to_lowercase()));
-
-    Ok(files)
+    scan_directory(&root, &root, &matcher, cancelled, on_file)?;
+    crate::check_cancelled(cancelled)
 }
 
 fn scan_directory(
     root: &std::path::Path,
     directory: &std::path::Path,
     matcher: &globset::GlobSet,
-    files: &mut Vec<ScannedFile>,
+    cancelled: &dyn Fn() -> bool,
+    on_file: &mut dyn FnMut(ScannedFile) -> Result<(), String>,
 ) -> Result<(), String> {
+    crate::check_cancelled(cancelled)?;
     let entries = std::fs::read_dir(directory)
         .map_err(|error| format!("Failed to read {}: {error}", directory.display()))?;
 
     for entry in entries {
+        crate::check_cancelled(cancelled)?;
         let entry = entry
             .map_err(|error| format!("Failed to read entry in {}: {error}", directory.display()))?;
         let path = entry.path();
@@ -48,7 +66,7 @@ fn scan_directory(
         }
 
         if metadata.is_dir() {
-            scan_directory(root, &path, matcher, files)?;
+            scan_directory(root, &path, matcher, cancelled, on_file)?;
             continue;
         }
 
@@ -77,7 +95,8 @@ fn scan_directory(
             .map(|duration| duration.as_millis());
         let path_string = path.display().to_string();
 
-        files.push(ScannedFile {
+        crate::check_cancelled(cancelled)?;
+        on_file(ScannedFile {
             id: path_string.clone(),
             name,
             path: path_string,
@@ -85,7 +104,7 @@ fn scan_directory(
             extension,
             size_bytes: metadata.len(),
             modified_ms,
-        });
+        })?;
     }
 
     Ok(())

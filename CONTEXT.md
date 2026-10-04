@@ -316,3 +316,29 @@ Folder 영향 검증은 Rust26·cargo check·타입·빌드 통과이며 lockfil
 현재 공통 구현·테스트·Storybook·리뷰 문서와 작업 이력을 main 브랜치에 커밋하여 푸시합니다. 공개 대상 136개 파일에서 일반적인 인증정보 패턴과 자격 증명 파일명이 발견되지 않았고 git diff --check가 통과했습니다. 직전 공통 pnpm check(Node29/Rust46·타입·소비 빌드·Storybook) 통과 결과를 유지하며 이번 게시에서는 소스 동작을 변경하지 않았습니다. 다섯 소비 앱은 커밋·푸시하지 않으며 기존 sibling 경로 의존성을 유지합니다. npm/crates.io 배포는 수행하지 않습니다.
 
 공통 구현 커밋 `6693f14`를 origin/main에 푸시했습니다. GitHub visibility PUBLIC·기본 브랜치 main 및 원격/로컬 커밋 일치를 확인했습니다. 이 완료 기록은 후속 문서 커밋으로 함께 푸시합니다.
+
+## 탐색 스트리밍·점진적 렌더링 확대 시작
+
+2026-10-05 사용자 요청. Folder는 항목 이벤트/점진적 목록을 이미 사용하며 Repo는 진행 상황만 스트리밍한다. Movie·Tree는 전체 반환을 기다린다. Bookmark는 이미지 정리 외 파일 탐색 목록이 없어 제외한다. 공통 fs-core를 먼저 구현·검증하고 기존 Herdr 탭에서 소비 앱을 연결한다. 작업 직전 snapshot: `/var/folders/3z/mcf5cp4n0t567wk9p_kjrpp80000gn/T/streaming-baseline-8gl3gp4s`.
+
+공통 fs-core에 콜백·취소 기반 scan_files_stream/list_dir_stream을 추가했고 기존 배열 API의 필터·정렬 계약을 유지했습니다. Node29/Rust50·타입·빌드·Storybook 전체 검증 통과 후 movie-shared/tree-shared/repo-shared 기존 Herdr 탭에 앱 연결을 배정했습니다. Folder는 이미 80ms 단위 점진 표시 중이며 Bookmark는 적용 대상이 아닙니다.
+
+중간 조정 리뷰에서 Movie의 로컬 registry 복제를 공통 scan-job 재사용으로 교체하고 Tree의 부분 setQueryData를 QueryClient별 임시 store로 분리하도록 수정했습니다. Tree의 첫 항목 이전 빈 폴더 표시와 재조회 시 루트 트리 상태도 보완했습니다. Repo는 inspection 항목 이벤트·50ms 임시 목록·취소 즉시 복귀·임시 메타데이터 편집 금지를 적용했고 TS14/Rust17·타입·앱/Storybook 빌드·cargo check/fmt를 통과했습니다. Movie는 Node7/Rust8·타입·앱/Storybook 빌드·check/fmt를 통과했습니다. 적용 결과를 사용자에게 보고한 뒤 기존 review-data/review-ui 탭에 snapshot 기준 독립 리뷰를 배정했습니다. Tree 최종 검증은 진행 중입니다.
+
+독립 리뷰에서 Repo worktree parentId 누락과 Movie 재검색 중 선택 폴더 초기화 P2를 발견했습니다. Repo는 경량 관계 인덱스와 동일 ID 수정 이벤트로 보완했고 실제 Git main-first/worktree-first 포함 Rust18·TS14 검증 및 backend 재리뷰 승인 완료입니다. Movie는 root별 선택 정책을 추가하여 진행 중/오류에서는 선택을 유지하고 완료 목록에서만 보정하도록 수정, UI 재리뷰 중입니다. Tree FSD 테스트 위치·동일 목록 재조회시 tree key·Unicode 정렬을 보완했습니다. 조정자가 Tree Node14와 전체 아키텍처 검사를 통과했고, agent-browser mock IPC에서 지연 항목 부분 표시·전체 완료·숨김 토글·폴더 이동과 최종 페이지 오류0을 확인했습니다. 초기 Vite optimize 중 import 오류는 새 세션 재검증으로 해소했습니다. 테스트 서버/브라우저는 종료했습니다.
+
+## 탐색 스트리밍 적용·리뷰 완료
+
+2026-10-05 공통 fs-core callback·취소 API를 먼저 검증한 뒤 Movie·Tree·Repo에 스트리밍 이벤트와 점진 렌더링을 반영했습니다. Folder는 이미 구현되어 유지했고 Bookmark는 사용자용 디렉터리 탐색 목록이 없어 제외했습니다.
+
+- 공통: Node29·Rust50 및 타입·소비 빌드·Storybook 전체 check 통과.
+- Movie: Node14·Rust8 및 타입·앱 빌드·cargo check/fmt 통과. 기본 glob/정렬 보존, 성공 전 임시 목록 분리, 취소·교체·실패/늦은 이벤트 차단, 완료 목록 기준 선택 보정. 마지막 UI 변경 후 Storybook 빌드도 최종 통과했습니다.
+- Tree: Node14·Rust6 및 타입·앱 빌드·check/fmt 통과. QueryClient별 임시 진행 상태·작업 공유, 작은 폴더 시간 기준 배치, 완료 캐시 보존, 동일 root 재조회시 모델 유지. 모의 IPC 브라우저에서 Scanning1+첫 행·전체완료·숨김 토글·폴더 이동·페이지 오류0을 확인했습니다.
+- Repo: TS14·Rust18 및 타입·앱/Storybook 빌드·check/fmt 통과. 검사 중 임시 항목·부모관계 수정 이벤트, 취소 즉시 저장 목록 복귀, 성공 commit 후 최종 확정.
+- backend 독립 리뷰는 Repo 부모관계 수정 후 실제 Git main-first/worktree-first 포함 Rust18을 재실행했고 추가 회귀 없음으로 확인했습니다. UI 독립 리뷰는 Movie 선택 보정·Tree FSD/모델 유지·세 앱 이벤트 상태를 재검토하고 관련 Movie10·Tree9·Repo8 테스트와 전체 아키텍처 검사를 직접 통과했습니다. 추가 회귀 없음으로 승인했습니다.
+
+네이티브 창·패키징·실제 대용량 OS 탐색 벤치마크는 하지 않았습니다. Repo 목록은 discovery 종료 후 inspection 중부터 표시하며 OS I/O 자체의 즉시 중단이나 backpressure를 제공하지 않습니다. 기존 dirty 작업과 Herdr 탭을 보존했습니다. 이번 변경은 commit/push하지 않았습니다. [조사·적용 보고서](docs/streaming-exploration-report.md)와 [작업 직전 snapshot 대비 변경 목록](docs/streaming-exploration-changes.json)에 결과를 기록했습니다.
+
+## 공통 스트리밍 변경 게시 시작
+
+2026-10-05 계속 진행 요청에 따라 공통 저장소 게시 흐름을 이어갑니다. 여섯 저장소의 스트리밍 변경 파일이 최종 리뷰 snapshot 해시와 모두 일치하고, explorer-kit의 HEAD와 origin/main이 일치함을 확인했습니다. 공통 공개 대상에서 일반적인 자격 증명 패턴은 발견되지 않았습니다. 이미 통과한 검증·리뷰 이후 소스 변경이 없어 테스트를 반복하지 않고 fs-core 스트리밍 API·테스트·보고서를 커밋·푸시합니다. 소비 앱은 커밋·푸시하지 않습니다. streaming-exploration-changes.json은 구현·리뷰 완료 시점의 snapshot으로 유지합니다.
