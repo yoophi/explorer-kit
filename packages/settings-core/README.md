@@ -22,3 +22,7 @@ preferences.update(current => ({ ...current, showHidden: true }));
 한 앱/key에 하나의 module-scope store를 만들고 `useSettings(store)`로 구독합니다. storage 이벤트로 다른 창 변경을 반영합니다. 다른 창 사이 원자적 read-modify-write는 제공하지 않습니다. DOM이 없는 테스트는 storage를 주입하세요.
 
 도메인 JSON 설정은 Rust `explorer-settings-store`를 사용합니다. 이 모듈로 별도 복제하여 두 저장 원본을 만들지 않습니다. Tauri command와 기존 schema는 앱 adapter 책임입니다.
+
+## 편집 초안
+
+`createSettingsDraft`·`editSettingsDraft`·`syncSettingsDraft`는 확정 값과 문자열 초안을 분리합니다. 외부 저장값 변경은 깨끗한 초안에만 반영하고 편집 중인 문자열은 보존합니다. `planSettingsDraft(draft, parse)`는 파싱 실패 시 `value: null, needsWrite: false`를 반환합니다. 저장 성공 후에만 `confirmSettingsDraft`를 호출하세요. 실패하면 초안과 dirty 상태를 유지합니다. glob 문자열, 숫자 범위·빈 문자열 처리와 저장 시점은 앱에서 결정합니다.

@@ -1,5 +1,7 @@
 # 원본 앱 통합 작업 지시
 
+이 문서는 최초 인계 당시 조건을 보존한 기록입니다. 이후 HERDR_ENV=1 환경에서 담당 탭을 구성해 통합했으며, 사용자가 공통 저장소와 다섯 앱 게시를 승인했습니다. 최신 범위·상태는 [PROMPT](../PROMPT.md), [CONTEXT](../CONTEXT.md), [후보14 보고서](promotion-14-report.md)를 따릅니다.
+
 공통 저장소 검증이 완료된 후 각 앱에 Codex gpt-6-sol medium 에이전트를 하나씩 배정합니다. 사용자가 요청한 실행 장소는 Herdr agent tab입니다. 현재 작성 세션은 HERDR_ENV가 없어 Herdr 제어를 시작하지 않았습니다.
 
 ## 모든 에이전트의 공통 조건

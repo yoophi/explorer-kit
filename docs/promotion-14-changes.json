@@ -1,0 +1,1008 @@
+{
+  "snapshot": "post-review, pre-publication",
+  "baseline": "/var/folders/3z/mcf5cp4n0t567wk9p_kjrpp80000gn/T/promotion14-baseline-65891yhw",
+  "excludedPublicationRecords": [
+    "CONTEXT.md",
+    "docs/promotion-14-changes.json",
+    "docs/promotion-14-report.md"
+  ],
+  "note": "Includes preserved upstream Repo merge changes; original provenance hashes remain unchanged.",
+  "repositories": {
+    "explorer-kit": [
+      {
+        "path": "Cargo.lock",
+        "status": "modified",
+        "beforeSha256": "d5cebd9a12f9f86fda6c185173dbb466df4c71d415fe81deecff56a295c1b856",
+        "afterSha256": "70073dfe321338585078a6969dcce75318fe2af99d234f21af21fede6ac7f3cd"
+      },
+      {
+        "path": "PROMPT.md",
+        "status": "modified",
+        "beforeSha256": "2dc4f4f8b0381d4974379d7c5d58227693326ce9f70603b721ebfc91dbfb088f",
+        "afterSha256": "3e17650e5b9ba737c23a276b582ee552c24f382f0a6018cba4c4672f7f3a6f9e"
+      },
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "e6dca22fe79b3f42f43de2b0e2a01c9efa22bc76982701dc0400c6fe2eece64b",
+        "afterSha256": "f58681a3f2cd8c22c565e802100b5bda2a593feb5d8691f03c636151740b068a"
+      },
+      {
+        "path": "crates/collection-policy/Cargo.toml",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "ee3578db10686638db18fd7b41e2c5c3a6d3e4bca86e67f33672d1e5ad5caa7e"
+      },
+      {
+        "path": "crates/collection-policy/README.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "6857bb39176652820d1bc867e0aa85b14873fc895c662899a62a17ad588653ba"
+      },
+      {
+        "path": "crates/collection-policy/src/lib.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "e44e069f82c8dd9860867f5b7b3944296bb737b1b2236a42be1986ac05e77710"
+      },
+      {
+        "path": "crates/fs-core/README.md",
+        "status": "modified",
+        "beforeSha256": "d204e7607c96732e92732a699adc131163c929bb6159e153bc0ddbe217559e29",
+        "afterSha256": "55a41de8809ee4cd5904ae9c7bcd767a9ec69765cc0b1a2a5b9b534f13cd96d1"
+      },
+      {
+        "path": "crates/fs-core/src/lib.rs",
+        "status": "modified",
+        "beforeSha256": "2b2c2d3d80c5a38b232deb5234b368f9d460ae90d19c8911cd3f19b985d31fa5",
+        "afterSha256": "53d8118cb32b4b1fe0e245e06a6b7f1349c6f3928348c4562938995ad17872de"
+      },
+      {
+        "path": "crates/fs-core/src/walk.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "c9c22ea900114805a53370c33da07767a48bb40b3654a222f1fbbf957d03daf8"
+      },
+      {
+        "path": "crates/fs-core/tests/walk.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "6f9da72d50b9fe005993d5784dda0b2ce5eb87a16fdf53fa3ca15b76040d7244"
+      },
+      {
+        "path": "crates/image-store/README.md",
+        "status": "modified",
+        "beforeSha256": "36e02ddaa98984808266f07359a73bf87365b3bee9125b15c096adb932b3cf9c",
+        "afterSha256": "cfd75ffa7cbf583ae9a266a37e114c284c0c47c1a228ac56d5e567f6447d26b8"
+      },
+      {
+        "path": "crates/image-store/src/lib.rs",
+        "status": "modified",
+        "beforeSha256": "e15f81350ac509af07be20e04f556b5b3e3bdf67ddcdc0a298aa4048d147202b",
+        "afterSha256": "b00a241782fe54932287cbd1384696c9b2b40a71446359319d052948f5a6389b"
+      },
+      {
+        "path": "docs/architecture.md",
+        "status": "modified",
+        "beforeSha256": "55cf060eaf22d393b44bbb4f8275d6d15ec1c7fbdf566633ab603f270f3268b9",
+        "afterSha256": "82d0e185d0673ed4e6daf13a75d8e584643195eaa6e23f56bb5a8487a9d5fb6e"
+      },
+      {
+        "path": "docs/integration-handoff.md",
+        "status": "modified",
+        "beforeSha256": "0d2c392e9d0c70b1fb5425e95620d47f948ca5aae63ababfd64bd3aa2a7ce27d",
+        "afterSha256": "8200cc3e6c8cd360b1e0ac35246ab2cd8aa09991d3073480d17d79de629e038a"
+      },
+      {
+        "path": "docs/provenance.md",
+        "status": "modified",
+        "beforeSha256": "afb0ad403b9ddb11d2dfdca6b2958dd41d3dbca7d614a8a320afdc9535761e56",
+        "afterSha256": "d33bb7880cf5adadfb8fc6c81524998d6ddad14cc971e14041fe0e51299e52b6"
+      },
+      {
+        "path": "docs/shared-feature-candidates.md",
+        "status": "modified",
+        "beforeSha256": "4d510a593724c41f451adc13fcfd6429a9cd793092ace73c725d699c5ca3a11e",
+        "afterSha256": "7d61b0ca412f1f682631db8e73ec1ea48b9cadd1ba5bd9b55f588950d8ffa367"
+      },
+      {
+        "path": "docs/storybook.md",
+        "status": "modified",
+        "beforeSha256": "b8f98fcafb9e2a8820fa7577eeb6883bab956e0a5f7bee3ca79fc53fb2189c06",
+        "afterSha256": "18f9ddafeeb650f30b7c7e658eeb2234eff995a9ba5a5205dcfb99cdd95e1018"
+      },
+      {
+        "path": "examples/storybook/src/compatible-button.stories.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "babb664d135af898d7f1f9fd18bc2ec3648f1b8aa78b24da77d2d9377c64b73e"
+      },
+      {
+        "path": "examples/storybook/src/composite-ui.stories.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "77dd53cb2daebd5f1ea5f2fe1a4c6dc99c80108053cc4e45ea18818f4bba5a78"
+      },
+      {
+        "path": "package.json",
+        "status": "modified",
+        "beforeSha256": "b157e6ee4daffec83e22b4b1957421aac72bf52b173be36e142fae0b3f51921b",
+        "afterSha256": "393f32ee321cd2623f0d09d186176b7826a6a6511779e25599d2bc314d230b06"
+      },
+      {
+        "path": "packages/collection-core/README.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "695d954989b8562d97676471f4c86b7ed2fb63696ecaedbb970d66b2a7925f35"
+      },
+      {
+        "path": "packages/collection-core/src/index.ts",
+        "status": "modified",
+        "beforeSha256": "58d8b3a61d481299166966c2b91e6aea74af08b663a210124e5c376da5057c3a",
+        "afterSha256": "3e7a15864ccc1c7e1549b518bc6e2a74cdf642cd5001b57b31eb0db07e6510dc"
+      },
+      {
+        "path": "packages/collection-core/tests/selection.test.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "f38b432385052d2265dd7bd587ba9c6055a28b19eb855a73718bd249420e0090"
+      },
+      {
+        "path": "packages/image-input/README.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "cb55836719dd1afe68b47e0e41e828fea901f449973a9d959dd45c203a543d68"
+      },
+      {
+        "path": "packages/image-input/package.json",
+        "status": "modified",
+        "beforeSha256": "d87607fd76133a4f89a16c8ffbed4523d411c1c01b241cc5d7e952aaa071c4fb",
+        "afterSha256": "34c34baf52c30989e9ad8b0aef4a7da05ca350dce7a8ecbc99cb51792a8f3e94"
+      },
+      {
+        "path": "packages/image-input/src/paste-session.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "903b653401a86d69b03ae98c0c5284de48c4c68726b44e8fd8839c92fb7e12fc"
+      },
+      {
+        "path": "packages/image-input/src/react.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "97dde60e46b56a02dfc5920ca03861af92b6bf97f1fb39fe4d56d17155c1ef5d"
+      },
+      {
+        "path": "packages/image-input/tests/paste-session.test.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "18ce4bfcf992511cba691d018a75b840c93d2c693288455770e3668ba2eb27d3"
+      },
+      {
+        "path": "packages/scan-client/README.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "574c12d64af8eeb53057aa7c7fd205fbc9782258a18bd97b66b84b2c15cdff36"
+      },
+      {
+        "path": "packages/scan-client/src/consume-scan.ts",
+        "status": "modified",
+        "beforeSha256": "ac33c6736455cbd05ec8d79d00f72f2fbfd9d2aa60ce9bc96a83e0d202e72ba4",
+        "afterSha256": "e0c4d9c0c9e3679da079b9f75b718ea3cc43e5dc3c3098e7876f672d383c15f9"
+      },
+      {
+        "path": "packages/scan-client/src/index.ts",
+        "status": "modified",
+        "beforeSha256": "80f9c8cf6a06929677fb356a4f328059601a48f3b52a1bc32f102f26c649a329",
+        "afterSha256": "fb1a3a365e95eb00dd648fc9573cb4d3a402062f2bfe4dda1415e12869f0a720"
+      },
+      {
+        "path": "packages/scan-client/src/scan-lifecycle.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "430b1ddf1384d91942dbf2f41f0550cd073d22a4982a247d0a0f03024238cc3c"
+      },
+      {
+        "path": "packages/scan-client/tests/consume-scan.test.mjs",
+        "status": "modified",
+        "beforeSha256": "f0d74d7bbd60a56ae1dd37c6e61d0fd7ac4eac45ac23f8624608fde1bc998505",
+        "afterSha256": "93d5f08eac9aa0f2fd3426f6435822ca1724f9b94c5a798e660b7255cd798b55"
+      },
+      {
+        "path": "packages/scan-client/tests/lifecycle.test.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "69ef2cf371bf658f32b8411acd31fd27853de010aaa8f158a7bfd4ed96e229b2"
+      },
+      {
+        "path": "packages/scan-client/tests/native-consumer.test.mjs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "4e003e5e5f5e273ab9c4e5532292cdb3235baa7bd39e33f9e87eae27ae2bda2c"
+      },
+      {
+        "path": "packages/settings-core/README.md",
+        "status": "modified",
+        "beforeSha256": "acc46d07b91edad4d888769daf464f5d9535c779f6b07c2c3c71c49a758aa88a",
+        "afterSha256": "0c88bc295c49415118bda0ba2a0d4995fdfbd81b6cf74e9364bcee8ec5ceab3c"
+      },
+      {
+        "path": "packages/settings-core/src/draft.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "76cacba505efeeb32c1f82dbdef1aaba2fa64b2a3de8955468b7702a9915eecc"
+      },
+      {
+        "path": "packages/settings-core/src/index.ts",
+        "status": "modified",
+        "beforeSha256": "66b09008ecef2051ee36b66d7b7a438e713d4eb08570cc15c6ec9fd0ee751133",
+        "afterSha256": "7e247750845c1c81284c67f03845dd3fb232686b2d401ae84b07202d22db4b5f"
+      },
+      {
+        "path": "packages/settings-core/tests/draft.test.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "e36d18b8822b64c3150614a6e0c489f244e61fb043d7716bebd0a9a5cb0c9d1f"
+      },
+      {
+        "path": "packages/ui-base/README.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "c9512b82f12a4a69cbee03ef87aa8a3888d21d802844e6c7f1e90b8d2728493d"
+      },
+      {
+        "path": "packages/ui-base/src/components/async-form-dialog.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "d315a0072c94542610f63b4f32a0fc6970fe77345538b3353831bbc8f4b1635d"
+      },
+      {
+        "path": "packages/ui-base/src/components/facet-chips.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "fd28a0f036c75ff3aa2a75404a96db2fb3a4112c814f8778311bdefd3199f8ed"
+      },
+      {
+        "path": "packages/ui-base/src/components/group-controls.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "c46612e419e5e6b03f37c27bc7d72c59f3c82a5c0b4575f7574736071ca59afb"
+      },
+      {
+        "path": "packages/ui-base/src/components/scan-status-panel.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "ec597bbee9103732297ad58335db5db356f267f354b78d1866417252a071b06f"
+      },
+      {
+        "path": "packages/ui-base/src/components/thumbnail-field.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "357b0b011efc7bb1b477e6d60def2012e0e6b4e598c4e8f6c05b2291c97b7984"
+      },
+      {
+        "path": "packages/ui-base/tests/composite-contract.test.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "31781fdadf01dc13897655567986c8f81a70e73985e70cc26af21f86ef11a9e3"
+      },
+      {
+        "path": "packages/ui-radix/README.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "e44ef5ba06c77f4a3377fb0073991a571dba986adcbf92bd7c31af9997a0b87b"
+      },
+      {
+        "path": "packages/ui-radix/src/components/compatible-button.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "79fbf83e715c2b2849dbd272f64f95e85ccb027abdbfbd1f656f8ee7ae3d2e6c"
+      },
+      {
+        "path": "packages/ui-radix/tests/compatible-button.test.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "a1657c355de8eeab24a567e9ab8175db5b6c78c6dbd97cc5cd1f093984876470"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "status": "modified",
+        "beforeSha256": "1c13406f3ba174bf22f44bee0ad30a84bad55979406a945ba261ee6f3abaa365",
+        "afterSha256": "7843aa5a1fae07b110335416d440d924d18a563f31f7142c063ab4dc370a87a7"
+      }
+    ],
+    "movie-explorer": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "d003e214c1d773c3153c00f09ed4b1a3620fe029382c266657fd051383155358",
+        "afterSha256": "a468d530f1367fd6fc7d0ab584a4d8fd4f63758df2968e00439e882ab7d676d7"
+      },
+      {
+        "path": "apps/desktop/package.json",
+        "status": "modified",
+        "beforeSha256": "2dadca0e77e73e8fca50e8d3afb4d72a2b4ddb56f748c8851432709f7cce8091",
+        "afterSha256": "aa736d6be0f7a4b1f4b8cc9f39e6186b6b332eef59206c5a9016e776d946ac60"
+      },
+      {
+        "path": "apps/desktop/src/app/styles/index.css",
+        "status": "modified",
+        "beforeSha256": "2dbae54e7de775fe9094cad2d172d2244da83bdc492399402f84cf4e238cbc53",
+        "afterSha256": "db989f99beeadd489b39957a2e0957a361ee126b377ffb1475286172a18cca03"
+      },
+      {
+        "path": "apps/desktop/src/features/preferences/model.ts",
+        "status": "modified",
+        "beforeSha256": "5c1d34603c99232e8081f92d77ed5007ab0eb3de368b1a585322d8f1d702d5c2",
+        "afterSha256": "9290f07fc3dd886531ee6dae74a306c36c8c7328dbe0297773169a7becd318db"
+      },
+      {
+        "path": "apps/desktop/src/pages/home/selection.ts",
+        "status": "modified",
+        "beforeSha256": "2ba67c005f75e477cf5e77b74901ef9f423a51991e62b9285e83e6fcf6fb8d6c",
+        "afterSha256": "ddc2496ff98b328ee8f4ee5eb60aaba97cd96fe84b3eab154d0f96e10d6c708d"
+      },
+      {
+        "path": "apps/desktop/vite.config.ts",
+        "status": "modified",
+        "beforeSha256": "bf70ae4497b3cfb674d3c35a0af5d1d1367f486ca56ac705ba493bfc17079d99",
+        "afterSha256": "7e1f750d1f358c481a64c3fe59f3b004376773c93cf3121f72a086da022c40da"
+      },
+      {
+        "path": "packages/ui/package.json",
+        "status": "modified",
+        "beforeSha256": "54c2a6f16a72b1dec4dc9e2ca3609cee00bed24e960458ae8fe1bd045a10666a",
+        "afterSha256": "a0374a8de608de09770a90407dd64419a7caa0f90a3a1a1305605369e5d63695"
+      },
+      {
+        "path": "packages/ui/src/components/button.tsx",
+        "status": "modified",
+        "beforeSha256": "baa4b47f67b27c21f9cec53d9a5e556b5af6647787a78a294df71bffba171123",
+        "afterSha256": "cee3366e987e0b72eac63bce75991301c22d26c189c8e545fc578828b3f5f423"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "status": "modified",
+        "beforeSha256": "0f7cbc02220378a8273863a9d9ab94603e4a6881f9eb9151a42b23cfab68a671",
+        "afterSha256": "1c2f63bbfc2738d0001129edfd3b9d521513b0c4a52a577650f65750036813f8"
+      }
+    ],
+    "movie-folder-explorer": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "5da573305f5fce8a1ce7dbb86054631ef38576ef09f07ea8fd5bc6a696b4c89b",
+        "afterSha256": "857599faab3d0d213a61524ed3451038c800e08efdbd7c19b9b6894aee4929df"
+      },
+      {
+        "path": "src-tauri/Cargo.lock",
+        "status": "modified",
+        "beforeSha256": "63dc5aecaf1f670c8f2b9b077935fbab62354fadd4db29f2004c4431b4bc2a97",
+        "afterSha256": "0e76283497d2ce40ce8eff103ad411e2425a60e7e9892665393ae5bc8fb28b96"
+      },
+      {
+        "path": "src-tauri/Cargo.toml",
+        "status": "modified",
+        "beforeSha256": "57c81ff1158048887567192a9183125cca2e7e2730c174319de1b690539f74fa",
+        "afterSha256": "f308fa17d62d11c682b06184577c108bb22056f6b5b2ed000159c228a124b1da"
+      },
+      {
+        "path": "src-tauri/src/domain/folder.rs",
+        "status": "modified",
+        "beforeSha256": "50356e5141419bef0be834b8fdb631497676bda94166c2f6d8bb57c85beab114",
+        "afterSha256": "d43744e4dd80d9b05d346e702204f47b30be39ac5d886f4384fa91334cfbaa7e"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/filesystem_directory_scanner.rs",
+        "status": "modified",
+        "beforeSha256": "0be22df36886adeb8af9254daa07e23a239de60c2c4e077fd7b244921253bef5",
+        "afterSha256": "f53a5c6eb682d7d7e5b7e0d799959d0d72076ab062ccea2d5917b78122d60d92"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/image_thumbnail_store.rs",
+        "status": "modified",
+        "beforeSha256": "38cbd8c3bf956834bfbc690b13db9af5ded4cf4f2d90935a9b1eee614c16ef40",
+        "afterSha256": "64bc6b5345822f92620ba2f28c7cba5fd6b39e33089dbff35c7934511ee9c0c8"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/json_last_opened_directory_store.rs",
+        "status": "modified",
+        "beforeSha256": "5fd9368e578f7c77055046aad4e1c43421c7da00ef93d7cd420646e8d1c4de8f",
+        "afterSha256": "2b0da6bf727a5ceb048a47946b5cef5cd557a04c5a496ae4587ddec2781db882"
+      },
+      {
+        "path": "src/features/folder-browser/model/thumbnail-paste-target.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "2357286fee30fcec07c49ebb1d8363625034c3400117032a0b77ca0019fa4ea7"
+      },
+      {
+        "path": "src/features/folder-browser/ui/manage-folders-dialog.tsx",
+        "status": "modified",
+        "beforeSha256": "2d40456e1e500d1d495b4781f7eae76f295944fa3a50213adf963a543dfe981b",
+        "afterSha256": "5a0291cab59370954d0cfcf0905099625585a3f404ce4cc3c97344a03f25a2c9"
+      },
+      {
+        "path": "src/features/folder-browser/ui/rename-folder-dialog.tsx",
+        "status": "modified",
+        "beforeSha256": "8ccf5baa6514de5f722a2f1a24d89daca4f3e6aa4bf50d89afd8915eaa4c6528",
+        "afterSha256": "3e3bfcc27257d76c35c0e3f58eee57981c9790d2c286fab7b2e103fb2569f022"
+      },
+      {
+        "path": "src/pages/home/ui/home-page.tsx",
+        "status": "modified",
+        "beforeSha256": "3e2990bffdd738c79d8988f5dd51a5b68b4e76602d43e4234d543cd1b1c6bf68",
+        "afterSha256": "6209ae06085f7383594befd24ad0567c9a6168d42cb671870a3917e4255e404e"
+      },
+      {
+        "path": "tests/thumbnail-paste-target.test.mjs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "f71993d04ce3ee29c5f7ae725ef07d6c1a8fc1bdb77ba43cab712ad4b8ec7949"
+      }
+    ],
+    "repo-explorer": [
+      {
+        "path": ".agents/skills/speckit-analyze/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "9f76cd502bac29c2b61bfce985c6895d8d470e76027302a0d2f8c0be88fdfd94"
+      },
+      {
+        "path": ".agents/skills/speckit-checklist/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "2a9c0f32b4d243a1a205121b11e497507b2a9f58ea2fcbbf980ffb89ce8d67bb"
+      },
+      {
+        "path": ".agents/skills/speckit-clarify/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "ad31f63f9ed1d2e84f22a5ef0967701cbc827c2473ff2ab073e748e14f74a730"
+      },
+      {
+        "path": ".agents/skills/speckit-constitution/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "7310adee465ee6a439a689518e6c133ce851d808c7a6e64d66f659ad8b4bd56e"
+      },
+      {
+        "path": ".agents/skills/speckit-git-commit/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "5c7bf976944f5ab6d6dbc143c160aa8742d2f303abdf1453688535d5ceffa1c4"
+      },
+      {
+        "path": ".agents/skills/speckit-git-feature/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "5a4e239e3c2966616c346d6e1d82a95c6497170820f8d5b41127563af4f91c75"
+      },
+      {
+        "path": ".agents/skills/speckit-git-initialize/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "2c3e80ca3f596720c064122b930eb224a87b4a9575f58db4a0c32de3bbc0be99"
+      },
+      {
+        "path": ".agents/skills/speckit-git-remote/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "045d34977a70cae585b8bc0adbfd378374498f1a6c59c77615923e64f8d1b3f0"
+      },
+      {
+        "path": ".agents/skills/speckit-git-validate/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "ab7656044903e878e73c8bd9d40d3d46cd6fecff6e054780ceb9e81ffa18c923"
+      },
+      {
+        "path": ".agents/skills/speckit-implement/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "8e610cc412686173a3ecea85fa78d8b9cc6bfe80c6bdc710e3df53e0c104ef0a"
+      },
+      {
+        "path": ".agents/skills/speckit-plan/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "1cd13274eb35a18d87e6f43bc69801910437ce9543286b13f87c4e3cbc33b9d8"
+      },
+      {
+        "path": ".agents/skills/speckit-specify/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "019e30edd3f31267b48a9c846311ac07e78661b7599d3a96e94bded5b8f646fe"
+      },
+      {
+        "path": ".agents/skills/speckit-tasks/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "a3154ecb04e7ed42608f59f64edea70ac1f3f258a2f3aa794d26edb5da017685"
+      },
+      {
+        "path": ".agents/skills/speckit-taskstoissues/SKILL.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "32d8ee0f0482a7b2b9e6bee4dfd6947465754f2f82c404bfc7ef64f4a3b63bdd"
+      },
+      {
+        "path": ".specify/extensions.yml",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "c5a406abfb481ac3b45cc3a5088d49d94ff013169ce6ba1789f31fd5f3c721ee"
+      },
+      {
+        "path": ".specify/extensions/.registry",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "941696943bf707be710666749b4361372626db05e3a80b165c50080fb53ee7d4"
+      },
+      {
+        "path": ".specify/extensions/git/README.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "38c0140b7804028cf0d212a29b930c9183f4eec7dcaf3ebc4af080653e290924"
+      },
+      {
+        "path": ".specify/extensions/git/commands/speckit.git.commit.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "445ed4cd43c8e685de294b68c841b8f15e082f7033f74b042feddd59edf7779c"
+      },
+      {
+        "path": ".specify/extensions/git/commands/speckit.git.feature.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "facdc68ceff5fc5dc985964c534e142a46483c5442e9fca8d635ced4d31db3a0"
+      },
+      {
+        "path": ".specify/extensions/git/commands/speckit.git.initialize.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "07bf0e1a9fc251482774141be5a903cbeb018f90cb66b2d29a5fff7f0bd3ecb7"
+      },
+      {
+        "path": ".specify/extensions/git/commands/speckit.git.remote.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "00397aff45bf00d3111b4f162e4220fd5a9020e72e4afe9179859c21bcd8aac3"
+      },
+      {
+        "path": ".specify/extensions/git/commands/speckit.git.validate.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "d8f8e5ecc52e819749f355b6dd1ad8400e9b1dfe03882a12c0d2369530f1f083"
+      },
+      {
+        "path": ".specify/extensions/git/config-template.yml",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "d07938ce94303be1c8afac77d4b0ea84654f811490850e744f8ee3021b59f8e3"
+      },
+      {
+        "path": ".specify/extensions/git/extension.yml",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "9731aa8143a72fbebfdb440f155038ab42642517c2b2bdbbf67c8fdbe076ed79"
+      },
+      {
+        "path": ".specify/extensions/git/git-config.yml",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "d07938ce94303be1c8afac77d4b0ea84654f811490850e744f8ee3021b59f8e3"
+      },
+      {
+        "path": ".specify/extensions/git/scripts/bash/auto-commit.sh",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "e12ff0e010c8891bbe7445950ea00a49ef7e0b387b050e382fed57bd09d0c8bc"
+      },
+      {
+        "path": ".specify/extensions/git/scripts/bash/create-new-feature.sh",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "fc5a477e2102c1761facf59d2cbb90077b95305c62c99f26768ac2c043b858ef"
+      },
+      {
+        "path": ".specify/extensions/git/scripts/bash/git-common.sh",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "5d2451b6c4ceee67e0f1b524e1ef1e4114cc08ccb173b5c2908fb031c540d7e5"
+      },
+      {
+        "path": ".specify/extensions/git/scripts/bash/initialize-repo.sh",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "34624e18854106bb793b0baeff9f6e8e4e9da39aa4ea443195fd745d3bdb8b6d"
+      },
+      {
+        "path": ".specify/extensions/git/scripts/powershell/auto-commit.ps1",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "d74d67ffab73485c3ba208a6389fe9a325c0bb8d90d31f5d490555e11910e7f9"
+      },
+      {
+        "path": ".specify/extensions/git/scripts/powershell/create-new-feature.ps1",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "e04167c21ca0e1ad77f065553ee07107ff0475f205fa7417e352094315f95e5f"
+      },
+      {
+        "path": ".specify/extensions/git/scripts/powershell/git-common.ps1",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "ebb2bf88d6504ff648176cf8c9c739aa24b8d3fe17d57bcc44d4dc854b51bfee"
+      },
+      {
+        "path": ".specify/extensions/git/scripts/powershell/initialize-repo.ps1",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "bb2660d4bdf35e8202db9eb78ab0b4ba226ddf35e08f101ab26f247fb0f39f65"
+      },
+      {
+        "path": ".specify/feature.json",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "231ab74b6a323b0af5a13d9ba41ba48c70b658d99d2943f74d11c6bba20633af"
+      },
+      {
+        "path": ".specify/init-options.json",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "81d21887f0c1dc73290827bdac74437f223a885a9975c0fa58b8de278404362a"
+      },
+      {
+        "path": ".specify/integration.json",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "87fcc00295a306aa57dd3f2e08300e832f42652b707b06096e12f6ffbd6640d8"
+      },
+      {
+        "path": ".specify/integrations/codex.manifest.json",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "d7ec5baa5743e0be1638c9a5500b762a1a1c76a9b6a7a41c2396e8c0161df307"
+      },
+      {
+        "path": ".specify/integrations/speckit.manifest.json",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "c96850f573c0da8e58eb60ff2f52e56aa6ba582f395f7aeb3ac732624ef4acc2"
+      },
+      {
+        "path": ".specify/memory/constitution.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "ca6305eff3da3a30fe60a2506e3ec32b30267b8185dda05d14c75e6f516cd844"
+      },
+      {
+        "path": ".specify/scripts/bash/check-prerequisites.sh",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "aff361639c504b95a2901493f5022788adc01a6792fd37f132de8f57782e4b80"
+      },
+      {
+        "path": ".specify/scripts/bash/common.sh",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "e5282bc3e3a1cc714ff64785d8984898e55c6a42284bff042ebf5996ec10e4d7"
+      },
+      {
+        "path": ".specify/scripts/bash/create-new-feature.sh",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "3439519f72ce6f88fcd4dcd27346de0c9ffe211c927b1319db42850282f02456"
+      },
+      {
+        "path": ".specify/scripts/bash/setup-plan.sh",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "bcaa0ccbf45b7d9ea9bff04006500d7eb28a2bdf82bcc819986b21e5294bf76c"
+      },
+      {
+        "path": ".specify/templates/checklist-template.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "312eee8291dfa984b21f95ddd0ca778e7a1f0b3a64bfc470d79762a3e3f5d7b8"
+      },
+      {
+        "path": ".specify/templates/constitution-template.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "ce7549540fa45543cca797a150201d868e64495fdff39dc38246fb17bd4024b3"
+      },
+      {
+        "path": ".specify/templates/plan-template.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "c2026cdaa94de4be970bc61de02cc5b1a165316974bfeefd11b3fbce80ac0926"
+      },
+      {
+        "path": ".specify/templates/spec-template.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "87a14a9c3f4843b3956ce0333fb9b219919a5ae74cf1cc56a49f571c6a54310b"
+      },
+      {
+        "path": ".specify/templates/tasks-template.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "767826737280de4c0e4f39fe4db998dec5772f2f793b855f629387a00652d1a6"
+      },
+      {
+        "path": ".specify/workflows/speckit/workflow.yml",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "30862b06e500cf482819b8b8db31de86a9d621633110692598e806ba0407b3d1"
+      },
+      {
+        "path": ".specify/workflows/workflow-registry.json",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "56acfc4ef5762958059c6851896cdae85ce16b5227bbf3545d3cd01b2e84715e"
+      },
+      {
+        "path": "AGENTS.md",
+        "status": "modified",
+        "beforeSha256": "9e3e12c8a3dd0aeb63d5ca8af2c846737d39ee6ca6877cc15fb488f712fedda4",
+        "afterSha256": "f4c0cce63f536595c4dcc50c3b37600958881a7b0eb8d7127cc8e976d27c4140"
+      },
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "7335c5675cdd9053c6561b192b18b1182847bcbf236475678896d9d7f2e349e8",
+        "afterSha256": "068b1b26ec96337c690d5f085208fb33e411dfc3a523aa498a7618e36aca6ebd"
+      },
+      {
+        "path": "apps/desktop/package.json",
+        "status": "modified",
+        "beforeSha256": "368bd6178d799f8eadf160a57ed558d317247a58459a6694b820ef2a5d660f21",
+        "afterSha256": "090391c777b695556a01f548d343c148b4f2ffbb958cfe8a9ac47c145b7dd55c"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.lock",
+        "status": "modified",
+        "beforeSha256": "3314c75adb63bb1c10a9e0ec2d4d5e2ed5101050dbcf54326f53f1beed88d424",
+        "afterSha256": "2a4ace6090065463eb3e6e9b2441bce80271b3e98e50626f818b6ff0e9760f51"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.toml",
+        "status": "modified",
+        "beforeSha256": "5b92d46d9efef7a13079729d0201c57b073ae7b1b28002037f709d98070dea78",
+        "afterSha256": "e372c19e8189d0d45d31220ec857d46b80cb8c88cb6b5b2c71a70c2b8770bbbe"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/application.rs",
+        "status": "modified",
+        "beforeSha256": "07314eaa8d7a7fc9f3f716c68a2d389aa791f5f1ab0753192c697281be6b75df",
+        "afterSha256": "bc3c2c8195846b7d5a260d11e0238e56bf879cd4749925b1a38478d2cf117323"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/domain.rs",
+        "status": "modified",
+        "beforeSha256": "d77ccb0151ae2f55486aec8c243e226ceed05b7e5cacd9030fd9aff94fc2d1bc",
+        "afterSha256": "d159c36c7398f88a7400ce41fe138c4163e4e92a71c2a5eca7cc195858282971"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/infrastructure.rs",
+        "status": "modified",
+        "beforeSha256": "6db4074c6c099e6fb68a9ed6fef2f4a5d2953c62b7e8865be1a6fd6c34aad905",
+        "afterSha256": "ad93785c51f0e1b8a909d745b927a01d8de63a6841e7e465c8deb959d399fec8"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/lib.rs",
+        "status": "modified",
+        "beforeSha256": "85d6a9ccb338ccc7d10dcef4a60aa14b0ca8c4128d604190c94a84890a160878",
+        "afterSha256": "0bc5a8f2c6f157e8457fd7ceb3069e967f1dc87490ef593ec0c1749acdb635aa"
+      },
+      {
+        "path": "apps/desktop/src/app/styles/index.css",
+        "status": "modified",
+        "beforeSha256": "4a3790539f7ec5badfa45b852622a0aa6345ea7c630a6d7bff636e13c89a0bbf",
+        "afterSha256": "f87db98c98291b23a8bbcd3666b58a819b902098bb1fdaa4cdc28d3a8612f64e"
+      },
+      {
+        "path": "apps/desktop/src/entities/preferences/model.ts",
+        "status": "modified",
+        "beforeSha256": "1e4e7d2bc7dfe121585c88e9c4bbc489fd9f08a386bbcff98ebb5ad944398bfa",
+        "afterSha256": "f687ed5daa4e705afb1886d483ef9089709547f798750b77df69d16c2ac6667d"
+      },
+      {
+        "path": "apps/desktop/src/entities/repository/api.ts",
+        "status": "modified",
+        "beforeSha256": "1fa76f84dfa5ea088e9b0f50385f529f71b713dece27732c9a47e216bb00d830",
+        "afterSha256": "3961900be5fcea6b2043673a8dd9ab53f41de668925b7d6e582f12647ce80b1b"
+      },
+      {
+        "path": "apps/desktop/src/entities/repository/index.ts",
+        "status": "modified",
+        "beforeSha256": "4b0f3ac515f2590402dedc83ed6d9c5f630160f199279d5b29bbf7f5bc60b915",
+        "afterSha256": "748653b9996eac25d1acbeb57add1156300f58d96f92a3ca1d40237bd3045029"
+      },
+      {
+        "path": "apps/desktop/src/entities/repository/scan-session.ts",
+        "status": "modified",
+        "beforeSha256": "7fc6a528098aec7c5ee66d1773dcceb43cb094d7b4a1367ca61977d239a47166",
+        "afterSha256": "aeff95b87e72b9bd904c3b81bca160f879889551112fd81394e3a2d76408162d"
+      },
+      {
+        "path": "apps/desktop/src/entities/repository/selection.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "d53ffaf1f251095537d2b37c8f9ff6940c5de470cd2242fb37d757a012a01765"
+      },
+      {
+        "path": "apps/desktop/src/pages/repository/ui/RepositoryPage.tsx",
+        "status": "modified",
+        "beforeSha256": "6b65470526108110c007031e15e185af148eebcc0cc84d278493329871bf5e07",
+        "afterSha256": "bc35585467a50f20121023173f8dc71f687f81122bc4ef06a105b32bd2b9f820"
+      },
+      {
+        "path": "apps/desktop/tests/repository-selection.test.mjs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "7c39290ebfbbca54e371fc5de445a8b97e9d0b98a58f85304b90aafa66a4f0b3"
+      },
+      {
+        "path": "apps/desktop/vite.config.ts",
+        "status": "modified",
+        "beforeSha256": "dbf7e3a5da32c39a85f6ed5d41b1926e0eac5d29fbd41a9e30b00d67b36904ef",
+        "afterSha256": "e22d82e1d91e55e97b9185edfebd78d1140158be6bb583a2e5a431d49643bd93"
+      },
+      {
+        "path": "packages/ui/package.json",
+        "status": "modified",
+        "beforeSha256": "c69e47b0b213b693cc2bdd6d4bda9ca84379ded2440a2b295151b07c4d675135",
+        "afterSha256": "bbca84a76cab72ca61efe6629cbe0bd1ec64e86e03dc8482ae9a25de69b322a0"
+      },
+      {
+        "path": "packages/ui/src/components/button.tsx",
+        "status": "modified",
+        "beforeSha256": "6f04e7626064c88beb67b9ac004387575a66ad605f305707552f9afa9a69ddf5",
+        "afterSha256": "46086efb55b077b8a4a73d6db7e75a29f7fc4fe21749c8e07a885a7ba7568f22"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "status": "modified",
+        "beforeSha256": "68ce8a46fc66538067046fb86065b50cbe7dd6bf09aa18f691e76f1449ffb932",
+        "afterSha256": "f3786b6f3db8ab2842e29e6cc0dcd9ed7c88f435a2d132655d3c472c5b67511d"
+      },
+      {
+        "path": "specs/001-copy-directory-path/checklists/requirements.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "6c2a16b15b56045f3dd6b040926d74dfb7ca89d29bf1bf3bbb40aa1a97603466"
+      },
+      {
+        "path": "specs/001-copy-directory-path/spec.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "ad1f8189f8ef6bac6cf0d38b8a32ea89ddd91ac831de01a2da586b75e95cecc4"
+      },
+      {
+        "path": "specs/002-open-directory-app/checklists/requirements.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "f7648e5bfb686020c894ebce76b98731bdc7c00e5008393716a0d3d7ab4e06dc"
+      },
+      {
+        "path": "specs/002-open-directory-app/contracts/open-repository-app.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "9d965526092c46adcb73c3345115ef292ea6c899a715b6bef14464f9dd3ed7b0"
+      },
+      {
+        "path": "specs/002-open-directory-app/data-model.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "21a904f45c17798335bc23a6eb8ceddbc9fc16e324b7c075dd6038e7a6201154"
+      },
+      {
+        "path": "specs/002-open-directory-app/plan.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "c4adf49d8c1220ad54229eb09f28ce214d419635a4066dcfb3df2a2489f89482"
+      },
+      {
+        "path": "specs/002-open-directory-app/quickstart.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "3387231b209652d9b513969e4d85a6660918df07fc23f96f9852d87db7622b47"
+      },
+      {
+        "path": "specs/002-open-directory-app/research.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "a381aae8dead0cedec08db383b84f153f754743a51a7398b5fc374bc59499e11"
+      },
+      {
+        "path": "specs/002-open-directory-app/spec.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "e9a272f543649166a0e67983a20a693b70b58be7bdc1445a8b6e7d66bc42194a"
+      },
+      {
+        "path": "specs/002-open-directory-app/tasks.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "8bf87c7ef3e92c679c1eafb33e3ee1939657b99d3f9513af2a275f1067bc2756"
+      }
+    ],
+    "site-bookmark-browser": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "419b43386f22d4c0ff28150d5460e512da0c3ee873fd5bc3a5ef2971c485d559",
+        "afterSha256": "a33163ae6487208b056ff212660398cfd36b658f0bc48def84856f806056be7b"
+      },
+      {
+        "path": "package.json",
+        "status": "modified",
+        "beforeSha256": "feae18731f7ac2fc86990858ce38036acdbd03951e29f13b0ed955e91cb6b93d",
+        "afterSha256": "633d99ea261fa38e7e23bda84f87bc31332b3dabc93bfd140b0fd3f4b763fc94"
+      },
+      {
+        "path": "src-tauri/Cargo.lock",
+        "status": "modified",
+        "beforeSha256": "c6ae1703b6811a47cec18d21a684caa22f791e64c3c0f48b9de78d86d5f9721b",
+        "afterSha256": "029d0a6ab55b19709daa5b38e6d36eeeccb3a40dd029fcb98229f19120c04db5"
+      },
+      {
+        "path": "src-tauri/Cargo.toml",
+        "status": "modified",
+        "beforeSha256": "f021c921b3c2b7cc2a14db9ae38b47d43a75101838dacdaac024eec70e00c34e",
+        "afterSha256": "d181131935e81a06d18bf335184dabf5dde55a81fc7d102dc2f48c5d4f6766c7"
+      },
+      {
+        "path": "src-tauri/src/application/groups.rs",
+        "status": "modified",
+        "beforeSha256": "6997de20929dfe80c522f254fd762148bfd628a8cb3cf6411d4ff4b8fdd67171",
+        "afterSha256": "4be2f42b8c12f704db9e2b5d344f7bf95ce109bdb6dfa6b9d7a70d4874d96072"
+      },
+      {
+        "path": "src-tauri/src/domain/bookmark.rs",
+        "status": "modified",
+        "beforeSha256": "08badcdf71b6b204a70dcf51adca457fccbfa3d7cb45422657bc0df022359844",
+        "afterSha256": "eb97ea73387b4fcf9df918a63714e1c32469955d351478cb08dfd31a340ff93e"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/library_images.rs",
+        "status": "modified",
+        "beforeSha256": "3a04ef595324f771cfb51e5c15a2224286fe337630cc3ccaa2678c930f94ad73",
+        "afterSha256": "02dd69bfef23f27ae3db8639e4efd3a190605536f6552b0670043ce95f175c58"
+      },
+      {
+        "path": "src/features/bookmark-browser/model/image-paste-target.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "3520c5d2597996d67d5e231a7eb48ff95d0d678009e0364155129d92b9828798"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/bookmark-edit-dialog.tsx",
+        "status": "modified",
+        "beforeSha256": "a9f76dc16f44331ee9256183da1e418fc1f384d2561f9f60e7a284f092fdad1d",
+        "afterSha256": "c4bb171f4d9b8668530dcec04ccad04d0092064ad097fc337d39aed7b2cc3216"
+      },
+      {
+        "path": "src/pages/bookmarks/ui/bookmark-browser-page.tsx",
+        "status": "modified",
+        "beforeSha256": "dfa96500f70c7b795b736da8746949ff10175cdd15595ab086025f3806ce161c",
+        "afterSha256": "42b894fb6cb70532bfde5acfb5d341ff1330ea2b70f4b5df87a01af9c29d0421"
+      },
+      {
+        "path": "tests/image-paste-target.test.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "2b8aa4d51d82eb91c1564434a3f6ad35a54b7a33e17221078aab1d6f059de26e"
+      }
+    ],
+    "tauri-tree-file-explorer": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "a683b250150562788ce26110f7f67931261501e1fe4bb504e387ce2b6fdae64e",
+        "afterSha256": "c71298220fbf8560e7ccd9978e220e0d8d36135767a5bb5b2f597121cb688d6d"
+      }
+    ]
+  }
+}

@@ -152,3 +152,22 @@ test('terminal event excludes immediately following stale items', async () => {
   await result;
   assert.equal(h.removed, 1);
 });
+
+test('item callback failure before ack cancels once after registration and rejects late items', async () => {
+  let acknowledge;
+  let cancelled = 0;
+  let seen = 0;
+  const h = harness(() => new Promise(resolve => { acknowledge = resolve; }));
+  h.transport.cancel = async () => { cancelled++; };
+  const result = consumeScan(h.transport, 'a', () => { seen++; throw new Error('render failed'); });
+  const rejected = assert.rejects(result, /render failed/);
+  await tick();
+  h.send({ scanId: 'a', status: 'item', item: 1 });
+  h.send({ scanId: 'a', status: 'item', item: 2 });
+  await rejected;
+  assert.equal(seen, 1);
+  assert.equal(h.removed, 1);
+  acknowledge();
+  await tick();
+  assert.equal(cancelled, 1);
+});

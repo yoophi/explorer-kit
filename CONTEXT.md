@@ -344,3 +344,25 @@ Folder 영향 검증은 Rust26·cargo check·타입·빌드 통과이며 lockfil
 2026-10-05 계속 진행 요청에 따라 공통 저장소 게시 흐름을 이어갑니다. 여섯 저장소의 스트리밍 변경 파일이 최종 리뷰 snapshot 해시와 모두 일치하고, explorer-kit의 HEAD와 origin/main이 일치함을 확인했습니다. 공통 공개 대상에서 일반적인 자격 증명 패턴은 발견되지 않았습니다. 이미 통과한 검증·리뷰 이후 소스 변경이 없어 테스트를 반복하지 않고 fs-core 스트리밍 API·테스트·보고서를 커밋·푸시합니다. 소비 앱은 커밋·푸시하지 않습니다. streaming-exploration-changes.json은 구현·리뷰 완료 시점의 snapshot으로 유지합니다.
 
 공통 스트리밍 구현 커밋 `13c1eb5`를 origin/main에 푸시했습니다. 구현·테스트·문서 13개 파일을 반영했고 원격 push 성공을 확인했습니다. 소비 앱의 변경은 로컬에 유지합니다. 이 완료 기록과 보고서 게시 상태를 후속 문서 커밋으로 푸시합니다.
+
+## 후보14 전체 승격 및 앱 게시 시작
+
+2026-10-05 사용자 명시 요청. BE4/UI1/ST1 등 작은 공통 경계와 이미지/그룹/스캔 묶음을 모두 구현한다. 기존 Herdr codex gpt-6-sol medium 탭을 재사용하며 공통 선행 검증 후 앱 적용·리뷰·게시 순서다. 직전 snapshot: `/var/folders/3z/mcf5cp4n0t567wk9p_kjrpp80000gn/T/promotion14-baseline-65891yhw`. Movie는 원격 public 빈 저장소/로컬 unborn main이며, Bookmark origin은 Folder로 잘못 연결되어 있다. Bookmark 새 저장소 이름·visibility를 사용자에게 확인 중이며 구현은 계속한다.
+
+사용자가 Bookmark 새 원격을 `yoophi/site-bookmark-browser` 비공개로 지정했습니다. PRIVATE 저장소 생성 및 origin 교체를 완료했고 아직 push하지 않았습니다. 이전 세션의 검증된 앱 변경을 로컬 커밋으로 보존했습니다(Movie 10baac9, Folder 5119e69, Repo 0c04c1b, Bookmark 22a5109, Tree 104e971). Repo 원격의 새 두 커밋(분할 크기 조절·Git 상태·터미널 열기·경로 복사 및 Spec Kit 문서)을 발견해 merge 중이며 기존 스캔 세션·취소·임시 목록 계약과 함께 유지하도록 충돌을 해결했습니다. 병합 후 Rust19 테스트가 통과했고 프론트엔드를 확인 중입니다. 공통 BE1–4/UI1–6/ST1–4 구현은 세 Herdr 담당 탭에서 진행합니다.
+
+Repo 원격 병합은 5f1635b로 로컬 커밋했고 수정 소스의 diff 검사·타입·빌드가 통과했습니다. 공통 UI 테스트 실행에 tsconfig.base.json을 명시해 TSX JSX runtime을 맞췄으며 중간 Node38 테스트를 통과했습니다. 공통 Rust RatingScale은 두 앱에서 필요한 정확한 이진 step과 정렬된 경계를 지원하도록 제한하고 필드를 비공개로 보완했습니다. 조정자가 ST2 payload 변환 도중 닫기/대상 전환 뒤에도 저장을 시작하는 회귀를 발견해 저장 직전 세대 검사를 요청했고 담당자가 수정 중입니다.
+
+공통 Storybook 정적 빌드를 agent-browser로 확인했습니다. 비동기 폼 pending 시 제출·취소 disabled/닫기 버튼 숨김/Escape 차단, 성공 닫힘, 실패 alert와 입력 보존을 확인했습니다. 필터 Tab+Enter 선택 및 aria-pressed, 비활성·빈 상태를 확인했고 최종 페이지 오류0입니다. 첫 navigation timeout 후 서버 응답을 확인하고 새 브라우저에서 재검증했습니다. 서버와 검사 세션은 종료했습니다. 이 검사는 모의 Storybook이며 실제 앱 Tauri 저장 검증을 대체하지 않습니다.
+
+공통 전체check Node47·Rust60+doctest1·타입·소비/Storybook 빌드 통과 후 Folder/Bookmark/Repo의 실제 소비 연결을 배정했습니다. BE/UI/ST 상호 독립 리뷰에서 추가 actionable 회귀가 없었습니다. ST3는 조정자가 ScanLifecycle로 구현하고 consumeScan을 해당 엔진으로 전환했습니다. Movie는 버튼 re-export·설정 초안·선택 보정을 공통 구현으로 연결했고 Node14·타입·앱/Storybook 빌드 통과했습니다. 실제 native Node 소비 중 settings-core의 확장자 없는 export 실패를 재현해 `.ts`를 명시했습니다. Movie의 완료 전 선택 보존과 text filter 계약은 기존6개 fixture로 유지 확인했습니다.
+
+Tree 소비 검증에서 ScanLifecycle의 TypeScript parameter property가 기존 native Node strip-only 테스트와 호환되지 않는 문제를 발견했습니다. 명시적 필드·constructor 할당으로 바꾸고 public scan export/internal import에 `.ts`를 명시했습니다. native TypeScript 공개 API 로딩 회귀 테스트를 추가한 뒤 공통 Node48, Tree Node14·Rust6·타입·빌드가 통과했습니다. Tree는 추가 앱 로직 변경 없이 공통 consumeScan 내부 승격을 소비하며 README에 이를 설명했습니다.
+
+## 후보14 구현·소비·리뷰 완료
+
+공통 BE4·UI6·ST4 총14개를 각각 최소두앱에 연결했습니다. common 모듈 먼저 검증 후 앱연결 순서를 지켰고, GitStatus/터미널/경로복사/분할패널 원격기능도 Repo에 보존했습니다. Movie Node14/Rust8, Folder Node12/Rust33, Repo TS16/Rust20, Bookmark Node11/Rust42, Tree Node14/Rust6 및 해당타입·앱빌드가 통과했습니다. Movie/Repo와 common Storybook빌드, common 전체fmt 및 수정앱fmt도 통과했습니다. Bookmark 기존 private_browser.rs 비포맷은 보존했습니다.
+
+조정자 리뷰의 Folder 독립필터 선택표시 및 Repo 초기 평면목록 우선선택 회귀를 수정했습니다. 프론트엔드 독립리뷰에서 ST2 단일queue가 다른대상의 느린저장을 기다리는경계를 확인하여 target별queue로 보완했습니다. A느린저장→B즉시저장→A복귀시A기존저장대기 및 stalepreview차단 fixture를 추가했습니다. 최종 common check는 Node49/Rust60+doctest1·타입·소비/Storybook빌드 통과이며 Folder/Bookmark test/build도 다시통과했습니다.
+
+review-data는 최종 Folder33/Bookmark42/Repo20 Rust를 직접통과하고 backend추가회귀없음을 확인했습니다. review-ui는 앱14/12/11/16 및 image-input5를 직접실행하고 대상별queue를 별도fixture로 재검증해 최종 추가회귀없음을 확인했습니다. 전체아키텍처검사와 실제두소비경로확인도 통과했습니다. 네이티브창·OS터미널·패키징·대용량벤치마크는 미실행입니다. 상세보고서는 docs/promotion-14-report.md입니다. 이제 사용자가승인한공통+다섯앱커밋·푸시를 진행합니다.

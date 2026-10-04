@@ -63,3 +63,21 @@ Movie/Repo의 화면 설정과 Tree의 숨김/패널 배치는 브라우저 설�
 Movie/Tree의 기존 배열 IPC는 호환용으로 유지하고, 화면용 탐색에는 항목·종료 이벤트를 추가합니다. 공통 fs-core는 항목 callback·취소 predicate만 알며 transport를 참조하지 않습니다. application port는 앱 DTO·정책을 정의하고 outbound adapter가 fs-core를 호출합니다. Tauri inbound adapter는 작업 등록과 blocking worker, 이벤트 전달을 담당합니다.
 
 React는 임시 탐색 결과와 완료한 서버 상태를 구분합니다. 폴더/glob/숨김 설정이 바뀌면 이전 작업의 이벤트를 새 목록에 섞지 않으며, 완료 전 전체 결과를 캐시에 확정하지 않습니다. Repo의 Git 검사와 catalog commit은 도메인 전용 흐름으로 남깁니다. 적용·검증 상태는 [탐색 스트리밍 보고서](streaming-exploration-report.md)를 참고하세요.
+
+## 추가 후보의 공통 경계
+
+`collection-policy`는 그룹 컬렉션과 숫자 평점의 순수 Rust 규칙을 제공한다. 폴더명·URL 문법, nullable 의미, JSON 및 이미지 연쇄 삭제는 앱의 domain/application이 소유한다. `fs-core/walk`는 두 기존 순회 정책을 명시적으로 구분하며 방문 callback에 검사·DTO 생성을 맡긴다.
+
+```mermaid
+flowchart LR
+    Page[앱 페이지와 feature] --> Composite[공통 필터 썸네일 폼 그룹 스캔 UI]
+    Page --> Draft[settings-core 초안]
+    Page --> Paste[image-input 대상과 요청 수명]
+    Page --> Scan[scan-client ID ack 취소 수명]
+    Page --> Selection[collection-core 선택 보정]
+    App[앱 application과 adapter] --> Policy[collection-policy 순수 규칙]
+    App --> Walk[fs-core 순회 정책]
+    App --> Image[image-store 완료와 정리 경고]
+```
+
+공통 React에는 Tauri·React Query·라우터·앱 store 의존성이 없다. 스캔 세션의 ID gate를 공유하되 이벤트 구독, 배치 갱신, 서버 캐시 확정은 앱에 유지한다. 이미지 붙여넣기 hook은 시작 전 오래된 저장 요청을 버리지만 이미 시작한 파일 쓰기를 취소하지 않는다. Movie/Repo의 초기·부분 결과 선택 정책은 공통 선택 함수에 전달할 목록과 fallback을 만드는 앱 adapter에서 보존한다. [적용 보고서](promotion-14-report.md)에 실제 두 소비 경로를 기록한다.

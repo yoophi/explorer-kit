@@ -1,5 +1,7 @@
 # 두 앱 이상에서 재사용 가능한 공통 기능 조사
 
+후속 상태(2026-10-05): 사용자가 14개 후보 전체 구현을 승인했고 공통 구현·소비 앱 연결과 최종 리뷰를 진행했습니다. 현재 상태는 [구현 보고서](promotion-14-report.md)를 기준으로 확인하세요. 아래는 조사 당시 판단이며 선행 이미지·root 이슈는 [후속 수정](remaining-review-fixes-report.md)에서 이미 해결했습니다.
+
 조사일: 2026-10-04. 현재 로컬 작업 트리의 explorer-kit과 다섯 소비 앱을 비교했습니다. M=movie-explorer, F=movie-folder-explorer, R=repo-explorer, B=site-bookmark-browser, T=tauri-tree-file-explorer입니다. 사용자가 부른 site-bookmark-explorer의 실제 저장소 이름은 site-bookmark-browser입니다.
 
 ## 결론과 선정 기준

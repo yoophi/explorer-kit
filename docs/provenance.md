@@ -45,3 +45,18 @@ image-store의 끝점 stem 검증을 확장자 결합 파일명 계약에 맞춰
 ## 탐색 스트리밍 확대
 
 Folder의 항목 이벤트/취소/80ms 화면 갱신 패턴을 기준으로 기존 fs-core/list(Tree 출처)와 fs-core/scan(Movie 출처)에 callback 기반 스트리밍 API를 추가했습니다. 원본 복사본의 필터·symlink·오류 정책을 유지하고 배열 API는 동일 탐색을 수집·정렬하는 호환 wrapper로 구성했습니다. 취소 확인과 sink 오류 전파를 추가했으며 Tauri event, 앱 기본 glob, 서버상태 캐시 정책은 소비 앱에 남겼습니다. 최초 provenance.json 해시는 변경하지 않습니다.
+
+## 추가 후보 14개 승격
+
+2026-10-05 후보 조사에 있던 공통 경계를 구현한다. 최초 복사본 `provenance.json` 해시는 유지한다. 새 파생 구현의 출처와 정책은 다음과 같다.
+
+- fs-core/walk: Folder의 filesystem_directory_scanner와 Repo의 infrastructure discovery에서 DFS/BFS·오류·깊이·symlink 정책을 분리한다. 검사·DTO·이벤트 전달은 앱 callback에 둔다.
+- collection-policy: Folder의 json_last_opened_directory_store, Bookmark의 application/groups 및 두 domain 평점 검증에서 메모리 컬렉션·숫자 규칙만 추출한다. 파일 삭제·트랜잭션·migration은 옮기지 않는다.
+- image-store/SaveCompletion: Folder command와 Bookmark LibraryImages가 중복 판단하던 저장 성공·정리 미완료 해석을 공통화한다. 경로와 경고를 보존한다.
+- ui-radix/compatible-button: Movie/Repo의 동일한 로컬 button을 복사하여 기존 모양을 유지하는 별도 export로 제공한다.
+- ui-base 복합 UI: Folder/Bookmark의 필터·썸네일·편집·그룹 화면 및 Folder/Repo 스캔 표시에서 도메인을 제외한 표시·접근성·상호작용 계약을 추출한다.
+- settings-core/draft, collection-core/reconcileSelection: Movie/Repo의 저장 초안과 현재 선택 보정에서 순수 상태 규칙을 추출한다.
+- image-input/react: Folder/Bookmark 이미지 붙여넣기의 대상·요청 수명과 미리보기 해제를 공통화한다. 저장 callback과 텍스트 붙여넣기는 앱 책임이다.
+- scan-client/session: Folder consumeScan과 Repo ScanSession의 ID/ack/취소/terminal 수명 규칙을 공통화하고 transport·결과 확정 정책은 앱에 남긴다.
+
+실제 연결·검증·리뷰 완료 여부는 [후보 14개 보고서](promotion-14-report.md)에 기록한다.

@@ -6,6 +6,8 @@
 
 저장이 성공하고 정리만 실패하면 `SaveOutcome { saved_path, cleanup_warnings }`를 반환합니다. 호출자는 경고를 확인해야 합니다. 이전 `png`가 남은 상태에서 단순 `find_image`를 다시 호출하면 확장자 우선순위에 따라 그 파일이 선택될 수 있으므로, 경고가 해결되기 전에는 `saved_path`를 사용하거나 교체 작업을 미완료로 처리해야 합니다. 여러 프로세스 사이 직렬화나 여러 파일에 걸친 원자성은 제공하지 않습니다.
 
+`SaveOutcome::is_complete()`는 정리 경고가 없는지 확인합니다. `into_completion()`은 `SaveCompletion::Complete { saved_path }` 또는 `SaveCompletion::CleanupIncomplete { saved_path, warnings }`를 반환합니다. 두 경우 모두 저장은 성공했으며, 정리 미완료 경우에도 저장 경로와 개별 경고를 잃지 않습니다. 앱은 사용자 문구와 IPC 형식을 결정합니다.
+
 stem의 경로 구분자, 제어 문자, Windows 특수 문자, 앞뒤 공백은 거부합니다. stem 끝의 점은 확장자가 뒤에 붙으므로 허용하며, `.`·`..` 자체는 거부합니다. 앱별 이름 생성·경로·정체성 규칙, 이미지 내용 decode/MIME 검사는 이 crate의 범위 밖입니다. 테스트는 `tempfile` fixture만 사용합니다.
 
 `migrate_image_if_absent(directory, legacy_stem, target_stem, StemMatch)`는 같은 이미지 mutex 안에서 이전합니다. 대상 stem의 이미지가 어느 확장자로든 이미 존재하면 이를 보존합니다. 대상이 없으면 legacy 후보 하나를 같은 디렉터리의 새 stem으로 rename합니다. 실패 시 legacy 파일은 유지되므로, 앱이 JSON version을 전환하기 전에 호출하고 실패 시 재시도할 수 있습니다. 앱의 여러 이미지 migration 전체에 대한 transaction은 제공하지 않습니다.

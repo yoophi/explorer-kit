@@ -28,9 +28,10 @@ pnpm check
 | Explorer | 파일 목록, 로딩, 빈 목록, 오류, 폴더 트리와 목록 연동 |
 | Rating | 0.5점 단위 입력, 표시 값, 비활성 입력 |
 | Base UI | 버튼 변형, 입력, 카드, 스크롤, badge/label/textarea/separator, select, combobox, dialog, alert dialog, context menu |
-| Radix UI | 버튼 변형, 입력, 카드, 스크롤, skeleton, empty, table, resizable panels |
+| Composite UI | Folder/Bookmark 필터·썸네일·그룹, 비동기 폼 성공·실패·pending, Folder/Repo 스캔 상태 |
+| Radix UI | Movie/Repo 호환 버튼, 버튼 변형, 입력, 카드, 스크롤, skeleton, empty, table, resizable panels |
 
-총 33개 스토리와 자동 문서 페이지 5개입니다. toolbar에서 Light/Dark를 전환할 수 있고 Controls와 Accessibility addon을 제공합니다. 공통 Base 테마 토큰으로 두 UI 계열을 비교합니다. 모든 접근성 항목의 자동 통과를 보장하는 인증 구성은 아닙니다.
+기본 카탈로그에 복합 UI 상태와 Movie/Repo 호환 버튼 예제를 추가했습니다. toolbar에서 Light/Dark를 전환할 수 있고 Controls와 Accessibility addon을 제공합니다. 공통 Base 테마 토큰으로 두 UI 계열을 비교합니다. 모든 접근성 항목의 자동 통과를 보장하는 인증 구성은 아닙니다.
 
 설정 예제는 스토리별 메모리 저장소를 사용합니다. 실제 localStorage·앱 JSON·파일시스템을 읽거나 수정하지 않습니다. fail/invalid Controls를 바꾸면 해당 예제의 저장소를 새로 생성합니다. 파일 탐색은 고정 fixture이며 Rust/Tauri와 연결하지 않습니다. image-input·scan-client 등 렌더링 없는 유틸리티는 컴포넌트 카탈로그 대상에서 제외했습니다.
 
@@ -46,3 +47,7 @@ pnpm check
 - 설정 Controls 변경 시 메모리 저장소를 재구성하는 후속 보완 후 Storybook 타입·정적 빌드를 다시 확인했습니다.
 - Aside 브라우저: 카탈로그/자동 문서 표시, 설정 토글 true→초기화 false, 쓰기 실패 alert와 이전 값 보존, Dialog 열기·포커스·닫기, 트리 선택에 따른 /demo/Movies 목록 전환·Archive 자식 추가, combobox 검색(Mov→Movies), 평점 2.5→4 변경을 확인했습니다. Resizable separator의 렌더링도 확인했습니다.
 - Node의 module.register deprecation, 의존성 use-client directive/sourcemap, Vite 큰 chunk 경고가 있으나 빌드는 완료됐습니다. 네이티브 앱·모든 스토리의 접근성 자동 검사·배포 검증은 범위에 포함하지 않았습니다.
+
+## 추가 복합 UI 확인
+
+2026-10-05 정적 Storybook을 agent-browser로 확인했습니다. AsyncFormDialog의 pending 버튼 비활성화·Escape 차단·성공 닫힘·실패 alert/입력 보존, FacetChips의 Tab+Enter 선택과 aria-pressed·disabled·빈 상태를 확인했습니다. 최종 페이지 오류는 0개입니다. 모의 화면 검사이며 실제 앱 저장·OS 연동 검증은 아닙니다.

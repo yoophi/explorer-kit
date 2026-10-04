@@ -154,7 +154,11 @@ importers:
         specifier: ^19.1.0
         version: 19.3.0
 
-  packages/image-input: {}
+  packages/image-input:
+    dependencies:
+      react:
+        specifier: ^19.1.0
+        version: 19.3.0
 
   packages/rating:
     dependencies:

@@ -35,3 +35,18 @@ export function countTags<T>(items: readonly T[], tagsOf: (item: T) => readonly 
   }
   return [...counts.values()].sort((a, b) => a.label.localeCompare(b.label));
 }
+
+export function isSelectionAvailable<T>(selectedId: T | null, visibleIds: readonly T[]): selectedId is T {
+  return selectedId !== null && visibleIds.includes(selectedId);
+}
+
+/** Preserve a visible choice; otherwise use the caller's ordered fallback. */
+export function reconcileSelection<T>(
+  selectedId: T | null,
+  visibleIds: readonly T[],
+  fallback: (visibleIds: readonly T[]) => T | null = (ids) => ids[0] ?? null,
+): T | null {
+  if (isSelectionAvailable(selectedId, visibleIds)) return selectedId;
+  const candidate = fallback(visibleIds);
+  return isSelectionAvailable(candidate, visibleIds) ? candidate : null;
+}

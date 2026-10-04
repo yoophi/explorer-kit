@@ -31,6 +31,38 @@ pub struct SaveOutcome {
     pub cleanup_warnings: Vec<CleanupWarning>,
 }
 
+/// Structured interpretation of a completed write. CleanupIncomplete is still
+/// a successful save; its saved path must be retained for reconciliation.
+#[derive(Debug)]
+pub enum SaveCompletion {
+    Complete {
+        saved_path: PathBuf,
+    },
+    CleanupIncomplete {
+        saved_path: PathBuf,
+        warnings: Vec<CleanupWarning>,
+    },
+}
+
+impl SaveOutcome {
+    pub fn is_complete(&self) -> bool {
+        self.cleanup_warnings.is_empty()
+    }
+
+    pub fn into_completion(self) -> SaveCompletion {
+        if self.cleanup_warnings.is_empty() {
+            SaveCompletion::Complete {
+                saved_path: self.saved_path,
+            }
+        } else {
+            SaveCompletion::CleanupIncomplete {
+                saved_path: self.saved_path,
+                warnings: self.cleanup_warnings,
+            }
+        }
+    }
+}
+
 /// Caller-selected candidates. Naming and group membership remain app policy.
 /// `FileName` selects one exact spelling (including upper-case extensions),
 /// useful when a caller has enumerated orphan images by its own group rule.
@@ -1048,6 +1080,31 @@ mod tests {
             outcome.cleanup_warnings[0].path,
             dir.path().join("cover.png")
         );
+        assert!(!outcome.is_complete());
+        match outcome.into_completion() {
+            SaveCompletion::CleanupIncomplete {
+                saved_path,
+                warnings,
+            } => {
+                assert_eq!(fs::read(saved_path).unwrap(), b"new");
+                assert_eq!(warnings.len(), 1);
+                assert_eq!(warnings[0].path, dir.path().join("cover.png"));
+            }
+            SaveCompletion::Complete { .. } => panic!("cleanup warning was lost"),
+        }
+    }
+
+    #[test]
+    fn successful_save_completion_keeps_path() {
+        let dir = tempfile::tempdir().unwrap();
+        let outcome = save_image(dir.path(), "cover", "png", b"new", StemMatch::Exact).unwrap();
+        assert!(outcome.is_complete());
+        match outcome.into_completion() {
+            SaveCompletion::Complete { saved_path } => {
+                assert_eq!(fs::read(saved_path).unwrap(), b"new")
+            }
+            SaveCompletion::CleanupIncomplete { .. } => panic!("unexpected warning"),
+        }
     }
 
     #[cfg(unix)]

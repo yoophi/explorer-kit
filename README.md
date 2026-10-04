@@ -1,27 +1,28 @@
 # Explorer Kit
 
-다섯 데스크톱 탐색기에서 복사한 공통 구현을 제공하는 [공개 GitHub 저장소](https://github.com/yoophi/explorer-kit)입니다. TypeScript source package 11개, 개발 도구 1개, Rust crate 5개로 구성됩니다. 기존 앱의 도메인 모델과 데이터 저장 위치는 소비 앱이 관리합니다.
+다섯 데스크톱 탐색기에서 복사한 공통 구현을 제공하는 [공개 GitHub 저장소](https://github.com/yoophi/explorer-kit)입니다. TypeScript source package 11개, 개발 도구 1개, Rust crate 6개로 구성됩니다. 기존 앱의 도메인 모델과 데이터 저장 위치는 소비 앱이 관리합니다.
 
 ## 패키지
 
 | 경로 | 패키지 | 제공 기능 |
 | --- | --- | --- |
-| packages/ui-base | @yoophi/ui-base | 폴더·북마크의 Base UI 컴포넌트 13개와 테마 |
-| packages/ui-radix | @yoophi/ui-radix | 파일 탐색기의 Radix 계열 UI와 resizable, 테마 |
+| packages/ui-base | @yoophi/ui-base | Base UI 기본 요소·필터·썸네일·비동기 폼·그룹·스캔 표시 |
+| packages/ui-radix | @yoophi/ui-radix | Radix 계열 UI·resizable·Movie/Repo 호환 버튼 |
 | packages/core | @yoophi/explorer-core | FileEntry 타입, 크기·수정일 표시 |
 | packages/file-tree | @yoophi/file-tree | controlled 가상화 폴더 트리 |
 | packages/file-list | @yoophi/file-list | controlled 파일 목록과 loading/empty/error 상태 |
-| packages/scan-client | @yoophi/scan-client | transport를 주입받는 제네릭 스캔 이벤트 소비·취소 |
-| packages/image-input | @yoophi/image-input | 클립보드 이미지 추출, MIME 검사, 바이트 변환, preview 수명 관리 |
+| packages/scan-client | @yoophi/scan-client | transport 기반 이벤트 소비와 ID·ack·취소 세션 |
+| packages/image-input | @yoophi/image-input | 이미지 추출·변환·preview 및 React 붙여넣기 수명 |
 | packages/rating | @yoophi/rating | 북마크의 0~5점·0.5점 단위 평점 표시·입력 |
-| packages/collection-core | @yoophi/collection-core | 태그 집계·크기, 문자열 정규화, seeded shuffle 순위 |
-| packages/settings-core | @yoophi/settings-core | 검증·버전 보호·오류 복구를 갖춘 브라우저 설정 저장과 React 구독 |
+| packages/collection-core | @yoophi/collection-core | 태그 집계·크기·정규화·shuffle 및 선택 보정 |
+| packages/settings-core | @yoophi/settings-core | 브라우저 설정 저장·구독 및 편집 초안 상태 |
 | packages/settings-ui | @yoophi/settings-ui | 설정 섹션·필드·토글·저장 상태 구성 요소 |
 | packages/dev-tools | @yoophi/explorer-dev-tools | 사용 가능한 포트로 Vite와 Tauri 동시 실행 |
-| crates/fs-core | explorer-fs-core | 단일 디렉터리 조회, glob 재귀 검색, 항목 스트리밍·취소 |
+| crates/fs-core | explorer-fs-core | 단일 조회·glob 검색·스트리밍 및 정책별 DFS/BFS 순회 |
 | crates/json-store | explorer-json-store | JSON 읽기, 조건부 갱신, 버전 검사, 원자적 byte 저장 |
 | crates/image-store | explorer-image-store | 이미지 확장자·후보 선택·원자적 교체와 정리 결과 |
 | crates/scan-job | explorer-scan-job | 스캔 작업 등록·취소·수명·종료 판정 |
+| crates/collection-policy | explorer-collection-policy | 키 기반 그룹 규칙·정확한 격자 평점 검증 |
 | crates/settings-store | explorer-settings-store | 앱 정책 callback으로 기존 schema를 유지하는 JSON 설정 transaction |
 
 ## 설치와 검증
@@ -88,7 +89,7 @@ explorer-fs-core = { path = "../../explorer-kit/crates/fs-core" }
 - JSON `load_json`은 파일 없음만 `None`으로 반환합니다. 손상·권한 오류는 오류입니다. `update_json`은 읽기→수정→쓰기를 프로세스 내에서 직렬화합니다. 서로 다른 프로세스 사이 lock, 여러 파일의 트랜잭션, 스키마 자동 마이그레이션은 제공하지 않습니다. update callback 안에서 저장 함수를 재호출하지 않습니다.
 - JSON 저장은 최종 symlink 대상을 갱신하고 기존 파일 권한을 보존합니다. 읽기 전용 파일과 순환 링크는 오류로 처리합니다. 파일 교체 방식이므로 상위 디렉터리의 쓰기 권한이 필요하며 inode·hard link 관계·소유권·확장 속성 보존은 제공하지 않습니다.
 - 이미지 입력은 MIME과 바이트 변환을 처리합니다. 실제 이미지 decode 검증과 저장 위치·이름은 앱이 담당하고, Rust 이미지 교체는 `explorer-image-store`를 사용합니다. preview는 교체·unmount 시 `dispose()` 해야 합니다.
-- 평점의 `null` 의미, 폴더 이름 변경, Git 검사, URL 중복 판별, 그룹 삭제 정책은 공통화하지 않았습니다.
+- 평점의 `null` 의미, 폴더 이름 변경, Git 검사, URL 중복 판별, 그룹의 연쇄 삭제 정책은 앱에 남깁니다. 그룹 컬렉션과 숫자 평점 검증은 collection-policy가 제공합니다.
 - 개발 CLI는 소비 앱 cwd에서 실행합니다. 모노레포는 `TAURI_PACKAGE=desktop explorer-tauri-dev`, 단일 앱은 `explorer-tauri-dev`입니다.
 
 복사 원본, 파생 변경과 통합 순서는 [출처](docs/provenance.md), [아키텍처](docs/architecture.md)에 기록합니다. 모든 패키지는 private이며 별도 라이선스를 임의로 부여하지 않았습니다.
@@ -126,3 +127,7 @@ explorer-fs-core = { path = "../../explorer-kit/crates/fs-core" }
 ## 탐색 스트리밍
 
 [fs-core 스트리밍 API](crates/fs-core/README.md)와 [다섯 앱 조사·적용 보고서](docs/streaming-exploration-report.md)를 참고하세요.
+
+## 추가 공통 기능 승격
+
+두 앱 이상에서 사용되는 추가 후보 14개의 구현·연결·검증 상태는 [진행 보고서](docs/promotion-14-report.md)를 참고하세요. 패키지별 README에 공개 API와 앱이 유지할 정책을 기록했습니다.

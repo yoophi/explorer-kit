@@ -1,3 +1,4 @@
+import { ScanLifecycle } from "./scan-lifecycle.ts";
 
 export type ScanEvent<T> = { scanId: string } & (
   | { status: "item"; item: T }
@@ -23,12 +24,12 @@ export async function consumeScan<T>(
   signal?.throwIfAborted();
   let unlisten: (() => void) | undefined;
   let rejectScan: (error: unknown) => void = () => {};
-  let acknowledged = false;
-  let settled = false;
-  const cancelWorker = () => { void transport.cancel?.().catch(console.error); };
+  const lifecycle = new ScanLifecycle(
+    { start: () => transport.start(), cancel: transport.cancel },
+    { onStartError: (error) => rejectScan(error), onCancelError: console.error },
+  );
   const abort = () => {
-    settled = true;
-    if (acknowledged) cancelWorker();
+    lifecycle.dispose();
     rejectScan(signal?.reason ?? new DOMException("Aborted", "AbortError"));
   };
   try {
@@ -36,29 +37,25 @@ export async function consumeScan<T>(
       rejectScan = reject;
       signal?.addEventListener("abort", abort, { once: true });
       void transport.listen((event) => {
-        if (settled || signal?.aborted || event.scanId !== scanId) return;
-        if (event.status === "completed") { settled = true; resolve(); }
-        else if (event.status === "cancelled") { settled = true; reject(new DOMException("검색을 중지했습니다.", "AbortError")); }
-        else if (event.status === "failed") { settled = true; reject(new Error(event.error)); }
+        if (signal?.aborted || !lifecycle.accepts(event.scanId)) return;
+        if (event.status === "completed") { lifecycle.finish(event.scanId); resolve(); }
+        else if (event.status === "cancelled") { lifecycle.finish(event.scanId); reject(new DOMException("검색을 중지했습니다.", "AbortError")); }
+        else if (event.status === "failed") { lifecycle.finish(event.scanId); reject(new Error(event.error)); }
         else {
-          try { onItem(event.item); } catch (error) { settled = true; cancelWorker(); reject(error); }
+          try { onItem(event.item); } catch (error) { lifecycle.dispose(); reject(error); }
         }
       }).then((cleanup) => {
         // An abort can occur while Tauri is still installing the listener.
-        if (signal?.aborted) {
+        if (signal?.aborted || lifecycle.state === "disposed") {
           cleanup();
           return;
         }
         unlisten = cleanup;
-        return transport.start().then(() => {
-          acknowledged = true;
-          // Abort may arrive while the backend is registering the scan.
-          if (signal?.aborted) cancelWorker();
-        });
+        lifecycle.start({ scanId });
       }).catch(reject);
     });
   } finally {
-    settled = true;
+    lifecycle.dispose();
     signal?.removeEventListener("abort", abort);
     unlisten?.();
   }
