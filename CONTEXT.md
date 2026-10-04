@@ -314,3 +314,5 @@ Folder 영향 검증은 Rust26·cargo check·타입·빌드 통과이며 lockfil
 2026-10-05 사용자가 공통 모듈의 공개 GitHub 저장소 생성과 커밋·푸시를 명시적으로 요청했습니다. 앞선 commit/push 제외 조건은 이번 공통 저장소 게시에 한해 대체됩니다. `gh repo create yoophi/explorer-kit --public --source=. --remote=origin`으로 https://github.com/yoophi/explorer-kit 을 생성하고 origin을 연결했습니다.
 
 현재 공통 구현·테스트·Storybook·리뷰 문서와 작업 이력을 main 브랜치에 커밋하여 푸시합니다. 공개 대상 136개 파일에서 일반적인 인증정보 패턴과 자격 증명 파일명이 발견되지 않았고 git diff --check가 통과했습니다. 직전 공통 pnpm check(Node29/Rust46·타입·소비 빌드·Storybook) 통과 결과를 유지하며 이번 게시에서는 소스 동작을 변경하지 않았습니다. 다섯 소비 앱은 커밋·푸시하지 않으며 기존 sibling 경로 의존성을 유지합니다. npm/crates.io 배포는 수행하지 않습니다.
+
+공통 구현 커밋 `6693f14`를 origin/main에 푸시했습니다. GitHub visibility PUBLIC·기본 브랜치 main 및 원격/로컬 커밋 일치를 확인했습니다. 이 완료 기록은 후속 문서 커밋으로 함께 푸시합니다.
