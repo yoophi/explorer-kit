@@ -60,3 +60,9 @@ Folder의 항목 이벤트/취소/80ms 화면 갱신 패턴을 기준으로 기�
 - scan-client/session: Folder consumeScan과 Repo ScanSession의 ID/ack/취소/terminal 수명 규칙을 공통화하고 transport·결과 확정 정책은 앱에 남긴다.
 
 실제 연결·검증·리뷰 완료 여부는 [후보 14개 보고서](promotion-14-report.md)에 기록한다.
+
+## 잔여 공통화
+
+게시 기준 `7089174` 이후 현재 두 소비처의 계약을 다시 대조했다. Movie/Tree의 Unicode 이름 비교는 core로, Movie/Repo의 동일 테마는 ui-radix의 별도 compatible-theme export로 옮겼다. Folder/Bookmark의 동일 테마 본문은 기존 ui-base CSS 직접 import로 전환했다. Movie/Repo의 cn은 기존 경로를 공통 함수 재수출로 유지한다. Bookmark의 그룹 키/Markdown 폼은 기존 AsyncFormDialog를 소비하며 아이콘 라벨과 기존 block 배치를 보존하는 선택적 합성 props를 추가했다. 기본 폼 동작은 유지한다.
+
+최초 복사본 해시는 덮어쓰지 않는다. 파생 출처·계약은 [이름 비교](residual-sort-notes.md), [테마](residual-theme-notes.md), [폼](residual-dialog-notes.md), 전체 선정·유지 판단과 검증은 [잔여 보고서](residual-commonality-report.md)에 기록한다.

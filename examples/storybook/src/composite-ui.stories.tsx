@@ -38,6 +38,7 @@ function AsyncDialogExample({ failing = false }: { failing?: boolean }) {
 
 export const AsyncDialogNormalAndError: Story = { render: () => <div className="flex gap-3"><AsyncDialogExample /><AsyncDialogExample failing /></div> };
 export const AsyncDialogPending: Story = { render: () => <AsyncFormDialog open onOpenChange={() => {}} title="외부 저장 중" onSubmit={() => {}} pending><input aria-label="잠긴 필드 예시" disabled placeholder="저장 중" /></AsyncFormDialog> };
+export const AsyncDialogComposedSubmit: Story = { render: () => <AsyncFormDialog open onOpenChange={() => {}} title="링크 가져오기" onSubmit={() => true} submitLabel={<><span aria-hidden="true">📋</span> 3개 추가</>} formClassName="block" submitClassName="gap-2"><textarea aria-label="마크다운 링크" className="w-full rounded border p-2" defaultValue="[제목](https://example.com)" /></AsyncFormDialog> };
 
 function GroupControlsExample() {
   const [group, setGroup] = useState("movies");

@@ -7,8 +7,8 @@
 | 경로 | 패키지 | 제공 기능 |
 | --- | --- | --- |
 | packages/ui-base | @yoophi/ui-base | Base UI 기본 요소·필터·썸네일·비동기 폼·그룹·스캔 표시 |
-| packages/ui-radix | @yoophi/ui-radix | Radix 계열 UI·resizable·Movie/Repo 호환 버튼 |
-| packages/core | @yoophi/explorer-core | FileEntry 타입, 크기·수정일 표시 |
+| packages/ui-radix | @yoophi/ui-radix | Radix 계열 UI·resizable·Movie/Repo 호환 버튼·테마 |
+| packages/core | @yoophi/explorer-core | FileEntry 타입, 크기·수정일 표시·Unicode 이름 비교 |
 | packages/file-tree | @yoophi/file-tree | controlled 가상화 폴더 트리 |
 | packages/file-list | @yoophi/file-list | controlled 파일 목록과 loading/empty/error 상태 |
 | packages/scan-client | @yoophi/scan-client | transport 기반 이벤트 소비와 ID·ack·취소 세션 |
@@ -131,3 +131,7 @@ explorer-fs-core = { path = "../../explorer-kit/crates/fs-core" }
 ## 추가 공통 기능 승격
 
 두 앱 이상에서 사용되는 추가 후보 14개의 구현·연결·검증 상태는 [진행 보고서](docs/promotion-14-report.md)를 참고하세요. 패키지별 README에 공개 API와 앱이 유지할 정책을 기록했습니다.
+
+## 남은 공통화와 유지할 경계
+
+기존 14개 이후의 현재 코드 감사, 추가 승격과 앱별 유지 근거는 [잔여 공통화 보고서](docs/residual-commonality-report.md)에 기록합니다. 안정성과 확장 가능성을 위해 앱의 도메인 스키마·삭제 순서·탐색 결과 확정·OS 실행·빌드 정책은 앱에 남깁니다.

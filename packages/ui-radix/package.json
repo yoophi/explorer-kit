@@ -6,7 +6,8 @@
   "exports": {
     "./components/*": "./src/components/*.tsx",
     "./lib/utils": "./src/lib/utils.ts",
-    "./globals.css": "./src/styles/globals.css"
+    "./globals.css": "./src/styles/globals.css",
+    "./compatible-theme.css": "./src/styles/compatible-theme.css"
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.2.9",

@@ -372,3 +372,15 @@ review-data는 최종 Folder33/Bookmark42/Repo20 Rust를 직접통과하고 back
 공통 구현 f25acb0과 Movie b71c9a2, Folder 4bcb9a1, Repo 3d0338f, Bookmark 0c134e2, Tree 45e9184를 각 origin/main에 푸시했습니다. Movie와 Bookmark에는 main 브랜치를 처음 게시했습니다. Bookmark 원격은 사용자가 지정한 비공개 yoophi/site-bookmark-browser이며, 기존 Folder를 향하던 origin 연결을 교체했습니다. Repo의 원격 변경은 5f1635b 병합으로 보존했습니다. 모든 푸시는 강제 옵션 없이 수행했습니다.
 
 공통 후보 14개의 구현·최소 두 앱 소비·검증·독립 리뷰 및 다섯 앱 커밋·푸시 요청을 완료했습니다. 이 게시 기록은 공통 저장소의 후속 문서 커밋으로 푸시하고 원격/로컬 SHA, 작업 트리 정리 상태, Bookmark 비공개 여부를 마지막으로 확인합니다. 기존 Herdr 탭은 유지하며 네이티브 창·패키징·registry 배포는 수행하지 않았습니다.
+
+## 남은 공통화 전수 감사 시작
+
+2026-10-05 지속 목표에 따라 현재 여섯 저장소를 다시 확인했다. 모두 게시된 main과 일치하고 작업 트리가 깨끗하다. 이전 목표 턴은 14개 구현·검증·게시를 완료한 진전으로 분류한다. 새 기준 snapshot은 `/tmp/explorer-residual-VlDr9S`이며 파일과 symlink를 구분해 보존했다. Herdr의 기존 review-data/backend, review-ui/UI, movie-shared/상태·유틸 탭에 읽기 전용 잔여 감사를 배정하고 조정자는 빌드·패키지 설정과 전체 범위 누락을 확인한다. 이전 제외 항목도 현재 코드 근거로 재판정하며 추가 추상화 자체를 완료 기준으로 삼지 않는다.
+
+잔여 감사에서 backend는 이미 공통 crate를 소비하고 있어 추가 승격하지 않기로 했다. UI/상태 감사와 조정자 검토로 이름 비교(M/T), 호환 테마(M/R), 기존 Base 테마 직접 소비(F/B), cn 재수출(M/R), 기존 AsyncFormDialog의 Bookmark 두 폼 추가 소비를 선정했다. 기존 Herdr 탭 세 곳에서 구현 중이다. root는 Tree 정렬의 항목당 전처리 유지와 로컬 CSS @source 계약 보존을 요청했고, 실제 두 대화상자를 임시 메모리 callback으로 렌더할 브라우저 fixture를 준비했다. SSR portal 내부를 검사하지 않는 동어반복 테스트는 검증 근거로 인정하지 않고 제거를 요청했다.
+
+## 잔여 공통화 구현·리뷰 완료
+
+이름 비교(M/T), 동일 테마 두 묶음(M/R·F/B), cn 재수출(M/R), Bookmark 두 비동기 폼 소비를 구현했다. 새 공통 폼 옵션은 아이콘과 기존 block 배치를 보존하며 기본 동작은 유지한다. 호환 테마의 Storybook iframe을 추가해 실제 CSS export를 격리해 보여준다. 앱별 도메인·저장·스캔 확정·OS·빌드 정책은 유지한다.
+
+review-data 독립 리뷰의 P3(core native Node import 실패)는 .ts 경로 명시와 실제 패키지명 subprocess 테스트로 해결했고 두 앱에서 재확인했다. folder-shared의 폼 리뷰와 repo-shared의 CSS/Storybook 리뷰는 추가 finding 없음이다. 최종 common check Node52/Rust60+doctest1·타입·소비·Storybook빌드 및 다섯 앱 정적 아키텍처 검사가 통과했다. M14/B11/T스트리밍7, 다섯 앱 타입 포함 빌드와 M/R Storybook이 통과했다. 실제 Bookmark 컴포넌트의 메모리 callback 브라우저 fixture로 pending·실패·재시도·성공·키보드·건수·아이콘을 검증했고 오류0이다. 네 앱 최종 CSS는 변경 전과 바이트 동일하다. source 검증 후 문서와 기록을 정리하며 승인된 게시를 진행한다. 상세 범위·유지 판단·제한은 docs/residual-commonality-report.md에 있다.
