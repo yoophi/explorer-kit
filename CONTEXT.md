@@ -384,3 +384,7 @@ review-data는 최종 Folder33/Bookmark42/Repo20 Rust를 직접통과하고 back
 이름 비교(M/T), 동일 테마 두 묶음(M/R·F/B), cn 재수출(M/R), Bookmark 두 비동기 폼 소비를 구현했다. 새 공통 폼 옵션은 아이콘과 기존 block 배치를 보존하며 기본 동작은 유지한다. 호환 테마의 Storybook iframe을 추가해 실제 CSS export를 격리해 보여준다. 앱별 도메인·저장·스캔 확정·OS·빌드 정책은 유지한다.
 
 review-data 독립 리뷰의 P3(core native Node import 실패)는 .ts 경로 명시와 실제 패키지명 subprocess 테스트로 해결했고 두 앱에서 재확인했다. folder-shared의 폼 리뷰와 repo-shared의 CSS/Storybook 리뷰는 추가 finding 없음이다. 최종 common check Node52/Rust60+doctest1·타입·소비·Storybook빌드 및 다섯 앱 정적 아키텍처 검사가 통과했다. M14/B11/T스트리밍7, 다섯 앱 타입 포함 빌드와 M/R Storybook이 통과했다. 실제 Bookmark 컴포넌트의 메모리 callback 브라우저 fixture로 pending·실패·재시도·성공·키보드·건수·아이콘을 검증했고 오류0이다. 네 앱 최종 CSS는 변경 전과 바이트 동일하다. source 검증 후 문서와 기록을 정리하며 승인된 게시를 진행한다. 상세 범위·유지 판단·제한은 docs/residual-commonality-report.md에 있다.
+
+## 잔여 공통화 게시 완료
+
+공통14d7cc0, Movie fa3be3a, Folder2a7defa, Repo f0563b3, Bookmark414c51a, Tree bf368db를 각 origin/main에 강제 옵션 없이 푸시했다. 실제 Bookmark 폼과 공통 테마 Storybook의 모의 브라우저 검사를 마쳤고 검사 서버·브라우저 세션은 종료했다. 해당 게시 기록을 공통 후속 문서 커밋으로 푸시한 뒤 여섯 원격 SHA·작업 트리·비공개 범위를 최종 확인한다. 선정 후보는 모두 구현됐으며 제외 항목은 안정성·확장 가능성을 위한 유지 판단과 재평가 조건을 기록했다.

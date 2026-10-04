@@ -80,3 +80,18 @@
 | 적용 보고 후 독립 리뷰·수정 | 위 리뷰3개와 P3 해결, 사용자 중간 적용 완료 보고 후 리뷰 수행 |
 | 게시 | 아래 게시 기록 및 원격 SHA/clean 확인으로 완료 판정 |
 
+
+## 게시 기록
+
+검증·독립 리뷰 후 여섯 저장소의 main을 강제 옵션 없이 커밋·푸시했다.
+
+| 저장소 | 구현 커밋 |
+| --- | --- |
+| explorer-kit | `14d7cc0` |
+| movie-explorer | `fa3be3a` |
+| movie-folder-explorer | `2a7defa` |
+| repo-explorer | `f0563b3` |
+| site-bookmark-browser | `414c51a` |
+| tauri-tree-file-explorer | `bf368db` |
+
+이 게시 이력은 공통의 후속 문서 커밋으로 함께 게시한다. [최종 리뷰 시점 변경 해시](residual-commonality-changes.json)는 게시 이력 문서·CONTEXT·목록 자체를 제외하고 기준 snapshot과 비교한다. Bookmark·Folder의 기존 비공개 범위를 유지한다. npm/crates.io 배포는 수행하지 않았다.
