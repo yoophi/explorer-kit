@@ -84,4 +84,4 @@ Tree의 `test.html`을 격리된 agent-browser 세션에서 실행했습니다. 
 
 네이티브 Tauri 창·패키징·실제 사용자 대용량 디렉터리의 성능 측정은 실행하지 않았습니다. 브라우저 검증은 모의 IPC/filesystem이며 실제 OS 연동 검증과 구분합니다. 진행 중 OS I/O 자체는 중단하지 않고 항목 경계에서 취소를 확인합니다. IPC는 항목 단위이며 frontend 갱신을 배치하지만 전체 목록 보관과 최종 정렬 비용은 남습니다. 전달 순서는 최종 정렬 순서와 다를 수 있습니다.
 
-Folder·Bookmark의 소스는 이번 작업에서 변경하지 않았습니다. 기존 미커밋 작업을 보존했으며 이번 수정은 커밋·푸시하지 않았습니다. [작업 직전 snapshot 대비 변경 목록](streaming-exploration-changes.json)과 [작업 이력](../CONTEXT.md)을 함께 참고하세요.
+Folder·Bookmark의 소스는 이번 작업에서 변경하지 않았습니다. 기존 미커밋 작업을 보존했으며 구현·리뷰 완료 당시에는 커밋·푸시하지 않았으며, 후속 계속 진행 요청으로 공통 저장소 변경을 `13c1eb5`에 커밋하여 origin/main에 푸시했습니다. 소비 앱의 변경은 아직 커밋·푸시하지 않았습니다. [작업 직전 snapshot 대비 변경 목록](streaming-exploration-changes.json)과 [작업 이력](../CONTEXT.md)을 함께 참고하세요.
