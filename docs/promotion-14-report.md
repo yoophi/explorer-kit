@@ -67,7 +67,7 @@ Bookmark는 사용자가 지정한 **비공개** [yoophi/site-bookmark-browser](
 | --- | --- | --- |
 | [explorer-kit](https://github.com/yoophi/explorer-kit) | `f25acb0` | 공개 |
 | [movie-explorer](https://github.com/yoophi/movie-explorer) | `b71c9a2` | 공개 |
-| [movie-folder-explorer](https://github.com/yoophi/movie-folder-explorer) | `4bcb9a1` | 공개 |
+| [movie-folder-explorer](https://github.com/yoophi/movie-folder-explorer) | `4bcb9a1` | 비공개(기존 유지) |
 | [repo-explorer](https://github.com/yoophi/repo-explorer) | `3d0338f` | 공개 |
 | [site-bookmark-browser](https://github.com/yoophi/site-bookmark-browser) | `0c134e2` | 비공개 |
 | [tauri-tree-file-explorer](https://github.com/yoophi/tauri-tree-file-explorer) | `45e9184` | 공개 |
