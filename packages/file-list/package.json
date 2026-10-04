@@ -1,0 +1,20 @@
+{
+  "name": "@yoophi/file-list",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@yoophi/explorer-core": "workspace:*",
+    "@yoophi/ui-radix": "workspace:*",
+    "lucide-react": "^1.17.0"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}

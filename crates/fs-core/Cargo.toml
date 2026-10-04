@@ -1,0 +1,12 @@
+[package]
+name = "explorer-fs-core"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+serde.workspace = true
+globset = "0.4"
+
+[dev-dependencies]
+tempfile.workspace = true

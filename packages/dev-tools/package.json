@@ -1,0 +1,9 @@
+{
+  "name": "@yoophi/explorer-dev-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "explorer-tauri-dev": "./bin/tauri-dev.mjs"
+  }
+}

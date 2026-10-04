@@ -1,0 +1,301 @@
+{
+  "note": "원본 작업 폴더 기준. 미커밋 변경 포함. sourceHead는 파일 내용과 다를 수 있음.",
+  "copies": [
+    {
+      "source": "tauri-tree-file-explorer/packages/core/src/types.ts",
+      "destination": "packages/core/src/types.ts",
+      "sourceSha256": "8436993a5f527481ae06416bf81b60c236a7019a941a183cdc57860777c2bc78",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/core/src/format.ts",
+      "destination": "packages/core/src/format.ts",
+      "sourceSha256": "7ed1fd22a25d0d888f1d9ab30b2f1ce6e1cdbcac3cdd071620de58542dbe73e9",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/core/src/index.ts",
+      "destination": "packages/core/src/index.ts",
+      "sourceSha256": "564e4655f7a9986a13bf5dbe3a616efd06aab89e16b1a4cdba28fa0af7837a6a",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/file-tree/src/FolderTree.tsx",
+      "destination": "packages/file-tree/src/FolderTree.tsx",
+      "sourceSha256": "ae59b3894e1c6ff957a18345d1047e5c1569017058d27598304d80d6c7741806",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/file-tree/src/index.ts",
+      "destination": "packages/file-tree/src/index.ts",
+      "sourceSha256": "044b4690daedbcfb43b5a67471a047219b387f26e1c76136671e609103f74123",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/file-tree/src/lib/paths.ts",
+      "destination": "packages/file-tree/src/lib/paths.ts",
+      "sourceSha256": "b71ddea8d0e9287cf5d27969c9c47691ee485d62acf3eaf2c7277cc911ae7d20",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/file-list/src/FileList.tsx",
+      "destination": "packages/file-list/src/FileList.tsx",
+      "sourceSha256": "6dc1eef946134c5e78c6daf64a4f38a3157d5fc3e43bc07084b0921eb6bf5aca",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/file-list/src/index.ts",
+      "destination": "packages/file-list/src/index.ts",
+      "sourceSha256": "c954b61e2a7840fce76d65f466a9fba61faa7bbd450875bf20a7b1f0175b5761",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/ui/src/styles/globals.css",
+      "destination": "packages/ui-radix/src/styles/globals.css",
+      "sourceSha256": "aa0207dbcf77d2e103d92d7fdc216865b8f4c4b87d7c4c3ad9eb363f46268792",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/ui/src/components/card.tsx",
+      "destination": "packages/ui-radix/src/components/card.tsx",
+      "sourceSha256": "56a4be72424761f173684b9c6933d51eb69be5907e2c6d238cd93ef84ea42e83",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/ui/src/components/scroll-area.tsx",
+      "destination": "packages/ui-radix/src/components/scroll-area.tsx",
+      "sourceSha256": "fd3da0101dea49544aa81830e7a972a88af874b343e85cf35a0adc1ed7ddbef5",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/ui/src/components/resizable.tsx",
+      "destination": "packages/ui-radix/src/components/resizable.tsx",
+      "sourceSha256": "da9f2cb04e4e904849e33096e2b27c36e084729300856b8562e29bda39516884",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/ui/src/components/empty.tsx",
+      "destination": "packages/ui-radix/src/components/empty.tsx",
+      "sourceSha256": "0ea1f35ebcfd96e5b3deb42ff1fe2032744c409294fd787f5a169633df8bdb38",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/ui/src/components/table.tsx",
+      "destination": "packages/ui-radix/src/components/table.tsx",
+      "sourceSha256": "eadcf3a94f6ea65a5cb5b7cd16c31337ae305e4b88cbe1945d3e9e6e401198e7",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/ui/src/components/button.tsx",
+      "destination": "packages/ui-radix/src/components/button.tsx",
+      "sourceSha256": "401ce751a3b1e6cdcd3c956041f0b324c192307f1da28dc22187de2cfed417e1",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/ui/src/components/input.tsx",
+      "destination": "packages/ui-radix/src/components/input.tsx",
+      "sourceSha256": "4ac92ead523a06a7c71a74f5170677dfe25cfc8977fe38f4de02505ee30743a2",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/ui/src/components/skeleton.tsx",
+      "destination": "packages/ui-radix/src/components/skeleton.tsx",
+      "sourceSha256": "bba7482da07bedac908f0607f0161a927fc7198adbbacf3f3a968ef23bce04a8",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/packages/ui/src/lib/utils.ts",
+      "destination": "packages/ui-radix/src/lib/utils.ts",
+      "sourceSha256": "7c8c3dfc0cdd370d44932828eb067ef771c8fe7996693221d5d4b90af6d54f2d",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-folder-explorer/src/components/ui/card.tsx",
+      "destination": "packages/ui-base/src/components/card.tsx",
+      "sourceSha256": "d8113cbf964f8d1aadf2649d2944d8bbc6e3cfd49d36746f76868cbc4dde3cfe",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-folder-explorer/src/components/ui/scroll-area.tsx",
+      "destination": "packages/ui-base/src/components/scroll-area.tsx",
+      "sourceSha256": "6412f9ef47c1c652db43a08994f3171cdbc62ef16d760ce20df8c7c361d063d2",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-folder-explorer/src/components/ui/label.tsx",
+      "destination": "packages/ui-base/src/components/label.tsx",
+      "sourceSha256": "fc58859ab5ee622b2fe853a6501a0ed8008d022ab34a4f0bf98bb7324c5b3619",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-folder-explorer/src/components/ui/combobox.tsx",
+      "destination": "packages/ui-base/src/components/combobox.tsx",
+      "sourceSha256": "f8f1df5d4e1b3fbbce76d3434eacc0a01459cd6d8a8443399a2943eb7efe5705",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-folder-explorer/src/components/ui/dialog.tsx",
+      "destination": "packages/ui-base/src/components/dialog.tsx",
+      "sourceSha256": "dd373d38c46f0e2227238fb517a7e58351cba91cd8b4a663641b7cfab7fbd697",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-folder-explorer/src/components/ui/badge.tsx",
+      "destination": "packages/ui-base/src/components/badge.tsx",
+      "sourceSha256": "968b0403af74a785c9408ca69a677235e49d0c80b2c27fb9858ad421a8778c7d",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-folder-explorer/src/components/ui/separator.tsx",
+      "destination": "packages/ui-base/src/components/separator.tsx",
+      "sourceSha256": "75085bd84ff6965e4a356c53a4689799cabf65caa93c0bba064d5a0c6fa78f13",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-folder-explorer/src/components/ui/button.tsx",
+      "destination": "packages/ui-base/src/components/button.tsx",
+      "sourceSha256": "d14549ab3ba7a9d5d1f424c2599233bffa0b317121abf3b6efa2fb902d5e2781",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-folder-explorer/src/components/ui/input.tsx",
+      "destination": "packages/ui-base/src/components/input.tsx",
+      "sourceSha256": "f7d6ecff9a4d631feeaf401c02bb87e26ddb38131c55d15a43b9290747390847",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-folder-explorer/src/components/ui/context-menu.tsx",
+      "destination": "packages/ui-base/src/components/context-menu.tsx",
+      "sourceSha256": "6be75f2614eddbedb575c4e019fd429512dfa8f6326ad771aae0d0dcf6ac0779",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "site-bookmark-browser/src/components/ui/select.tsx",
+      "destination": "packages/ui-base/src/components/select.tsx",
+      "sourceSha256": "41685f5d3a488b4e512bc9cee80738087f3e84c92f67e89eed9fc4858f81abe6",
+      "sourceHead": "eeef176069b5b6acb7a5e1433e694686bb920a4e",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "site-bookmark-browser/src/components/ui/textarea.tsx",
+      "destination": "packages/ui-base/src/components/textarea.tsx",
+      "sourceSha256": "58b58d84fc54ba5f4ca46937870c619349fd9eccc4d494250ac7bc73a94e05e9",
+      "sourceHead": "eeef176069b5b6acb7a5e1433e694686bb920a4e",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "site-bookmark-browser/src/components/ui/alert-dialog.tsx",
+      "destination": "packages/ui-base/src/components/alert-dialog.tsx",
+      "sourceSha256": "7abcaccfeb706cdaecc56f02a1b0ccb1be3f26ff2de8cf172a46b2bd550c1987",
+      "sourceHead": "eeef176069b5b6acb7a5e1433e694686bb920a4e",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-folder-explorer/src/lib/utils.ts",
+      "destination": "packages/ui-base/src/lib/utils.ts",
+      "sourceSha256": "7c8c3dfc0cdd370d44932828eb067ef771c8fe7996693221d5d4b90af6d54f2d",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "그대로 복사"
+    },
+    {
+      "source": "movie-folder-explorer/src/index.css",
+      "destination": "packages/ui-base/src/styles/globals.css",
+      "sourceSha256": "8a08e0a81a88730b94d88364d699b434438ec5d6c58110cc7043d85b1bffc9b8",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "그대로 복사"
+    },
+    {
+      "source": "site-bookmark-browser/src/features/bookmark-browser/ui/rating.tsx",
+      "destination": "packages/rating/src/index.tsx",
+      "sourceSha256": "f99a82dabf5c6f4fd2d1d2e86f0f0b522872a8063ce485dce3655351554150c4",
+      "sourceHead": "eeef176069b5b6acb7a5e1433e694686bb920a4e",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-folder-explorer/src/features/folder-browser/api/consume-folder-scan.ts",
+      "destination": "packages/scan-client/src/consume-scan.ts",
+      "sourceSha256": "f194d4d2a49b2ce5e75145145f0a90600c0eb679e8d0464bace6b282a0662097",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-folder-explorer/tests/folder-scan.test.mjs",
+      "destination": "packages/scan-client/tests/consume-scan.test.mjs",
+      "sourceSha256": "b49f3085b06dae803559de068ec548d0586dd91cb3b66ad0076a237fdda66596",
+      "sourceHead": "88303fbe6774a5cca089e6867a56af91d8c17725",
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "movie-explorer/scripts/tauri-dev.mjs",
+      "destination": "packages/dev-tools/bin/tauri-dev.mjs",
+      "sourceSha256": "53410ccbd3a3a14d063e714f97286c45c0670f8a09e020c1ac31500d4d66af0d",
+      "sourceHead": null,
+      "adaptation": "import 경로 변경"
+    },
+    {
+      "source": "tauri-tree-file-explorer/tsconfig.base.json",
+      "destination": "tsconfig.base.json",
+      "sourceSha256": "9447aa5d34519238e49e50f4cf3c3422c1171a7480dcf439bff3779c48a1a88f",
+      "sourceHead": "4e056f907c2f9e8e2036aadd4d2e2964e20d1920",
+      "adaptation": "그대로 복사"
+    },
+    {
+      "source": "movie-explorer/apps/desktop/src-tauri/src/lib.rs",
+      "sourceSha256": "7b3bbcd8d92f6ce3265792ca04103a32b3f3998dfa6b667bbe4474c29ae0ef85",
+      "adaptation": "선택 함수의 일반화; docs/provenance.md 참조"
+    },
+    {
+      "source": "tauri-tree-file-explorer/apps/desktop/src-tauri/src/lib.rs",
+      "sourceSha256": "69bdbaf34f3df95877eacec21b7b871e611530736d4d7dd6a79ba2ea715f49a1",
+      "adaptation": "선택 함수의 일반화; docs/provenance.md 참조"
+    },
+    {
+      "source": "movie-folder-explorer/src-tauri/src/infrastructure/json_folder_cache_store.rs",
+      "sourceSha256": "897e339dfc46f9839f40b14859ddbef5d8784765ec214d9dec1e9b1bba97fed1",
+      "adaptation": "선택 함수의 일반화; docs/provenance.md 참조"
+    },
+    {
+      "source": "movie-folder-explorer/src/features/folder-browser/model/use-folder-explorer.ts",
+      "sourceSha256": "217fdbd611e409f363fcddceb4f3037db7919825021a5e803a8dd6d955758fd3",
+      "adaptation": "선택 함수의 일반화; docs/provenance.md 참조"
+    },
+    {
+      "source": "site-bookmark-browser/src/features/bookmark-browser/ui/bookmark-edit-dialog.tsx",
+      "sourceSha256": "10aa19e085d4e84c2c360205ffe8920f1fa3d20dcb2d45a105c1e840537d7257",
+      "adaptation": "선택 함수의 일반화; docs/provenance.md 참조"
+    },
+    {
+      "source": "site-bookmark-browser/src/features/bookmark-browser/ui/bookmark-browser.tsx",
+      "sourceSha256": "416aa87ae041360f51c3817d5bc8837e61b18c1498dd1026effe080485b0aff1",
+      "adaptation": "선택 함수의 일반화; docs/provenance.md 참조"
+    }
+  ]
+}

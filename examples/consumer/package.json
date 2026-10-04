@@ -1,0 +1,19 @@
+{
+  "name": "@yoophi/explorer-kit-consumer",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@yoophi/rating": "workspace:*",
+    "@yoophi/explorer-core": "workspace:*",
+    "@yoophi/ui-radix": "workspace:*",
+    "@yoophi/collection-core": "workspace:*",
+    "@yoophi/file-list": "workspace:*",
+    "@yoophi/image-input": "workspace:*",
+    "@yoophi/scan-client": "workspace:*",
+    "@yoophi/file-tree": "workspace:*",
+    "@yoophi/ui-base": "workspace:*"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}
