@@ -1,0 +1,166 @@
+{
+  "baseline": "/var/folders/3z/mcf5cp4n0t567wk9p_kjrpp80000gn/T/remaining-fixes-baseline-_rzae4t3",
+  "scope": "Remaining functional review fixes 1/2/3/5; pre-existing work preserved",
+  "repositories": {
+    "explorer-kit": [
+      {
+        "path": "CONTEXT.md",
+        "status": "modified",
+        "beforeSha256": "5f6dfd17b1d55a2df43c5ff6e63a5f9330725aa079521fbc69e20c7ae270aa0c",
+        "afterSha256": "28fa8013900908edc9adcd7b998da33491692cfba2b6e5e3ec789460662b9d1b"
+      },
+      {
+        "path": "PROMPT.md",
+        "status": "modified",
+        "beforeSha256": "e2b02475a1e50996449c28e7116ee97f42c4cdf0a1aa62dd03096dcc89e3322c",
+        "afterSha256": "e9faeb5ff295989c6434315e846f2503d73487c9261000b50bdbd120a82dd1ac"
+      },
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "f594ac5be8eda17762f047669990360e6601de8adbac334023cbe2c17d2378f2",
+        "afterSha256": "e94c89d14cce7dca065050a46da9ec28480a00a957accb3041939faf677e6f66"
+      },
+      {
+        "path": "crates/image-store/Cargo.toml",
+        "status": "modified",
+        "beforeSha256": "8e2c98970e4a4fc9b1041d72f4dd6d23bc2e88fac725ca6431ac65da92d72983",
+        "afterSha256": "a02b46a53bd7d594d6bc4835adbc06d074c10826947346df83c751139a94ea4e"
+      },
+      {
+        "path": "crates/image-store/README.md",
+        "status": "modified",
+        "beforeSha256": "758fb21e47dd4c7b6169cb2d4d13f6133108163bd1e8e318eb92f47ecb11f63b",
+        "afterSha256": "36e02ddaa98984808266f07359a73bf87365b3bee9125b15c096adb932b3cf9c"
+      },
+      {
+        "path": "crates/image-store/src/lib.rs",
+        "status": "modified",
+        "beforeSha256": "4e97297c3e8f1ed6cd67efa89787557ac305c36ed70bab38b48515086769651b",
+        "afterSha256": "e15f81350ac509af07be20e04f556b5b3e3bdf67ddcdc0a298aa4048d147202b"
+      },
+      {
+        "path": "docs/architecture-fix-report.md",
+        "status": "modified",
+        "beforeSha256": "54005cb45c5f17095566815fdc08b290a888d2d319c0e7a9c2ea740e17e42421",
+        "afterSha256": "30799c526eb1592eca124913d7734f165748b0871b03676c5d5dfc36afdd9a78"
+      },
+      {
+        "path": "docs/provenance.md",
+        "status": "modified",
+        "beforeSha256": "e203715a259bdc235685fde70de9d15a33ff0e86b2365f43305732afa9b73ad5",
+        "afterSha256": "fadbbc2f9cbc4bc1f5df9e6efe113add9a01f2ae52af20547f7083d5c6d74b6f"
+      },
+      {
+        "path": "docs/remaining-review-fixes-report.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "3435e5d580a5541a9583db5443cce52608f4238c786fbb48f0489dad797b797d"
+      },
+      {
+        "path": "docs/shared-code-review.md",
+        "status": "modified",
+        "beforeSha256": "4c451b40d69df110de78d5c6f6e8916e465462df7a614ff944a22322e18c6ecd",
+        "afterSha256": "2145a985b5d7815f147841c57c2e0dc64e78e215785635d0ca2e88285ee3ec8d"
+      },
+      {
+        "path": "packages/file-tree/src/lib/paths.ts",
+        "status": "modified",
+        "beforeSha256": "b71ddea8d0e9287cf5d27969c9c47691ee485d62acf3eaf2c7277cc911ae7d20",
+        "afterSha256": "adda5c7b4dd54260a8fc96f4ecdf696f6386f8000d65f4e937dd9cd4e46d7b17"
+      },
+      {
+        "path": "packages/file-tree/tests/paths.test.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "97141749ab556c0b8188adf73009c9d96d270528f547dfe4d2cda37023bc0e5c"
+      }
+    ],
+    "movie-explorer": [],
+    "movie-folder-explorer": [
+      {
+        "path": "src-tauri/Cargo.lock",
+        "status": "modified",
+        "beforeSha256": "461224dfdc7509bc6090b9b66b0e9f12c8c79e949cfa9544c57f4b115bcffb9a",
+        "afterSha256": "63dc5aecaf1f670c8f2b9b077935fbab62354fadd4db29f2004c4431b4bc2a97"
+      }
+    ],
+    "repo-explorer": [],
+    "site-bookmark-browser": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "c4cc63a370e68bf60fecf1cf45fc3047dd147ab159414881a03dfb454fff222c",
+        "afterSha256": "419b43386f22d4c0ff28150d5460e512da0c3ee873fd5bc3a5ef2971c485d559"
+      },
+      {
+        "path": "src-tauri/Cargo.lock",
+        "status": "modified",
+        "beforeSha256": "1a83b67036d648a697bbaa73615deeb403f9686550f70536ce9cb4d4bdf7b1d0",
+        "afterSha256": "c6ae1703b6811a47cec18d21a684caa22f791e64c3c0f48b9de78d86d5f9721b"
+      },
+      {
+        "path": "src-tauri/src/application/bookmarks.rs",
+        "status": "modified",
+        "beforeSha256": "b0d3c66cf60130909166c5a7d21d53076dfa50373f0ed38b22dc8b749aa27727",
+        "afterSha256": "78abee43a2912d4db99eaf0cf8d79aaf3cfe4a2e26ccc63ca16274ca6cbdc49f"
+      },
+      {
+        "path": "src-tauri/src/application/delete_group.rs",
+        "status": "modified",
+        "beforeSha256": "900e5a7f3bc3c5d6a7cbe0721bb68393104b29ecf05b1c741d28a0f4e214c0b0",
+        "afterSha256": "5af0575ff1942c6a4cc91402a7b97e551e7ff87ea98dd6eeac5f60fcdfd32414"
+      },
+      {
+        "path": "src-tauri/src/application/ports.rs",
+        "status": "modified",
+        "beforeSha256": "563b5fd886911642cb1432b8140ddcc4be67a5b944ca501b8054067caaba8864",
+        "afterSha256": "7be501ccf68dd3409b278f2f582fa684363facb2dae47be1a1922aa3b7acb5e1"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/bookmarks_integration_tests.rs",
+        "status": "modified",
+        "beforeSha256": "787282135a33a3e361bb7d5d5b767e4c50b2ef67983cb85e7ce561476b816f72",
+        "afterSha256": "351ebbeabde8d7ff422f9231d92bafa952c3c32b1948f19b20c5ceb05a269bd4"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/library_images.rs",
+        "status": "modified",
+        "beforeSha256": "beffd64fbb1815866ef02e90a5259a2a6ae7ddebe854b265d0bf531d195aee08",
+        "afterSha256": "3a04ef595324f771cfb51e5c15a2224286fe337630cc3ccaa2678c930f94ad73"
+      },
+      {
+        "path": "src-tauri/src/interface/commands.rs",
+        "status": "modified",
+        "beforeSha256": "47ca97d331ae1f9a8fb8ce9f8b02aa794e7436e70ed09d80380d588caa13a6c3",
+        "afterSha256": "51c6eb2f5c503d5441a9ab0e0dfa51968dc1157a70d0213f0e7534c91d15a9a4"
+      },
+      {
+        "path": "src/features/bookmark-browser/model/delete-outcome.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "1101ba5544e6020bdd74f4b6e247d0845823c9c2feee484e620be7ff2758f7e8"
+      },
+      {
+        "path": "src/features/bookmark-browser/model/use-bookmarks.ts",
+        "status": "modified",
+        "beforeSha256": "4b39a741a5a03b7e50a20cb3136ecda07defadc901e84d377432edb70beea127",
+        "afterSha256": "1803eaf6648d5c4205e88c547cce2529c7766e5ecebef130c0112144b2086428"
+      },
+      {
+        "path": "tests/delete-outcome.test.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "6e957a689efea42f7283b7e8c55a2ade36cc3cc5d1ae5fd6a5b480734b3f326a"
+      }
+    ],
+    "tauri-tree-file-explorer": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "72f63f77f08356a05e90affc1272918395e91ecc3ac5ef8f2792c3751bc809ae",
+        "afterSha256": "92537759a8fbc11c1a82556cb95a458c0918f2f989e55e6390908e0efb546cbd"
+      }
+    ]
+  }
+}

@@ -10,7 +10,10 @@
     "typecheck": "pnpm -r run typecheck",
     "test": "tsx --test packages/*/tests/*.test.*",
     "build": "node scripts/build-smoke.mjs",
-    "check": "pnpm typecheck && pnpm test && pnpm build && cargo test --workspace"
+    "check": "pnpm typecheck && pnpm test && pnpm build && cargo test --workspace && pnpm build-storybook",
+    "storybook": "pnpm --filter @yoophi/explorer-kit-storybook dev",
+    "build-storybook": "pnpm --filter @yoophi/explorer-kit-storybook build",
+    "check:apps-architecture": "node scripts/check-app-architecture.mjs"
   },
   "devDependencies": {
     "typescript": "~5.8.3",

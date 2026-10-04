@@ -11,7 +11,9 @@
     "@yoophi/image-input": "workspace:*",
     "@yoophi/scan-client": "workspace:*",
     "@yoophi/file-tree": "workspace:*",
-    "@yoophi/ui-base": "workspace:*"
+    "@yoophi/ui-base": "workspace:*",
+    "@yoophi/settings-core": "workspace:*",
+    "@yoophi/settings-ui": "workspace:*"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"

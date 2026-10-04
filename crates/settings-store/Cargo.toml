@@ -1,0 +1,13 @@
+[package]
+name = "explorer-settings-store"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+explorer-json-store = { path = "../json-store" }
+serde_json.workspace = true
+
+[dev-dependencies]
+serde.workspace = true
+tempfile.workspace = true

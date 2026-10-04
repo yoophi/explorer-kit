@@ -1,0 +1,321 @@
+{
+  "baseline": "/var/folders/3z/mcf5cp4n0t567wk9p_kjrpp80000gn/T/settings-promotion-baseline-bp9nv1wn",
+  "repositories": {
+    "explorer-kit": [
+      {
+        "path": "CONTEXT.md",
+        "status": "modified"
+      },
+      {
+        "path": "Cargo.lock",
+        "status": "modified"
+      },
+      {
+        "path": "PROMPT.md",
+        "status": "modified"
+      },
+      {
+        "path": "README.md",
+        "status": "modified"
+      },
+      {
+        "path": "crates/settings-store/Cargo.toml",
+        "status": "added"
+      },
+      {
+        "path": "crates/settings-store/README.md",
+        "status": "added"
+      },
+      {
+        "path": "crates/settings-store/src/lib.rs",
+        "status": "added"
+      },
+      {
+        "path": "crates/settings-store/tests/store.rs",
+        "status": "added"
+      },
+      {
+        "path": "docs/architecture.md",
+        "status": "modified"
+      },
+      {
+        "path": "docs/provenance.md",
+        "status": "modified"
+      },
+      {
+        "path": "docs/settings-promotion-changes.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/settings-promotion-report.md",
+        "status": "added"
+      },
+      {
+        "path": "docs/shared-code-review.md",
+        "status": "modified"
+      },
+      {
+        "path": "docs/validation.md",
+        "status": "modified"
+      },
+      {
+        "path": "examples/consumer/package.json",
+        "status": "modified"
+      },
+      {
+        "path": "examples/consumer/src/index.tsx",
+        "status": "modified"
+      },
+      {
+        "path": "packages/settings-core/README.md",
+        "status": "added"
+      },
+      {
+        "path": "packages/settings-core/package.json",
+        "status": "added"
+      },
+      {
+        "path": "packages/settings-core/src/index.ts",
+        "status": "added"
+      },
+      {
+        "path": "packages/settings-core/src/react.ts",
+        "status": "added"
+      },
+      {
+        "path": "packages/settings-core/tests/settings.test.ts",
+        "status": "added"
+      },
+      {
+        "path": "packages/settings-core/tsconfig.json",
+        "status": "added"
+      },
+      {
+        "path": "packages/settings-ui/README.md",
+        "status": "added"
+      },
+      {
+        "path": "packages/settings-ui/package.json",
+        "status": "added"
+      },
+      {
+        "path": "packages/settings-ui/src/index.tsx",
+        "status": "added"
+      },
+      {
+        "path": "packages/settings-ui/tsconfig.json",
+        "status": "added"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "status": "modified"
+      }
+    ],
+    "movie-explorer": [
+      {
+        "path": "apps/desktop/package.json",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/app/styles/index.css",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/features/preferences/model.test.ts",
+        "status": "added"
+      },
+      {
+        "path": "apps/desktop/src/features/preferences/model.ts",
+        "status": "added"
+      },
+      {
+        "path": "apps/desktop/src/pages/home/index.tsx",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/vite.config.ts",
+        "status": "modified"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "status": "modified"
+      }
+    ],
+    "movie-folder-explorer": [
+      {
+        "path": "package.json",
+        "status": "modified"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/Cargo.lock",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/Cargo.toml",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/json_last_opened_directory_store.rs",
+        "status": "modified"
+      },
+      {
+        "path": "src/features/folder-browser/model/use-folder-explorer.ts",
+        "status": "modified"
+      },
+      {
+        "path": "src/features/folder-browser/ui/folder-explorer.tsx",
+        "status": "modified"
+      },
+      {
+        "path": "src/features/folder-browser/ui/manage-folders-dialog.tsx",
+        "status": "modified"
+      },
+      {
+        "path": "src/index.css",
+        "status": "modified"
+      },
+      {
+        "path": "vite.config.ts",
+        "status": "modified"
+      }
+    ],
+    "repo-explorer": [
+      {
+        "path": "apps/desktop/package.json",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/app/styles/index.css",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/entities/preferences/model.ts",
+        "status": "added"
+      },
+      {
+        "path": "apps/desktop/src/pages/repository/ui/RepositoryPage.tsx",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/tests/preferences.test.mjs",
+        "status": "added"
+      },
+      {
+        "path": "apps/desktop/vite.config.ts",
+        "status": "modified"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "status": "modified"
+      }
+    ],
+    "site-bookmark-browser": [
+      {
+        "path": "package.json",
+        "status": "modified"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/Cargo.lock",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/Cargo.toml",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/json_settings_store.rs",
+        "status": "modified"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/bookmark-browser.tsx",
+        "status": "modified"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/groups-dialog.tsx",
+        "status": "modified"
+      },
+      {
+        "path": "src/index.css",
+        "status": "modified"
+      },
+      {
+        "path": "vite.config.ts",
+        "status": "modified"
+      }
+    ],
+    "tauri-tree-file-explorer": [
+      {
+        "path": "README.md",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/package.json",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/app/styles/index.css",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/features/settings/index.ts",
+        "status": "added"
+      },
+      {
+        "path": "apps/desktop/src/features/settings/model/settings.test.ts",
+        "status": "added"
+      },
+      {
+        "path": "apps/desktop/src/features/settings/model/settings.ts",
+        "status": "added"
+      },
+      {
+        "path": "apps/desktop/src/features/settings/ui/ExplorerSettingsControls.tsx",
+        "status": "added"
+      },
+      {
+        "path": "apps/desktop/src/features/toggle-hidden-files/index.ts",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/features/toggle-hidden-files/model/store.ts",
+        "status": "deleted"
+      },
+      {
+        "path": "apps/desktop/src/features/toggle-hidden-files/ui/ToggleHiddenFilesButton.tsx",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/pages/explorer/ui/ExplorerPage.tsx",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/test-main.tsx",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/widgets/file-list-panel/ui/FileListPanel.tsx",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/widgets/folder-tree-panel/ui/FolderTreePanel.tsx",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/vite.config.ts",
+        "status": "modified"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "status": "modified"
+      }
+    ]
+  }
+}

@@ -1,0 +1,528 @@
+{
+  "baseline": "/var/folders/3z/mcf5cp4n0t567wk9p_kjrpp80000gn/T/architecture-fix-baseline-1jkxu9_k",
+  "scope": "H1-H5 / F1-F3 architecture fixes; pre-existing work preserved",
+  "repositories": {
+    "explorer-kit": [
+      {
+        "path": "CONTEXT.md",
+        "status": "modified",
+        "beforeSha256": "c35e85b49388d87ae0a2c3cba6c0fedbbc932f490a3d6a9bd2733927ee30fe3b",
+        "afterSha256": "5f6dfd17b1d55a2df43c5ff6e63a5f9330725aa079521fbc69e20c7ae270aa0c"
+      },
+      {
+        "path": "PROMPT.md",
+        "status": "modified",
+        "beforeSha256": "5fc39efa00f5d994b9b8fc5c7112d7758da70aa5bc62f657074d49202da44098",
+        "afterSha256": "e2b02475a1e50996449c28e7116ee97f42c4cdf0a1aa62dd03096dcc89e3322c"
+      },
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "5541d3bfce292c1eae616a99cb670061e4e640bc0b58c1b19322c1216057ab7d",
+        "afterSha256": "f594ac5be8eda17762f047669990360e6601de8adbac334023cbe2c17d2378f2"
+      },
+      {
+        "path": "docs/architecture-fix-report.md",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "54005cb45c5f17095566815fdc08b290a888d2d319c0e7a9c2ea740e17e42421"
+      },
+      {
+        "path": "docs/architecture-review.md",
+        "status": "modified",
+        "beforeSha256": "9751439844e882a3b01d4c9ee5f9599273be68e78192867707a5f4f2b39a8b75",
+        "afterSha256": "019c189a4ddd7be7a6ee019a04cfade77e63c205617342e612cd1171131b920a"
+      },
+      {
+        "path": "package.json",
+        "status": "modified",
+        "beforeSha256": "5380e9f761d5f92852b12055e4ce1b9ac38416d599f94acf3a8b49c1d3893415",
+        "afterSha256": "b157e6ee4daffec83e22b4b1957421aac72bf52b173be36e142fae0b3f51921b"
+      },
+      {
+        "path": "scripts/check-app-architecture.mjs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "befcf814e748104e700ae5d2b7995df5f0b3d43d39586190c0b4631508ee12e5"
+      }
+    ],
+    "movie-explorer": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "a27035648fceb290998b132595a8bf9faf71c8477dd4d6e4d6538fa0139f1842",
+        "afterSha256": "b2249390b6470b55a3e5ab7726dc2ffea6724a95062e96831a6f3c0cc0a51a3d"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/application/mod.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "1af57b3f894af66849e504da55435a4b255fc6974e4de4ef5e9861d952af35f0"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/infrastructure/mod.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "a67ddc0f572ffd498b2e10888eed3415a3a49c4bb6856fcd3ad397ccace904fa"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/lib.rs",
+        "status": "modified",
+        "beforeSha256": "a46fb44e3ec9c77cc856c012a15fa2b6dfb01e561aa05d2ef2f502733594c0a0",
+        "afterSha256": "dd81493ec0140726d60bf25ea4ad3dc8885dc796cc58ff9c4e6cd9e223846d8b"
+      },
+      {
+        "path": "apps/desktop/src/features/preferences/index.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "3944a2e8b7da2d510259f13def71f5dd5abb4c88863e08d119eaf3a6efa39551"
+      },
+      {
+        "path": "apps/desktop/src/pages/home/index.tsx",
+        "status": "modified",
+        "beforeSha256": "945df09b90834f2739e7c59ddc38b7c6b1cb3a7f9288dcb65b02c409d05aeb39",
+        "afterSha256": "adbc129dc3e30b56be6eb54c8fd26b389e2f2643c5fa3964ebf58b4006b916cd"
+      }
+    ],
+    "movie-folder-explorer": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "1181083b04f0396a3ecd7e1bab964a7d96232c499ba65489887dce1eb57db9b1",
+        "afterSha256": "5da573305f5fce8a1ce7dbb86054631ef38576ef09f07ea8fd5bc6a696b4c89b"
+      },
+      {
+        "path": "src-tauri/src/application/mod.rs",
+        "status": "modified",
+        "beforeSha256": "87fdb18a43b39a260312bce0d3eee3280694c3293dfe87ec6129028869eeea6c",
+        "afterSha256": "8f1829bc1b75e30065d1d731e4eeb9528bfd3897b5b3e96989376211457d5e31"
+      },
+      {
+        "path": "src-tauri/src/application/rename_and_refresh.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "1b45ed74cc1ec3d4d92e43f9639f9215241d5f222b68a153ff5f79b0a4f286af"
+      },
+      {
+        "path": "src-tauri/src/application/rename_directory.rs",
+        "status": "deleted",
+        "beforeSha256": "e03eee03f3da2102ec9f4d5a186fd4b92f35fc1e6c970a1f3f334c37bebbf3b6",
+        "afterSha256": null
+      },
+      {
+        "path": "src-tauri/src/application/save_thumbnail.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "5cb2115d4276b482c9e31b1f260fb3e3d5e39fb7521488cc0548cac6a7d52d04"
+      },
+      {
+        "path": "src-tauri/src/application/scan_directories.rs",
+        "status": "modified",
+        "beforeSha256": "e58fe3c273fa4017c41e8319d5deaaf8dd7248406d7d8dd1bef1f0e83db7589b",
+        "afterSha256": "fee2d3e47ecb7f4cf0253db284875ff9f6111ff00005f00de69d0c07c1e763e8"
+      },
+      {
+        "path": "src-tauri/src/domain/folder.rs",
+        "status": "modified",
+        "beforeSha256": "116b0bec352f61257e8d5d55b52edffc6f7930e56bb9b0bb0858bfd64fb6896b",
+        "afterSha256": "50356e5141419bef0be834b8fdb631497676bda94166c2f6d8bb57c85beab114"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/filesystem_directory_scanner.rs",
+        "status": "modified",
+        "beforeSha256": "3bb705f43672a1699bdac3b69e7e1fc49a02744966911b84758b9c9532aadc28",
+        "afterSha256": "0be22df36886adeb8af9254daa07e23a239de60c2c4e077fd7b244921253bef5"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/image_thumbnail_store.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "38cbd8c3bf956834bfbc690b13db9af5ded4cf4f2d90935a9b1eee614c16ef40"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/json_last_opened_directory_store.rs",
+        "status": "modified",
+        "beforeSha256": "3916f1e90c3ea3a369882785fa0a270f670d3aa6d43cfa4f0d3aedcf0707432e",
+        "afterSha256": "5fd9368e578f7c77055046aad4e1c43421c7da00ef93d7cd420646e8d1c4de8f"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/mod.rs",
+        "status": "modified",
+        "beforeSha256": "74d5e35d0ac8e238888d033f2d76aaf7e40c688cb9786c96b89b29e88b5ae132",
+        "afterSha256": "72d37c0350c82b8b5347ac24bc6eca51e78af65f8c0c09da3dedab0046d6daa9"
+      },
+      {
+        "path": "src-tauri/src/interface/commands.rs",
+        "status": "modified",
+        "beforeSha256": "c9a3876b5402d6328aab337467e664b9ea0e3c81bc4653e3d8dcfd47b9575a14",
+        "afterSha256": "9dd1fc1e85cfc29e65388a5a408792c58faa0de3b12dadcfcd1e005c22690184"
+      },
+      {
+        "path": "src/App.tsx",
+        "status": "modified",
+        "beforeSha256": "76a3334c83ea39b89d01b2cd33942f9ccee114c3c5300252728e566d3f4ea069",
+        "afterSha256": "c0d4870a853a72063a415583ac292a67139649aff7f4a3cbb6ebf7ab85cf9ea0"
+      },
+      {
+        "path": "src/entities/folder/index.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "e0e819303a7b310539e9fa02f89cf741e8cbdb1622628ae6c5e3f2e85851d190"
+      },
+      {
+        "path": "src/features/folder-browser/api/consume-folder-scan.ts",
+        "status": "modified",
+        "beforeSha256": "53f4b28139e1db243ec1125b8f036f5cbeb03640f1ed7d4b560a909d9330c549",
+        "afterSha256": "618545c766d78a06475b47bf8a6cd6915c519fd616eef0a0e7f63e4536c4f834"
+      },
+      {
+        "path": "src/features/folder-browser/api/folder-gateway.ts",
+        "status": "modified",
+        "beforeSha256": "82d08ba73795032e3dae4e4535f53d19c2912061b825e7d11addc3aeaedc87c1",
+        "afterSha256": "2dea8e4278f917dec81e30d7b70ab4613214b7739a63f1f7189f6db2c2498a84"
+      },
+      {
+        "path": "src/features/folder-browser/index.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "c2e8a329a78c5ff5a74d299bd54dc1b03e56c2a215eae80e669464920754a0d9"
+      },
+      {
+        "path": "src/features/folder-browser/model/use-folder-explorer.ts",
+        "status": "modified",
+        "beforeSha256": "e1a4e3c47774bb7a1001e618b0cf40e0b0eaf41b7b0ca48e30d96d566249e4c4",
+        "afterSha256": "196f499f26398a69101fcdcb514be7eba55813ab1b87da7e5d215898d9fdf455"
+      },
+      {
+        "path": "src/features/folder-browser/ui/folder-explorer.tsx",
+        "status": "deleted",
+        "beforeSha256": "4c1ceb7c2e7d934eefaa4d0bbf60880c6ec1d3e5dd69e5e73982428c721289d0",
+        "afterSha256": null
+      },
+      {
+        "path": "src/features/folder-browser/ui/manage-folders-dialog.tsx",
+        "status": "modified",
+        "beforeSha256": "09c8949debd9d129392f98817870e8ebf867d1726bb1210b690a9732d7d0bcd0",
+        "afterSha256": "2d40456e1e500d1d495b4781f7eae76f295944fa3a50213adf963a543dfe981b"
+      },
+      {
+        "path": "src/features/folder-browser/ui/rename-folder-dialog.tsx",
+        "status": "modified",
+        "beforeSha256": "77a03523234fce6ac40b94245a47addaa97dd7c40dfb4ff98abb95a0359079ce",
+        "afterSha256": "8ccf5baa6514de5f722a2f1a24d89daca4f3e6aa4bf50d89afd8915eaa4c6528"
+      },
+      {
+        "path": "src/pages/home/index.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "96df7b2608ed2fc1734be18113007f228ebb170fd730f2149620a64b519dcead"
+      },
+      {
+        "path": "src/pages/home/ui/home-page.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "3e2990bffdd738c79d8988f5dd51a5b68b4e76602d43e4234d543cd1b1c6bf68"
+      }
+    ],
+    "repo-explorer": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "9ccc57f594536b44efd02fcc413e267a17c59871a7a226353c5f650b2ff60479",
+        "afterSha256": "77762cfb92edbc1b373d6707e7008b7f90a0ad1d6113bc0799d4d765bde52e1d"
+      },
+      {
+        "path": "apps/desktop/.storybook/app.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "9b2e05f4ce4b096d0557a0233daa7d058e8a52d7f06b1f3a7e83eac49564040d"
+      },
+      {
+        "path": "apps/desktop/.storybook/preview.tsx",
+        "status": "modified",
+        "beforeSha256": "a89dda3ac9554cdd3af28def366f440da588b034679910592465facf967d6dda",
+        "afterSha256": "81900c2838e44874690306e70a2be025eaa742d970f50d02c09f268f4c393917"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/application.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "33ade99db522b4f51cbac431934a3e4aaf73f9fdab2a2ba4305abea13ff0bbbf"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/domain.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "2a79b5b9e26de659790a63d316bae9c00c751b44ce602673703e8592bdb3667c"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/infrastructure.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "b4f23b37f9010ade7cba524b01c913a2779ca6c81737a01a98f74b53c4770913"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/lib.rs",
+        "status": "modified",
+        "beforeSha256": "f71c5c60cccc54302acf3a4c1d61754bfd4612e80b2cbb4cbe9170909b0183d1",
+        "afterSha256": "8ff2438fb1d509e6fce5ee99512edd79f8f971a92ef6107bf9a020ae8cf59734"
+      },
+      {
+        "path": "apps/desktop/src/entities/preferences/index.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "5eab05c7aa447067c7b908591476a6d21bf84b563cf9a9f1c27cc43f105a9c2e"
+      },
+      {
+        "path": "apps/desktop/src/pages/repository/ui/RepositoryPage.tsx",
+        "status": "modified",
+        "beforeSha256": "65c94d78adb9ef6bfd4cb358f54c4635e9418530487c86bf8eeaa2b2b9b338c6",
+        "afterSha256": "5e9e7ee9c211800fd0dbbe0c5d8c02568a3205d89375566170641f2cc5557428"
+      },
+      {
+        "path": "apps/desktop/src/shared/storybook/storybook-providers.tsx",
+        "status": "deleted",
+        "beforeSha256": "ad20246994d8a1eecb235de654b1ead3c04a0821de63adcc09d03ad0d8387cb4",
+        "afterSha256": null
+      },
+      {
+        "path": "apps/desktop/src/stories/pages.stories.tsx",
+        "status": "modified",
+        "beforeSha256": "5ef449179c05f53fd8c07adc01011223f72df64ce386db038cf73070301796c4",
+        "afterSha256": "a1a902e2a3d45621c9f4b005986c4f5adfd953d23b7f22dc42f39c8375eaab4a"
+      }
+    ],
+    "site-bookmark-browser": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "17b875018b1dd42f08d94d2f295e02caab21d6a62c94dfcf33eaa8ce8de46d8b",
+        "afterSha256": "c4cc63a370e68bf60fecf1cf45fc3047dd147ab159414881a03dfb454fff222c"
+      },
+      {
+        "path": "src-tauri/src/application/bookmarks.rs",
+        "status": "modified",
+        "beforeSha256": "b5dde64f372da3451475d1067be84c2a352f23c28bf01368863e71c2700d6906",
+        "afterSha256": "b0d3c66cf60130909166c5a7d21d53076dfa50373f0ed38b22dc8b749aa27727"
+      },
+      {
+        "path": "src-tauri/src/application/delete_group.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "900e5a7f3bc3c5d6a7cbe0721bb68393104b29ecf05b1c741d28a0f4e214c0b0"
+      },
+      {
+        "path": "src-tauri/src/application/groups.rs",
+        "status": "modified",
+        "beforeSha256": "7787061e5b10eea84b3d62b94f62aa05da8fe7172db39e89b9f95db3a01b09cd",
+        "afterSha256": "6997de20929dfe80c522f254fd762148bfd628a8cb3cf6411d4ff4b8fdd67171"
+      },
+      {
+        "path": "src-tauri/src/application/mod.rs",
+        "status": "modified",
+        "beforeSha256": "0c219ced242876377ee04109da69d2894011983019e3338a3690dab2a92ad560",
+        "afterSha256": "dcd5d2eda86700a3438b8ae30b1bfa01773f4661e917003e6efd44cf321962cb"
+      },
+      {
+        "path": "src-tauri/src/application/ports.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "563b5fd886911642cb1432b8140ddcc4be67a5b944ca501b8054067caaba8864"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/bookmarks_integration_tests.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "787282135a33a3e361bb7d5d5b767e4c50b2ef67983cb85e7ce561476b816f72"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/json_bookmark_store.rs",
+        "status": "modified",
+        "beforeSha256": "25a386765b52e18446419c21412b1bc12c5464055f77b328830e9915a8c27ea7",
+        "afterSha256": "268234d5d59fc7de01346201fe6b52f1744c89f14f6d5a7be2ae98cd0fda9c76"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/json_settings_store.rs",
+        "status": "modified",
+        "beforeSha256": "5d79dd96c1108a65a447961b7d5a2e1997c573e9ef152a03b03740242695cc61",
+        "afterSha256": "123b25aa9d3c72048424d51ba8ee6469433632a917affd37e687679da69ca17f"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/library_images.rs",
+        "status": "modified",
+        "beforeSha256": "aa167d1299ffad389d74e85e90f880f838f78bc216ff30b1f437b297ed2c6c10",
+        "afterSha256": "beffd64fbb1815866ef02e90a5259a2a6ae7ddebe854b265d0bf531d195aee08"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/mod.rs",
+        "status": "modified",
+        "beforeSha256": "4f9327607e03f25caddac0da565a985e0d2173f354312d9c3ce5c9de4fc7edeb",
+        "afterSha256": "901698c14c17975b6c9e4602c4f96b3161d3895dec873f9b3c97979407e5f9d1"
+      },
+      {
+        "path": "src-tauri/src/interface/commands.rs",
+        "status": "modified",
+        "beforeSha256": "de1979d13b49150c9b4d2858511483b8182b339ca54ac23df3395bd88de091ef",
+        "afterSha256": "47ca97d331ae1f9a8fb8ce9f8b02aa794e7436e70ed09d80380d588caa13a6c3"
+      },
+      {
+        "path": "src/App.tsx",
+        "status": "modified",
+        "beforeSha256": "d4c5bb74843d0bb3700cddbac3df42fbb6f6dc173ad218d0c91f7dff460aad3d",
+        "afterSha256": "82f1f48632bdfbd6f540a3f529adbf5ce1ebf70dc756ece69354237790f8fd57"
+      },
+      {
+        "path": "src/entities/bookmark/index.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "e0c2c261bd6589e2dfa069d0203e4128881119c85c8303c45a84ec2ee9ac23be"
+      },
+      {
+        "path": "src/features/bookmark-browser/api/bookmark-gateway.ts",
+        "status": "modified",
+        "beforeSha256": "aa7a05dfa10c872a92c02ad831f27c0f52ae4782dd7a8fcb383c16aefffa775b",
+        "afterSha256": "8c1f20267a94c58a8a118be24b52a2de108a3f84b6508fab2c097500dfc82b7a"
+      },
+      {
+        "path": "src/features/bookmark-browser/index.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "2ece1d3f080c76655c11939c967aa304e4bf274f9c90c9419964fc5d84f7a905"
+      },
+      {
+        "path": "src/features/bookmark-browser/model/use-bookmarks.ts",
+        "status": "modified",
+        "beforeSha256": "8018c91ddabd2a2b9cb3d5db110e32f982a5f2edcd0248426f1a837b4c25773c",
+        "afterSha256": "4b39a741a5a03b7e50a20cb3136ecda07defadc901e84d377432edb70beea127"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/bookmark-browser.tsx",
+        "status": "deleted",
+        "beforeSha256": "c903b777fbf4f718fb1ce62e30b91e8cda48dc9de48a6fb01f8b49cc6447dddd",
+        "afterSha256": null
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/bookmark-edit-dialog.tsx",
+        "status": "modified",
+        "beforeSha256": "00314d741eb61b56f3ec40fa9d21c4c4debc278f46b5c40b107629fe004ea0fe",
+        "afterSha256": "a9f76dc16f44331ee9256183da1e418fc1f384d2561f9f60e7a284f092fdad1d"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/duplicate-urls-dialog.tsx",
+        "status": "modified",
+        "beforeSha256": "8eaa7f2d3a5d0b0c7e4f4d9815c7f865b978dc4989cd83a0531415e3b50a1592",
+        "afterSha256": "04ee6e93ef3f15c43a0d5f77db8edb0622a1e7888840f9003cd9f5c6e2a580e6"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/groups-dialog.tsx",
+        "status": "modified",
+        "beforeSha256": "709e12a18827aff8bdb133d80285a6cd095b78ba615734deafe33463c4d721e1",
+        "afterSha256": "32aa25b7f8b28610f1b63381adf4bbb379b77a07c9abd9fd5a48654cbf3bd8da"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/markdown-import-dialog.tsx",
+        "status": "modified",
+        "beforeSha256": "2ca155bd3288c25566b6a98697ffe86916f8b11e4364773cebd066333c1fd012",
+        "afterSha256": "6bd02b6f983596599739ce211dda4f9a4c1ebc8384c4e2159099f480f39dd670"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/rename-group-key-dialog.tsx",
+        "status": "modified",
+        "beforeSha256": "52030e59a07b22acb42032aa83cac6f88eaa616eca59513a1437d7472d976914",
+        "afterSha256": "6f9b86d4d2edea3ff63b4a46e4a790622d05a5b0d0fcd9d6ddd1505e70dd3dcc"
+      },
+      {
+        "path": "src/pages/bookmarks/index.ts",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "99137d84dfeef88a68b6329675a746cd3828e6a12161b1fd0a4e208c213769c0"
+      },
+      {
+        "path": "src/pages/bookmarks/ui/bookmark-browser-page.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "dfa96500f70c7b795b736da8746949ff10175cdd15595ab086025f3806ce161c"
+      },
+      {
+        "path": "tests/duplicates.test.ts",
+        "status": "modified",
+        "beforeSha256": "4ef328632743b98f8d6dd2e831d4d57b6f1482dafaa4243c5df204f42658b241",
+        "afterSha256": "bfd7ad8f79e1e5efee8c0e1ef17c31c806f096e7cf757eccd45db6f7ee6af5f2"
+      }
+    ],
+    "tauri-tree-file-explorer": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "beforeSha256": "892eb9cba56d50c66ca18f15a1dc43a8e1cc9b3b78d5c5ad17c684c6be23ef1f",
+        "afterSha256": "72f63f77f08356a05e90affc1272918395e91ecc3ac5ef8f2792c3751bc809ae"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.lock",
+        "status": "modified",
+        "beforeSha256": "95a21383ecad09495b434aa6d84990267579e3dbb3c8e3bc9fe775fd9c3232ec",
+        "afterSha256": "ca50178379518155116609148676e521d901e2ec755e078fadda5c0160ff61ff"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.toml",
+        "status": "modified",
+        "beforeSha256": "f23a1d9c7ea8463097f63fb0409c99693eef549e47b28d896b06394c6e9cccd7",
+        "afterSha256": "4040531d5bf5a5cd3100865167c0e9a316bfc563f045fa64cd7cf72fb0d192a9"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/application.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "c08c27e4203afae56b0f18c7cf6fa382633dec7f2876d05b4fd9dcd66ab295ff"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/lib.rs",
+        "status": "modified",
+        "beforeSha256": "e41886f6b2423f650a3a06d3f463bb8519b2d28e2dc777ef544ccc1e73b80c4d",
+        "afterSha256": "2ba377325381e1a181eef501f416460f15a22d8854d1d3cd5e31a046e1691e01"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/outbound.rs",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "de9f2c271149a12c32d52953752477b9baeeac93af6fb59f568f4a7d57b0e815"
+      },
+      {
+        "path": "apps/desktop/src/features/settings/index.ts",
+        "status": "modified",
+        "beforeSha256": "3095c2c4d5c2f10833b8c57e2a2d7f465e8faf9bdc9b1cd54947dd443861059e",
+        "afterSha256": "86f120d2b54b8f8a4b3d828d3bc186ecd483a03d8553e990c9013e43e2b244d2"
+      },
+      {
+        "path": "apps/desktop/src/features/settings/ui/ExplorerSettingsControls.tsx",
+        "status": "modified",
+        "beforeSha256": "6f91284f563e8b3887944381fe7857120c81ca3907d4a6729524e9678e756af0",
+        "afterSha256": "993da7dc2619bd56b3474dea4a29df00be671c6c6933c8960c525718a0bb1b55"
+      },
+      {
+        "path": "apps/desktop/src/features/settings/ui/ToggleHiddenFilesButton.tsx",
+        "status": "added",
+        "beforeSha256": null,
+        "afterSha256": "8b54bc62bf375da29456efc9d5f764a71b93d574c9852a73a87797d1c03318da"
+      },
+      {
+        "path": "apps/desktop/src/features/toggle-hidden-files/index.ts",
+        "status": "deleted",
+        "beforeSha256": "074570ddaac5aa6a4643f6a142052c7d1486238d37eadec1680e47be3813cf93",
+        "afterSha256": null
+      },
+      {
+        "path": "apps/desktop/src/features/toggle-hidden-files/ui/ToggleHiddenFilesButton.tsx",
+        "status": "deleted",
+        "beforeSha256": "7437e608c17c6e8c89fefe9212e4b49f0eadaf7c51775020992ec199433b0e59",
+        "afterSha256": null
+      },
+      {
+        "path": "apps/desktop/src/widgets/file-list-panel/ui/FileListPanel.tsx",
+        "status": "modified",
+        "beforeSha256": "c35d011eddaaa2f2c53a6ae4ed6178354d665fe4529331f938f06beb2a74e9b8",
+        "afterSha256": "98d08fdc69fc6efd317416c1bec24b764e52aafe94511e64ee588394fe60171f"
+      }
+    ]
+  }
+}

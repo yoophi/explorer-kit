@@ -27,3 +27,7 @@ import * as image_input from "@yoophi/image-input";
 import * as scan_client from "@yoophi/scan-client";
 import * as collection_core from "@yoophi/collection-core";
 export const packages = { base_alert_dialog, base_card, base_scroll_area, base_label, base_combobox, base_dialog, base_badge, base_separator, base_button, base_select, base_textarea, base_input, base_context_menu, radix_card, radix_scroll_area, radix_resizable, radix_empty, radix_table, radix_button, radix_input, radix_skeleton, file_tree, file_list, explorer_core, rating, image_input, scan_client, collection_core };
+
+export * as settings_core from "@yoophi/settings-core";
+export * as settings_react from "@yoophi/settings-core/react";
+export * as settings_ui from "@yoophi/settings-ui";

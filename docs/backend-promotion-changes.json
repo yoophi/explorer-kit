@@ -1,0 +1,185 @@
+{
+  "baseline": "/var/folders/3z/mcf5cp4n0t567wk9p_kjrpp80000gn/T/backend-promotion-baseline-vegfb0x_",
+  "repositories": {
+    "explorer-kit": [
+      {
+        "path": "CONTEXT.md",
+        "status": "modified"
+      },
+      {
+        "path": "Cargo.lock",
+        "status": "modified"
+      },
+      {
+        "path": "PROMPT.md",
+        "status": "modified"
+      },
+      {
+        "path": "README.md",
+        "status": "modified"
+      },
+      {
+        "path": "crates/image-store/Cargo.toml",
+        "status": "added"
+      },
+      {
+        "path": "crates/image-store/README.md",
+        "status": "added"
+      },
+      {
+        "path": "crates/image-store/src/lib.rs",
+        "status": "added"
+      },
+      {
+        "path": "crates/json-store/src/lib.rs",
+        "status": "modified"
+      },
+      {
+        "path": "crates/scan-job/Cargo.toml",
+        "status": "added"
+      },
+      {
+        "path": "crates/scan-job/src/lib.rs",
+        "status": "added"
+      },
+      {
+        "path": "docs/architecture.md",
+        "status": "modified"
+      },
+      {
+        "path": "docs/backend-promotion-changes.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/backend-promotion-report.md",
+        "status": "added"
+      },
+      {
+        "path": "docs/provenance.md",
+        "status": "modified"
+      },
+      {
+        "path": "docs/validation.md",
+        "status": "modified"
+      }
+    ],
+    "movie-explorer": [
+      {
+        "path": "apps/desktop/src-tauri/src/lib.rs",
+        "status": "modified"
+      }
+    ],
+    "movie-folder-explorer": [
+      {
+        "path": "src-tauri/Cargo.lock",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/Cargo.toml",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/filesystem_directory_scanner.rs",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/json_last_opened_directory_store.rs",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/src/interface/commands.rs",
+        "status": "modified"
+      },
+      {
+        "path": "src/features/folder-browser/model/use-folder-explorer.ts",
+        "status": "modified"
+      },
+      {
+        "path": "src/features/folder-browser/ui/rename-folder-dialog.tsx",
+        "status": "modified"
+      }
+    ],
+    "repo-explorer": [
+      {
+        "path": "apps/desktop/src-tauri/Cargo.lock",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.toml",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/lib.rs",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/entities/repository/api.ts",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/entities/repository/index.ts",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/src/entities/repository/scan-session.ts",
+        "status": "added"
+      },
+      {
+        "path": "apps/desktop/src/pages/repository/ui/RepositoryPage.tsx",
+        "status": "modified"
+      },
+      {
+        "path": "apps/desktop/tests/scan-session.test.mjs",
+        "status": "added"
+      },
+      {
+        "path": "package.json",
+        "status": "modified"
+      }
+    ],
+    "site-bookmark-browser": [
+      {
+        "path": "src-tauri/Cargo.lock",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/Cargo.toml",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/src/application/bookmarks.rs",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/src/application/groups.rs",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/src/domain/bookmark.rs",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/json_bookmark_store.rs",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/json_settings_store.rs",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/library_images.rs",
+        "status": "modified"
+      },
+      {
+        "path": "src-tauri/src/interface/commands.rs",
+        "status": "modified"
+      }
+    ],
+    "tauri-tree-file-explorer": [
+      {
+        "path": "apps/desktop/src-tauri/src/lib.rs",
+        "status": "modified"
+      }
+    ]
+  }
+}

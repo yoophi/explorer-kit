@@ -4,11 +4,24 @@
  * and the absolute paths the rest of the app (and the backend) speaks.
  */
 
+function withoutTrailingSeparators(path: string): string {
+  return path.replace(/\/+$/, "") || "/";
+}
+
 export function toTreeId(absolutePath: string, root: string): string | null {
-  if (!absolutePath.startsWith(`${root}/`)) return null;
-  return `${absolutePath.slice(root.length + 1)}/`;
+  const normalizedRoot = withoutTrailingSeparators(root);
+  const normalizedPath = withoutTrailingSeparators(absolutePath);
+  if (normalizedPath === normalizedRoot) return null;
+  const prefix = normalizedRoot === "/" ? "/" : `${normalizedRoot}/`;
+  if (!normalizedPath.startsWith(prefix)) return null;
+  return `${normalizedPath.slice(prefix.length)}/`;
 }
 
 export function toAbsolutePath(treeId: string, root: string): string {
-  return `${root}/${treeId.replace(/\/+$/, "")}`;
+  const normalizedRoot = withoutTrailingSeparators(root);
+  const relativePath = treeId.replace(/\/+$/, "");
+  if (relativePath === "") return normalizedRoot;
+  return normalizedRoot === "/"
+    ? `/${relativePath}`
+    : `${normalizedRoot}/${relativePath}`;
 }

@@ -1,0 +1,239 @@
+{
+  "scope": "Current local src static import scan; manually reviewed; not a complete AST dependency analysis",
+  "repositories": {
+    "movie-explorer": [
+      {
+        "file": "pages/home/index.tsx",
+        "line": 33,
+        "import": "@/features/preferences/model",
+        "kinds": [
+          "deep-import"
+        ]
+      }
+    ],
+    "movie-folder-explorer": [
+      {
+        "file": "App.tsx",
+        "line": 1,
+        "import": "@/features/folder-browser/ui/folder-explorer",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/folder-browser/api/consume-folder-scan.ts",
+        "line": 2,
+        "import": "@/entities/folder/model/types",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/folder-browser/api/folder-gateway.ts",
+        "line": 5,
+        "import": "@/entities/folder/model/types",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/folder-browser/model/use-folder-explorer.ts",
+        "line": 4,
+        "import": "@/entities/folder/model/types",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/folder-browser/ui/folder-explorer.tsx",
+        "line": 11,
+        "import": "@/entities/folder/model/types",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/folder-browser/ui/manage-folders-dialog.tsx",
+        "line": 16,
+        "import": "@/entities/folder/model/types",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/folder-browser/ui/rename-folder-dialog.tsx",
+        "line": 5,
+        "import": "@/entities/folder/model/types",
+        "kinds": [
+          "deep-import"
+        ]
+      }
+    ],
+    "repo-explorer": [
+      {
+        "file": "pages/repository/ui/RepositoryPage.tsx",
+        "line": 26,
+        "import": "@/entities/preferences/model",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "shared/storybook/storybook-providers.tsx",
+        "line": 1,
+        "import": "@/app/providers/query",
+        "kinds": [
+          "upward"
+        ]
+      }
+    ],
+    "site-bookmark-browser": [
+      {
+        "file": "App.tsx",
+        "line": 1,
+        "import": "@/features/bookmark-browser/ui/bookmark-browser",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/api/bookmark-gateway.ts",
+        "line": 2,
+        "import": "@/entities/bookmark/model/types",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/api/bookmark-gateway.ts",
+        "line": 4,
+        "import": "@/entities/bookmark/model/url",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/model/use-bookmarks.ts",
+        "line": 2,
+        "import": "@/entities/bookmark/model/types",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/model/use-bookmarks.ts",
+        "line": 3,
+        "import": "@/entities/bookmark/model/url",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/model/use-bookmarks.ts",
+        "line": 4,
+        "import": "@/entities/bookmark/model/group-key",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/ui/bookmark-browser.tsx",
+        "line": 16,
+        "import": "@/entities/bookmark/model/types",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/ui/bookmark-browser.tsx",
+        "line": 17,
+        "import": "@/entities/bookmark/model/group-key",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/ui/bookmark-edit-dialog.tsx",
+        "line": 5,
+        "import": "@/entities/bookmark/model/types",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/ui/duplicate-urls-dialog.tsx",
+        "line": 2,
+        "import": "@/entities/bookmark/model/types",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/ui/duplicate-urls-dialog.tsx",
+        "line": 3,
+        "import": "@/entities/bookmark/model/duplicates",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/ui/groups-dialog.tsx",
+        "line": 3,
+        "import": "@/entities/bookmark/model/types",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/ui/markdown-import-dialog.tsx",
+        "line": 3,
+        "import": "@/entities/bookmark/model/types",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/ui/markdown-import-dialog.tsx",
+        "line": 4,
+        "import": "@/entities/bookmark/model/url",
+        "kinds": [
+          "deep-import"
+        ]
+      },
+      {
+        "file": "features/bookmark-browser/ui/rename-group-key-dialog.tsx",
+        "line": 13,
+        "import": "@/entities/bookmark/model/group-key",
+        "kinds": [
+          "deep-import"
+        ]
+      }
+    ],
+    "tauri-tree-file-explorer": [
+      {
+        "file": "features/settings/ui/ExplorerSettingsControls.tsx",
+        "line": 4,
+        "import": "@/features/toggle-hidden-files",
+        "kinds": [
+          "cross-slice"
+        ]
+      },
+      {
+        "file": "features/toggle-hidden-files/ui/ToggleHiddenFilesButton.tsx",
+        "line": 4,
+        "import": "@/features/settings",
+        "kinds": [
+          "cross-slice"
+        ]
+      },
+      {
+        "file": "widgets/file-list-panel/ui/FileListPanel.tsx",
+        "line": 6,
+        "import": "@/features/settings/ui/ExplorerSettingsControls",
+        "kinds": [
+          "deep-import"
+        ]
+      }
+    ]
+  }
+}

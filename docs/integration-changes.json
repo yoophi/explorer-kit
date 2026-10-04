@@ -1,0 +1,511 @@
+{
+  "baseline": "/var/folders/3z/mcf5cp4n0t567wk9p_kjrpp80000gn/T/explorer-integration-baseline-i6ok2ys4",
+  "repositories": {
+    "movie-explorer": [
+      {
+        "path": "apps/desktop/package.json",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.lock",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.toml",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/lib.rs",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/src/pages/home/index.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/vite.config.ts",
+        "change": "modified"
+      },
+      {
+        "path": "package.json",
+        "change": "modified"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "change": "modified"
+      },
+      {
+        "path": "scripts/tauri-dev.mjs",
+        "change": "deleted"
+      }
+    ],
+    "movie-folder-explorer": [
+      {
+        "path": "README.md",
+        "change": "modified"
+      },
+      {
+        "path": "package-lock.json",
+        "change": "deleted"
+      },
+      {
+        "path": "package.json",
+        "change": "modified"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "change": "added"
+      },
+      {
+        "path": "src-tauri/Cargo.lock",
+        "change": "modified"
+      },
+      {
+        "path": "src-tauri/Cargo.toml",
+        "change": "modified"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/json_folder_cache_store.rs",
+        "change": "modified"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/json_last_opened_directory_store.rs",
+        "change": "modified"
+      },
+      {
+        "path": "src-tauri/src/interface/commands.rs",
+        "change": "modified"
+      },
+      {
+        "path": "src/components/ui/badge.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/button.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/card.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/combobox.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/context-menu.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/dialog.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/input.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/label.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/scroll-area.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/separator.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/features/folder-browser/api/consume-folder-scan.ts",
+        "change": "modified"
+      },
+      {
+        "path": "src/features/folder-browser/model/use-folder-explorer.ts",
+        "change": "modified"
+      },
+      {
+        "path": "src/features/folder-browser/ui/artist-alias-dialog.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "src/features/folder-browser/ui/folder-explorer.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "src/features/folder-browser/ui/manage-folders-dialog.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "src/features/folder-browser/ui/rename-folder-dialog.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "src/index.css",
+        "change": "modified"
+      },
+      {
+        "path": "src/lib/utils.ts",
+        "change": "deleted"
+      },
+      {
+        "path": "tsconfig.json",
+        "change": "modified"
+      },
+      {
+        "path": "vite.config.ts",
+        "change": "modified"
+      }
+    ],
+    "repo-explorer": [
+      {
+        "path": "apps/desktop/src-tauri/Cargo.lock",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.toml",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/lib.rs",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/vite.config.ts",
+        "change": "modified"
+      },
+      {
+        "path": "docs/dynamic-dev-port.md",
+        "change": "modified"
+      },
+      {
+        "path": "package.json",
+        "change": "modified"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "change": "modified"
+      },
+      {
+        "path": "scripts/tauri-dev.mjs",
+        "change": "deleted"
+      }
+    ],
+    "site-bookmark-browser": [
+      {
+        "path": "README.md",
+        "change": "modified"
+      },
+      {
+        "path": "package-lock.json",
+        "change": "deleted"
+      },
+      {
+        "path": "package.json",
+        "change": "modified"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "change": "added"
+      },
+      {
+        "path": "src-tauri/Cargo.lock",
+        "change": "modified"
+      },
+      {
+        "path": "src-tauri/Cargo.toml",
+        "change": "modified"
+      },
+      {
+        "path": "src-tauri/src/application/bookmarks.rs",
+        "change": "modified"
+      },
+      {
+        "path": "src-tauri/src/application/groups.rs",
+        "change": "modified"
+      },
+      {
+        "path": "src-tauri/src/domain/bookmark.rs",
+        "change": "modified"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/json_bookmark_store.rs",
+        "change": "modified"
+      },
+      {
+        "path": "src-tauri/src/infrastructure/json_settings_store.rs",
+        "change": "modified"
+      },
+      {
+        "path": "src-tauri/src/interface/commands.rs",
+        "change": "modified"
+      },
+      {
+        "path": "src/components/ui/alert-dialog.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/badge.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/button.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/card.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/combobox.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/context-menu.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/dialog.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/input.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/label.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/scroll-area.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/select.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/separator.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/components/ui/textarea.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/entities/bookmark/model/group-key.ts",
+        "change": "modified"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/bookmark-browser.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/bookmark-edit-dialog.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/duplicate-urls-dialog.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/groups-dialog.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/markdown-import-dialog.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/rating.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "src/features/bookmark-browser/ui/rename-group-key-dialog.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "src/index.css",
+        "change": "modified"
+      },
+      {
+        "path": "src/lib/utils.ts",
+        "change": "deleted"
+      },
+      {
+        "path": "tsconfig.json",
+        "change": "modified"
+      },
+      {
+        "path": "vite.config.ts",
+        "change": "modified"
+      }
+    ],
+    "tauri-tree-file-explorer": [
+      {
+        "path": "README.md",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/components.json",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/package.json",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.lock",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/src-tauri/Cargo.toml",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/src-tauri/src/lib.rs",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/src/app/styles/index.css",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/src/features/toggle-hidden-files/ui/ToggleHiddenFilesButton.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/src/pages/explorer/ui/ExplorerPage.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/src/widgets/folder-tree-panel/ui/FolderTreePanel.tsx",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/tsconfig.json",
+        "change": "modified"
+      },
+      {
+        "path": "apps/desktop/vite.config.ts",
+        "change": "modified"
+      },
+      {
+        "path": "packages/core/package.json",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/core/src/format.ts",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/core/src/index.ts",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/core/src/types.ts",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/core/tsconfig.json",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/file-list/package.json",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/file-list/src/FileList.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/file-list/src/index.ts",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/file-list/tsconfig.json",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/file-tree/package.json",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/file-tree/src/FolderTree.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/file-tree/src/index.ts",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/file-tree/src/lib/paths.ts",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/file-tree/tsconfig.json",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/ui/components.json",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/ui/package.json",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/ui/src/components/button.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/ui/src/components/card.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/ui/src/components/empty.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/ui/src/components/input.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/ui/src/components/resizable.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/ui/src/components/scroll-area.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/ui/src/components/skeleton.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/ui/src/components/table.tsx",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/ui/src/lib/utils.ts",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/ui/src/styles/globals.css",
+        "change": "deleted"
+      },
+      {
+        "path": "packages/ui/tsconfig.json",
+        "change": "deleted"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "change": "modified"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "change": "modified"
+      }
+    ]
+  }
+}

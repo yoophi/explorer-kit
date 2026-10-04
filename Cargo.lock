@@ -53,9 +53,31 @@ dependencies = [
 ]
 
 [[package]]
+name = "explorer-image-store"
+version = "0.1.0"
+dependencies = [
+ "explorer-json-store",
+ "tempfile",
+]
+
+[[package]]
 name = "explorer-json-store"
 version = "0.1.0"
 dependencies = [
+ "serde",
+ "serde_json",
+ "tempfile",
+]
+
+[[package]]
+name = "explorer-scan-job"
+version = "0.1.0"
+
+[[package]]
+name = "explorer-settings-store"
+version = "0.1.0"
+dependencies = [
+ "explorer-json-store",
  "serde",
  "serde_json",
  "tempfile",
