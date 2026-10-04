@@ -52,10 +52,24 @@ ST3의 Folder adapter는 `consumeScan`을 통해 공통 `ScanLifecycle`을 소�
 
 Bookmark는 사용자가 지정한 **비공개** [yoophi/site-bookmark-browser](https://github.com/yoophi/site-bookmark-browser)를 생성하고 잘못된 Folder origin을 교체했다. Repo 원격의 두 후속 커밋을 병합해 resizable panes, Git 상태, 터미널 열기, 경로 복사와 Spec Kit 문서를 유지했다. 원격 문서의 기존 trailing whitespace는 보존했다.
 
-게시 대상 파일에서 일반적인 인증정보 패턴·자격 증명 파일명은 발견하지 않았다. 공통과 다섯 앱은 최종 리뷰 후 main에 커밋·푸시하며, npm/crates.io 배포는 하지 않는다.
+게시 대상 파일에서 일반적인 인증정보 패턴·자격 증명 파일명은 발견하지 않았다. 공통과 다섯 앱 모두 최종 리뷰 후 main에 커밋·푸시했다. npm/crates.io 배포는 하지 않았다.
 
 ## 검증 한계
 
 실제 Tauri 창·OS 터미널 실행·패키징·대용량 탐색 성능은 검증하지 않았다. Storybook은 모의 UI 검사다. Bookmark의 기존 private_browser.rs 미포맷은 보존해 전체 fmt 대신 수정 파일을 검사했다. 기존 Vite 큰 chunk 및 의존성 경고가 있으나 빌드는 성공했다. 앱은 explorer-kit 형제 checkout과 각 저장소 의존성 설치가 필요하다.
 
 [리뷰 완료 시점 변경 목록](promotion-14-changes.json)은 작업 직전 snapshot과 비교한 파일 해시이며, 이후 게시 상태를 기록하는 CONTEXT·이 보고서·목록 자체는 제외한다. Repo 원격 병합으로 보존한 파일도 비교에 포함한다.
+
+
+## 게시 완료 커밋
+
+| 저장소 | 구현 커밋 | 공개 범위 |
+| --- | --- | --- |
+| [explorer-kit](https://github.com/yoophi/explorer-kit) | `f25acb0` | 공개 |
+| [movie-explorer](https://github.com/yoophi/movie-explorer) | `b71c9a2` | 공개 |
+| [movie-folder-explorer](https://github.com/yoophi/movie-folder-explorer) | `4bcb9a1` | 공개 |
+| [repo-explorer](https://github.com/yoophi/repo-explorer) | `3d0338f` | 공개 |
+| [site-bookmark-browser](https://github.com/yoophi/site-bookmark-browser) | `0c134e2` | 비공개 |
+| [tauri-tree-file-explorer](https://github.com/yoophi/tauri-tree-file-explorer) | `45e9184` | 공개 |
+
+이 게시 완료 기록은 공통 구현 커밋 뒤의 문서 커밋으로 함께 푸시한다. 앱에는 앞선 세션에서 검증한 공통 모듈·설정·아키텍처·스트리밍 변경도 포함한다. Repo 원격 변경을 강제로 덮어쓰지 않고 병합했으며 강제 푸시는 사용하지 않았다.

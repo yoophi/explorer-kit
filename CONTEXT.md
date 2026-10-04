@@ -366,3 +366,9 @@ Tree 소비 검증에서 ScanLifecycle의 TypeScript parameter property가 기�
 조정자 리뷰의 Folder 독립필터 선택표시 및 Repo 초기 평면목록 우선선택 회귀를 수정했습니다. 프론트엔드 독립리뷰에서 ST2 단일queue가 다른대상의 느린저장을 기다리는경계를 확인하여 target별queue로 보완했습니다. A느린저장→B즉시저장→A복귀시A기존저장대기 및 stalepreview차단 fixture를 추가했습니다. 최종 common check는 Node49/Rust60+doctest1·타입·소비/Storybook빌드 통과이며 Folder/Bookmark test/build도 다시통과했습니다.
 
 review-data는 최종 Folder33/Bookmark42/Repo20 Rust를 직접통과하고 backend추가회귀없음을 확인했습니다. review-ui는 앱14/12/11/16 및 image-input5를 직접실행하고 대상별queue를 별도fixture로 재검증해 최종 추가회귀없음을 확인했습니다. 전체아키텍처검사와 실제두소비경로확인도 통과했습니다. 네이티브창·OS터미널·패키징·대용량벤치마크는 미실행입니다. 상세보고서는 docs/promotion-14-report.md입니다. 이제 사용자가승인한공통+다섯앱커밋·푸시를 진행합니다.
+
+## 공통과 다섯 앱 게시 완료
+
+공통 구현 f25acb0과 Movie b71c9a2, Folder 4bcb9a1, Repo 3d0338f, Bookmark 0c134e2, Tree 45e9184를 각 origin/main에 푸시했습니다. Movie와 Bookmark에는 main 브랜치를 처음 게시했습니다. Bookmark 원격은 사용자가 지정한 비공개 yoophi/site-bookmark-browser이며, 기존 Folder를 향하던 origin 연결을 교체했습니다. Repo의 원격 변경은 5f1635b 병합으로 보존했습니다. 모든 푸시는 강제 옵션 없이 수행했습니다.
+
+공통 후보 14개의 구현·최소 두 앱 소비·검증·독립 리뷰 및 다섯 앱 커밋·푸시 요청을 완료했습니다. 이 게시 기록은 공통 저장소의 후속 문서 커밋으로 푸시하고 원격/로컬 SHA, 작업 트리 정리 상태, Bookmark 비공개 여부를 마지막으로 확인합니다. 기존 Herdr 탭은 유지하며 네이티브 창·패키징·registry 배포는 수행하지 않았습니다.
